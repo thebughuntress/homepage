@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, Divider, IconButton, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -14,13 +14,16 @@ const Footer = () => {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
-        backgroundColor: "#DFDFE2",
+        backgroundColor: "#A0A0A5",
         padding: "20px 0 10px 0",
         margin: 0,
         boxSizing: "border-box",
         overflowX: "hidden",
       }}
     >
+      <Divider
+        sx={{ borderColor: "white", borderWidth: "1px", width: "90%", marginBottom: 3 }}
+      />
       <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
         {/* LinkedIn Button */}
         <IconButton
@@ -67,7 +70,12 @@ const Footer = () => {
 
       <Typography
         variant="body2"
-        sx={{ color: "black", wordWrap: "break-word", paddingTop: "12px", fontSize: "12px" }}
+        sx={{
+          color: "black",
+          wordWrap: "break-word",
+          paddingTop: "12px",
+          fontSize: "12px",
+        }}
       >
         © {new Date().getFullYear()} Antonia Frey. All rights reserved.
       </Typography>
