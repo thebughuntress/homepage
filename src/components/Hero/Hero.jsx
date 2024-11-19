@@ -1,35 +1,39 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import heroImg from "../../assets/hero-img.jpg";
+import heroImgMobile from "../../assets/hero-img-mobile.jpg";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 function Hero() {
+  // Check if the screen is small (phone)
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
-        height: { xs: "auto", md: "92vh" },
+        height: "92vh",
         width: "100vw",
-        gap: 1,
       }}
     >
       {/* Image Box */}
       <Box
         sx={{
           width: { xs: "100%", md: "50%" },
+          backgroundColor: { xs: "white", md: "transparent" },
         }}
       >
         <Box
           component="img"
-          src={heroImg}
-          alt="A descriptive text for the image"
+          src={isMobile ? heroImgMobile : heroImg}
+          alt="heroImg"
           sx={{
             width: { xs: "100%", md: "70%" },
-            maxWidth: "500px",
-            borderRadius:{ xs: 0, md: "8px" },
+            borderRadius: { xs: 0, md: "8px" },
           }}
         />
       </Box>
@@ -38,29 +42,45 @@ function Hero() {
       <Box
         sx={{
           width: { xs: "100%", md: "50%" },
+          background: {
+            xs: "linear-gradient(to bottom, white, #f4f4f4)",
+            md: "inherit",
+          },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           textAlign: "center",
-          padding: { xs: "10px", md: "20px" },
+          alignItems: "center",
+          gap: 1,
         }}
       >
-        <Typography variant="h2" fontWeight={700} gutterBottom>
-          Welcome.
-        </Typography>
         <Typography
-          variant="h6"
-          gutterBottom
-          sx={{ fontStyle: "italic", opacity: 0.9, my: 3 }}
+          variant="h4"
+          fontWeight={500}
+          sx={{
+            width: { xs: "85%", md: "100%" },
+            paddingTop: { xs: "0.5rem", md: 0 },
+            marginTop: 1,
+          }}
         >
+          Full Stack Developer, Cloud Engineer & Tutor
+        </Typography>
+        <Typography sx={{ width: { xs: "80%", md: "100%" } }}>
+          I build software and teach programming, and I love what I do.
+        </Typography>
+        <DownloadButton
+          label="Download CV"
+          pathToFile="/downloads/cv.pdf"
+          downloadFileName="cv.pdf"
+        />
+        {/* <Typography variant="h6" sx={{ fontStyle: "italic", my: 1 }}>
           "Technology is best when it brings people together." <br />
           Matt Mullenweg
-        </Typography>
-        <Typography variant="h6" gutterBottom >
-          In today’s digital world, information technology isn’t just a tool,{" "}
-          <br />
+        </Typography> */}
+        {/*  <Typography variant="body1">
+          In today’s digital world, information technology isn’t just a tool,
           it’s the backbone of progress, creativity, and connection.
-        </Typography>
+        </Typography> */}
       </Box>
     </Box>
   );
