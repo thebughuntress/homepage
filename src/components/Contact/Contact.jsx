@@ -52,7 +52,7 @@ const Contact = () => {
           </IconButton>
           <Typography variant="body1">
             <Link href="mailto:antonia.frey@outlook.com" color="inherit">
-              antonia.frey@example.com
+              antonia.frey@outlook.com
             </Link>
           </Typography>
         </Box>
@@ -69,14 +69,14 @@ const Contact = () => {
         <Box display="flex" alignItems="center" marginBottom={1}>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/in/antoniafrey/"
+            href="https://www.linkedin.com/in/antonia-alice-frey/"
             target="_blank"
           >
             <LinkedIn />
           </IconButton>
           <Typography variant="body1">
             <Link
-              href="https://www.linkedin.com/in/thisisfrey/"
+              href="https://www.linkedin.com/in/antonia-alice-frey/"
               color="inherit"
               target="_blank"
             >
@@ -89,14 +89,14 @@ const Contact = () => {
         <Box display="flex" alignItems="center">
           <IconButton
             color="inherit"
-            href="https://github.com/antoniafrey"
+            href="https://github.com/thisisfrey"
             target="_blank"
           >
             <GitHub />
           </IconButton>
           <Typography variant="body1">
             <Link
-              href="https://github.com/antoniafrey"
+              href="https://github.com/thisisfrey"
               color="inherit"
               target="_blank"
             >

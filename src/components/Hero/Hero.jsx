@@ -31,6 +31,7 @@ function Hero() {
           component="img"
           src={isMobile ? heroImgMobile : heroImg}
           alt="heroImg"
+          loading="eager"
           sx={{
             width: { xs: "100%", md: "70%" },
             borderRadius: { xs: 0, md: "8px" },
@@ -43,7 +44,7 @@ function Hero() {
         sx={{
           width: { xs: "100%", md: "50%" },
           background: {
-            xs: "linear-gradient(to bottom, white, #f4f4f4)",
+            xs: "linear-gradient(to bottom, white, #fffdf4)",
             md: "inherit",
           },
           display: "flex",
@@ -58,25 +59,21 @@ function Hero() {
           variant="h4"
           fontWeight={500}
           sx={{
-            width: { xs: "85%", md: "100%" },
+            width: { xs: "85%", md: "50%" },
             paddingTop: { xs: "0.5rem", md: 0 },
             marginTop: 1,
           }}
         >
           Full Stack Developer, Cloud Engineer & Tutor
         </Typography>
-        <Typography sx={{ width: { xs: "80%", md: "100%" } }}>
-          I build software and teach programming, and I love what I do.
+        <Typography sx={{ width: { xs: "80%", md: "100%" }, marginBottom: 1 }}>
+          I build software and teach programming.
         </Typography>
         <DownloadButton
           label="Download CV"
           pathToFile="/downloads/cv.pdf"
           downloadFileName="cv.pdf"
         />
-        {/* <Typography variant="h6" sx={{ fontStyle: "italic", my: 1 }}>
-          "Technology is best when it brings people together." <br />
-          Matt Mullenweg
-        </Typography> */}
         {/*  <Typography variant="body1">
           In today’s digital world, information technology isn’t just a tool,
           it’s the backbone of progress, creativity, and connection.

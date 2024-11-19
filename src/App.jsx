@@ -18,16 +18,11 @@ function App() {
             alignItems: "center",
             minHeight: "100vh",
             width: "100vw",
-            backgroundColor: "#f4f4f4",
+            backgroundColor: "#fffdf4", //"#f4f4f4", // "#fffdf4"
           }}
         >
           <Navigation />
-          <Box
-            sx={{
-              flexGrow: 1,
-              width: "100%",
-            }}
-          >
+          <Box>
             <Routes>
               <Route path="/" element={<Home />} />
             </Routes>
