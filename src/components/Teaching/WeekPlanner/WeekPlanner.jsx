@@ -10,7 +10,7 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
-import BookingButton from "../BookingButton/BookingButton";
+import BookingButton from "../Teaching/BookingButton/BookingButton";
 import WeekSelector from "../WeekSelector/WeekSelector";
 
 const TIME_SLOTS = [

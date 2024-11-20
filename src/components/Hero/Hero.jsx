@@ -1,7 +1,7 @@
-import React from "react";
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import heroImg from "../../assets/hero-img.jpg";
+import React from "react";
 import heroImgMobile from "../../assets/hero-img-mobile.jpg";
+import heroImg from "../../assets/hero-img.jpg";
 import DownloadButton from "../DownloadButton/DownloadButton";
 
 function Hero() {

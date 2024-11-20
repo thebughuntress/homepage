@@ -1,5 +1,5 @@
+import { Box, LinearProgress, Typography } from "@mui/material";
 import React from "react";
-import { Box, Typography, LinearProgress } from "@mui/material";
 
 const skillsList = [
   { name: "Web Development", value: 90 },

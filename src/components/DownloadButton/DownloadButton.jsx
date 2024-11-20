@@ -2,7 +2,7 @@ import React from "react";
 import { Button, styled } from "@mui/material";
 
 // Styled Button Component using button-18 styles with updated background color
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(Button)(({ }) => ({
   alignItems: "center",
   backgroundColor: "#2f1f70", // Updated background color
   border: "0",

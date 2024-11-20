@@ -1,3 +1,4 @@
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   Accordion,
@@ -7,12 +8,11 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-import React from "react";
-import superprofImg from "../../assets/superprof.svg";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import React from "react";
+import superprofImg from "../../assets/superprof.svg";
 
 const TOPICS = [
   "Programming Fundamentals",
