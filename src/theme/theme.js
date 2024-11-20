@@ -59,6 +59,16 @@ const theme = createTheme({
       marginTop: 0,
       marginBottom: 0,
     },
+    body1: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "1rem",
+      lineHeight: 1.5,
+    },
+    body2: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "0.875rem",
+      lineHeight: 1.43,
+    },
   },
 });
 

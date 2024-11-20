@@ -1,103 +1,151 @@
-import React from "react";
-import {
-  Box,
-  Typography,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Button,
-  Divider,
-} from "@mui/material";
-import superprofImg from "../../assets/superprof.svg";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Chip,
+  Typography,
+} from "@mui/material";
+import React from "react";
+import superprofImg from "../../assets/superprof.svg";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+
+const TOPICS = [
+  "Programming Fundamentals",
+  "Python",
+  "Java",
+  "JavaScript",
+  "WebDev: HTML, CSS",
+  "Deploying",
+  "Versioning with Git",
+  "LaTex",
+  "Matlab",
+  "Excel",
+];
 
 const Services = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#750b2b",
-        color: "white",
         width: "100%",
-        padding: 1,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <Typography
-        variant="h4"
+      <Box
         sx={{
+          borderRadius: 2,
+          margin: 2,
+          width: "95%",
+          backgroundColor: "#750b2b",
           color: "white",
-          textAlign: "left",
-          marginBottom: 2,
+          padding: { xs: 1, md: "15px 15px 8px 15px" },
         }}
       >
-        Teaching & Freelancing
-      </Typography>
-
-      <Accordion
-        sx={{
-          backgroundColor: "#8b213d",
-          color: "white",
-          width: "90%",
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+        <Box
+          sx={{
+            textAlign: "left",
+            marginBottom: 3,
+          }}
         >
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Programming Classes
+          <Typography
+            variant="h5"
+            sx={{
+              color: "rgba(255, 255, 255, 1)",
+            }}
+          >
+            Teaching & Freelancing
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Box sx={{ width: "100%", height: "40px" }}>
-            <Box
-              component="img"
-              src={superprofImg}
-              alt="superprofImg"
-              sx={{
-                width: "150px",
-                height: "auto",
-              }}
+        </Box>
+
+        <Accordion
+          sx={{
+            backgroundColor: "#8b213d",
+            color: "white",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+          >
+            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+              Programming Classes
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Box sx={{ width: "100%", height: "40px" }}>
+              <Box
+                component="img"
+                src={superprofImg}
+                alt="superprofImg"
+                sx={{
+                  width: "130px",
+                  height: "auto",
+                }}
+              />
+            </Box>
+            <Typography sx={{ mb: 1 }}>
+              Programming classes (online) for all levels, beginner to advanced.
+            </Typography>
+            <List>
+              {TOPICS.map((topic, index) => (
+                <ListItem sx={{ padding: "2px" }} key={index}>
+                  <CheckCircleIcon
+                    sx={{ color: "white", marginRight: "8px" }}
+                  />
+                  <ListItemText primary={topic} />
+                </ListItem>
+              ))}
+            </List>
+            <Chip
+              sx={{ marginTop: 2, color: "white" }}
+              label="25 Euro / Hour"
             />
-          </Box>
-          <Typography>
-            Programming classes (online) for all levels, beginner to advanced.
-          </Typography>
-          <Typography sx={{ marginTop: 1 }}>
-            Price: 25 Euro / 60 minutes
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+          </AccordionDetails>
+        </Accordion>
 
-      <Accordion
-        sx={{
-          backgroundColor: "#8b213d",
-          color: "white",
-          width: "90%",
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+        <Accordion
+          sx={{
+            backgroundColor: "#8b213d",
+            color: "white",
+            width: "100%",
+            marginBottom: 1,
+          }}
         >
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Freelancing
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>Freelancing services available.</Typography>
-          <Typography sx={{ marginTop: 1 }}>Price upon request.</Typography>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+          >
+            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+              Freelancing
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              I provide freelance services in the field of IT.
+            </Typography>
+            <Chip
+              sx={{ marginTop: 2, color: "white" }}
+              label="Price upon request."
+            />
+          </AccordionDetails>
+        </Accordion>
 
-      {/* <Divider sx={{ marginY: 3, borderColor: "white", borderWidth: "1px" }} /> */}
+        {/* <Divider sx={{ marginY: 3, borderColor: "white", borderWidth: "1px" }} /> */}
 
-      <Typography
-        variant="body1"
-        sx={{
-          marginTop: 2,
-          textAlign: "center",
-        }}
-      >
-        Get in touch for more information.
-      </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            marginTop: 2,
+            textAlign: "center",
+          }}
+        >
+          Kindly contact me for additional details.
+        </Typography>
+      </Box>
     </Box>
   );
 };

@@ -59,14 +59,18 @@ function Hero() {
           variant="h4"
           fontWeight={500}
           sx={{
-            width: { xs: "85%", md: "50%" },
+            fontSize: { xs: "inherit", md: "50px" },
+            width: { xs: "85%", md: "80%" },
             paddingTop: { xs: "0.5rem", md: 0 },
             marginTop: 1,
           }}
         >
           Full Stack Developer, Cloud Engineer & Tutor
         </Typography>
-        <Typography sx={{ width: { xs: "80%", md: "100%" }, marginBottom: 1 }}>
+        <Typography
+          variant="body1"
+          sx={{ width: { xs: "90%", md: "100%" }, marginBottom: 1 }}
+        >
           I build software and teach programming.
         </Typography>
         <DownloadButton
@@ -74,10 +78,6 @@ function Hero() {
           pathToFile="/downloads/cv.pdf"
           downloadFileName="cv.pdf"
         />
-        {/*  <Typography variant="body1">
-          In today’s digital world, information technology isn’t just a tool,
-          it’s the backbone of progress, creativity, and connection.
-        </Typography> */}
       </Box>
     </Box>
   );

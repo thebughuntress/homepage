@@ -49,10 +49,10 @@ function Navigation() {
 
         <Typography
           variant="h6"
-          noWrap
           sx={{
             mr: 2,
-            fontWeight: 700,
+            fontFamily: "Playwrite DE LA, cursive",
+            fontWeight: 500,
             color: "white",
           }}
         >

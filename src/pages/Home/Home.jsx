@@ -7,6 +7,7 @@ import BuyMeACoffee from "../../components/BuyMeACoffee/BuyMeACoffee.jsx";
 import BadgeCollection from "../../components/BadgeCollection/BadgeCollection.jsx";
 import QuoteBox from "../../components/QuoteBox/QuoteBox.jsx";
 import Services from "../../components/Services/Services.jsx";
+import Skills from "../../components/Skills/Skills.jsx";
 
 const Home = () => {
   return (
@@ -14,22 +15,15 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
       {/* Main Content */}
+      <BuyMeACoffee />
+
+      <Skills />
 
       <Services />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <BadgeCollection />
-        <QuoteBox />
+      <BadgeCollection />
+      <QuoteBox />
 
-        <BuyMeACoffee />
-        <Contact />
-      </Box>
+      <Contact />
 
       <Box sx={{ display: "none" }}>
         <Teaching />
