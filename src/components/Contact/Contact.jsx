@@ -43,7 +43,7 @@ const Contact = () => {
         <Typography variant="h3" sx={{ fontWeight: "bold" }}>
           Contact
         </Typography>
-        <Typography variant="body1">Talking is better in person</Typography>
+        <Typography variant="body2">Talking is better in person</Typography>
       </Box>
 
       {/* Right Side: Contact Info */}
@@ -65,7 +65,7 @@ const Contact = () => {
 
           {/* Email */}
           <ListItem sx={{ padding: "2px" }}>
-            <IconButton color="inherit">
+            <IconButton color="inherit" href="mailto:antonia.frey@outlook.com">
               <Email />
             </IconButton>
             <ListItemText

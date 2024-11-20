@@ -1,80 +1,48 @@
 import React from "react";
 import { Button, styled } from "@mui/material";
 
-// Styled Button Component
+// Styled Button Component using button-18 styles with updated background color
 const StyledButton = styled(Button)(({ theme }) => ({
   alignItems: "center",
-  appearance: "none",
-  backgroundColor: "#fff",
-  borderRadius: "24px",
-  borderStyle: "none",
-  boxShadow:
-    "rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0",
+  backgroundColor: "#2f1f70", // Updated background color
+  border: "0",
+  borderRadius: "100px",
   boxSizing: "border-box",
-  color: "#3c4043",
+  color: "#ffffff",
   cursor: "pointer",
   display: "inline-flex",
-  fill: "currentcolor",
-  fontFamily: `"Google Sans", Roboto, Arial, sans-serif`,
-  fontSize: "14px",
-  fontWeight: 500,
-  height: "48px",
+  fontFamily:
+    '-apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif',
+  fontSize: "16px",
+  fontWeight: 600,
   justifyContent: "center",
-  letterSpacing: ".25px",
-  lineHeight: "normal",
-  maxWidth: "100%",
-  overflow: "visible",
-  padding: "2px 24px",
-  position: "relative",
+  lineHeight: "20px",
+  maxWidth: "480px",
+  minHeight: "40px",
+  minWidth: "0px",
+  overflow: "hidden",
+  padding: "0px 20px",
   textAlign: "center",
-  textTransform: "none",
-  transition:
-    "box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms",
-  userSelect: "none",
   touchAction: "manipulation",
-  width: "auto",
-  willChange: "transform,opacity",
-  zIndex: 0,
+  transition:
+    "background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1), color 0.167s cubic-bezier(0.4, 0, 0.2, 1)",
+  userSelect: "none",
+  verticalAlign: "middle",
 
-  "&:hover": {
-    background: "#F6F9FE",
-    color: "#174ea6",
+  "&:hover, &:focus": {
+    backgroundColor: "#1e154a", // Darker shade for hover/focus
+    color: "#ffffff",
   },
 
   "&:active": {
-    boxShadow:
-      "0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%)",
-    outline: "none",
-  },
-
-  "&:focus": {
-    outline: "none",
-    border: "2px solid #4285f4",
-  },
-
-  "&:not(:disabled)": {
-    boxShadow:
-      "rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px",
-  },
-
-  "&:not(:disabled):hover": {
-    boxShadow:
-      "rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px",
-  },
-
-  "&:not(:disabled):focus": {
-    boxShadow:
-      "rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px",
-  },
-
-  "&:not(:disabled):active": {
-    boxShadow:
-      "rgba(60, 64, 67, 0.3) 0 4px 4px 0, rgba(60, 64, 67, 0.15) 0 8px 12px 6px",
+    backgroundColor: "#150e3a", // Even darker shade for active
+    color: "rgba(255, 255, 255, 0.7)",
   },
 
   "&:disabled": {
-    boxShadow:
-      "rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px",
+    cursor: "not-allowed",
+    backgroundColor: "rgba(47, 31, 112, 0.5)", // Semi-transparent for disabled
+    color: "rgba(255, 255, 255, 0.3)",
   },
 }));
 

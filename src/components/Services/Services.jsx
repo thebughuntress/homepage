@@ -95,7 +95,7 @@ const Services = () => {
               {TOPICS.map((topic, index) => (
                 <ListItem sx={{ padding: "2px" }} key={index}>
                   <CheckCircleIcon
-                    sx={{ color: "white", marginRight: "8px" }}
+                    sx={{ color: "white", marginRight: "7px", fontSize: "16px" }}
                   />
                   <ListItemText primary={topic} />
                 </ListItem>

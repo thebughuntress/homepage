@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Divider, IconButton, Typography } from "@mui/material";
+import { Box, Divider, IconButton, Typography, Link } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -22,8 +22,15 @@ const Footer = () => {
       }}
     >
       <Divider
-        sx={{ borderColor: "white", borderWidth: "1px", width: "90%", marginBottom: 3 }}
+        sx={{
+          borderColor: "white",
+          borderWidth: "1px",
+          width: "90%",
+          marginBottom: 3,
+        }}
       />
+
+      
       <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
         {/* LinkedIn Button */}
         <IconButton
@@ -66,6 +73,18 @@ const Footer = () => {
         >
           <WhatsAppIcon />
         </IconButton>
+      </Box>
+      <Box sx={{ margin: 1 }}>
+        <Typography variant="body1">
+          Want to see the source code of my website?{" "}
+          <Link
+            href="https://github.com/your-repository-link"
+            target="_blank"
+            sx={{ color: "#3DD1E7" }}
+          >
+            It is here.
+          </Link>
+        </Typography>
       </Box>
 
       <Typography

@@ -1,11 +1,10 @@
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
 import { useNavigate } from "react-router-dom";
-import ActionButton from "../ActionButton/ActionButton";
 //import Logo from "../../assets/logo.png";
 
 const pages = [];

@@ -60,16 +60,22 @@ function Hero() {
           fontWeight={500}
           sx={{
             fontSize: { xs: "inherit", md: "50px" },
-            width: { xs: "85%", md: "80%" },
+            width: { xs: "85%", md: "100%" },
             paddingTop: { xs: "0.5rem", md: 0 },
-            marginTop: 1,
+            marginTop: { xs: 1, md: 1 },
+            marginBottom: { xs: 1, md: 1 },
           }}
         >
-          Full Stack Developer, Cloud Engineer & Tutor
+          Full Stack Developer, <br />
+          Cloud Engineer & Tutor
         </Typography>
         <Typography
           variant="body1"
-          sx={{ width: { xs: "90%", md: "100%" }, marginBottom: 1 }}
+          sx={{
+            width: { xs: "90%", md: "100%" },
+            marginBottom: 1,
+            fontSize: { xs: "14px", md: "1.2rem" },
+          }}
         >
           I build software and teach programming.
         </Typography>
