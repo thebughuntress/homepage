@@ -10,7 +10,7 @@ const QuoteBox = () => {
         sx={{
           padding: 3,
           borderRadius: 2,
-          width: { xs: "85%", md: "50%" },
+          width: { xs: "85%", md: "fit-content" },
           margin: 2,
         }}
       >
@@ -19,7 +19,7 @@ const QuoteBox = () => {
           sx={{
             fontSize: {xs: "25px", md: "30px"},
             fontStyle: "italic",
-            color: "#08494b",
+            color: "primary.main",
             my: 2,
           }}
         >
@@ -29,7 +29,7 @@ const QuoteBox = () => {
           variant="body2"
           sx={{
             textAlign: "right",
-            color: "#08494b",
+            color: "primary.main",
             fontSize: "0.8rem",
           }}
         >

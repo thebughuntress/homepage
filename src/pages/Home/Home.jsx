@@ -8,6 +8,7 @@ import QuoteBox from "../../components/QuoteBox/QuoteBox.jsx";
 import Services from "../../components/Services/Services.jsx";
 import Skills from "../../components/Skills/Skills.jsx";
 import Teaching from "../../components/Teaching/Teaching.jsx";
+import AboutMe from "../../components/AboutMe/AboutMe.jsx";
 
 const Home = () => {
   return (
@@ -15,14 +16,15 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
       {/* Main Content */}
-      <BuyMeACoffee />
-      <Skills />
-      <Services />
-      <BadgeCollection />
-      <QuoteBox />
-      <Contact />
-      <Box sx={{ display: "none" }}>
-        <Teaching />
+      <Box sx={{ marginTop: "0" }}>
+        <BuyMeACoffee />
+        <AboutMe />
+        <Skills />
+        <Services />
+        <BadgeCollection />
+        <QuoteBox />
+        <Contact />
+        {/* <Teaching /> */}
       </Box>
     </>
   );

@@ -3,7 +3,6 @@ import React from "react";
 
 const skillsList = [
   { name: "Web Development", value: 90 },
-  { name: "React", value: 90 },
   { name: "Python", value: 85 },
   { name: "Java", value: 60 },
   { name: "Git", value: 95 },
@@ -16,7 +15,7 @@ const Skills = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#08494b",
+        backgroundColor: "primary.main",
         padding: { xs: 3, md: "2rem 10rem 2rem 10rem" },
       }}
     >
@@ -51,10 +50,10 @@ const Skills = () => {
               variant="determinate"
               value={skill.value}
               sx={{
-                height: 8, // Make bars slightly thicker
-                backgroundColor: "rgba(255, 255, 255, 0.3)", // Adjust background for better contrast
+                height: 7,
+                backgroundColor: "primary.dark", 
                 "& .MuiLinearProgress-bar": {
-                  backgroundColor: "#85ff5b", // Customized bar color
+                  backgroundColor: "#85ff5b", 
                 },
               }}
             />

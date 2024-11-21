@@ -24,7 +24,11 @@ function Navigation() {
         height: "8vh",
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "#0a0a23",
+        backgroundColor: { xs: "primary.main", md: "transparent" },
+        boxShadow: {
+          xs: 1,
+          md: "none", 
+        },
         zIndex: 1,
       }}
     >
@@ -52,7 +56,7 @@ function Navigation() {
             mr: 2,
             fontFamily: "Playwrite DE LA, cursive",
             fontWeight: 500,
-            color: "white",
+            color: {xs: "white", md: "black"},
           }}
         >
           Antonia Alice Frey
@@ -69,10 +73,10 @@ function Navigation() {
                 color: "white",
                 display: "block",
                 borderRadius: 0,
-                textTransform: "none", // Optional: to prevent the button text from being uppercase
-                borderBottom: "1px solid transparent", // To add space for the underline effect
+                textTransform: "none", 
+                borderBottom: "1px solid transparent", 
                 "&:hover": {
-                  borderBottom: "1px solid #fff", // Underline on hover
+                  borderBottom: "1px solid #fff", 
                 },
               }}
             >
@@ -80,7 +84,6 @@ function Navigation() {
             </Button>
           ))}
         </Box>
-
         {/*  <Box sx={{ flexGrow: 0, mr: "100px" }}>
           <ActionButton label="Anmelden" />
         </Box> */}

@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import WeekPlanner from "../../components/WeekPlanner/WeekPlanner";
+import WeekPlanner from "../../components/Teaching/WeekPlanner/WeekPlanner";
 import topics from "./data.jsx";
 
 const Teaching = () => {

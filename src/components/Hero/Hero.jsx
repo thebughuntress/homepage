@@ -3,6 +3,7 @@ import React from "react";
 import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 import heroImg from "../../assets/hero-img.jpg";
 import DownloadButton from "../DownloadButton/DownloadButton";
+import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {
   // Check if the screen is small (phone)
@@ -12,11 +13,11 @@ function Hero() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: { xs: "column", md: "row-reverse" },
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
-        height: "92vh",
+        minHeight: "92vh",
         width: "100vw",
       }}
     >
@@ -33,7 +34,7 @@ function Hero() {
           alt="heroImg"
           loading="eager"
           sx={{
-            width: { xs: "100%", md: "70%" },
+            width: { xs: "100%", md: "80%" },
             borderRadius: { xs: 0, md: "8px" },
           }}
         />
@@ -79,11 +80,12 @@ function Hero() {
         >
           I build software and teach programming.
         </Typography>
-        <DownloadButton
+        <ContactButtons color="primary.main" />
+       {/*  <DownloadButton
           label="Download CV"
           pathToFile="/downloads/cv.pdf"
           downloadFileName="cv.pdf"
-        />
+        /> */}
       </Box>
     </Box>
   );

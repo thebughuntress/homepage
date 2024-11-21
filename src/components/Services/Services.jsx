@@ -31,20 +31,19 @@ const Services = () => {
   return (
     <Box
       sx={{
-        width: "100%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        margin: 2,
       }}
     >
       <Box
         sx={{
+          width: "90%",
           borderRadius: 2,
-          margin: 2,
-          width: "95%",
-          backgroundColor: "#750b2b",
+          backgroundColor: "primary.main",
           color: "white",
-          padding: { xs: 1, md: "15px 15px 8px 15px" },
+          padding: { xs: 2, md: 2 },
         }}
       >
         <Box
@@ -65,7 +64,7 @@ const Services = () => {
 
         <Accordion
           sx={{
-            backgroundColor: "#8b213d",
+            backgroundColor: "primary.dark",
             color: "white",
           }}
         >
@@ -95,7 +94,11 @@ const Services = () => {
               {TOPICS.map((topic, index) => (
                 <ListItem sx={{ padding: "2px" }} key={index}>
                   <CheckCircleIcon
-                    sx={{ color: "white", marginRight: "7px", fontSize: "16px" }}
+                    sx={{
+                      color: "white",
+                      marginRight: "7px",
+                      fontSize: "16px",
+                    }}
                   />
                   <ListItemText primary={topic} />
                 </ListItem>
@@ -110,7 +113,7 @@ const Services = () => {
 
         <Accordion
           sx={{
-            backgroundColor: "#8b213d",
+            backgroundColor: "primary.dark",
             color: "white",
             width: "100%",
             marginBottom: 1,

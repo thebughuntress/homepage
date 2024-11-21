@@ -55,14 +55,6 @@ const Contact = () => {
       >
         {/* Contact List */}
         <List>
-          {/* Address */}
-          <ListItem sx={{ padding: "2px" }}>
-            <IconButton color="inherit" onClick={openGoogleMaps}>
-              <LocationOn />
-            </IconButton>
-            <ListItemText primary="Freiburg, Germany" />
-          </ListItem>
-
           {/* Email */}
           <ListItem sx={{ padding: "2px" }}>
             <IconButton color="inherit" href="mailto:antonia.frey@outlook.com">
@@ -127,6 +119,13 @@ const Contact = () => {
                 </Link>
               }
             />
+          </ListItem>
+          {/* Address */}
+          <ListItem sx={{ padding: "2px" }}>
+            <IconButton color="inherit" onClick={openGoogleMaps}>
+              <LocationOn />
+            </IconButton>
+            <ListItemText primary="Freiburg, Germany" />
           </ListItem>
         </List>
       </Box>
