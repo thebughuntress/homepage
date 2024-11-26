@@ -16,6 +16,7 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 import { FaDiscord } from "react-icons/fa";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 const Contact = () => {
   const contactItems = [
@@ -30,11 +31,6 @@ const Contact = () => {
       link: "https://wa.me/4915146782868",
     },
     {
-      icon: <FaDiscord />,
-      text: "thisisalice",
-      link: "https://discord.com/users/1138415841344503899",
-    },
-    {
       icon: <GitHub />,
       text: "thisisalicee",
       link: "https://github.com/thisisalicee",
@@ -43,6 +39,11 @@ const Contact = () => {
       icon: <LinkedIn />,
       text: "Antonia Frey",
       link: "https://www.linkedin.com/in/antonia-alice-frey/",
+    },
+    {
+      icon: <FaDiscord />,
+      text: "thisisalice",
+      link: "https://discord.com/users/1138415841344503899",
     },
     {
       icon: <LocationOn />,
@@ -103,7 +104,7 @@ const Contact = () => {
               <ListItemText
                 sx={{
                   "& .MuiListItemText-primary": {
-                    fontSize: { xs: "16px", md: "18px" } 
+                    fontSize: { xs: "16px", md: "18px" },
                   },
                 }}
                 primary={
@@ -119,6 +120,14 @@ const Contact = () => {
             </ListItem>
           ))}
         </List>
+      </Box>
+      <Box sx={{ backgroundColor: "red", display: { xs: "flex", md: "none" } }}>
+        <DownloadButton
+          label="Download CV"
+          pathToFile="/downloads/cv.pdf"
+          downloadFileName="cv.pdf"
+          color="#FFF"
+        />
       </Box>
     </Box>
   );

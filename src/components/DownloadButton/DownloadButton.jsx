@@ -3,12 +3,7 @@ import { Button, styled } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 // DownloadButton component that accepts color as a prop
-const DownloadButton = ({
-  label,
-  pathToFile,
-  downloadFileName,
-  color = "primary.main",
-}) => {
+const DownloadButton = ({ label, pathToFile, downloadFileName, color }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pathToFile;
@@ -21,8 +16,7 @@ const DownloadButton = ({
       variant="outlined"
       startIcon={<FileDownloadIcon />}
       sx={{
-        display: { xs: "none", md: "flex" },
-        color: color,
+        color: `${color}`,
         border: `2px solid`,
         borderColor: `${color}`,
         borderRadius: 100,
@@ -31,9 +25,10 @@ const DownloadButton = ({
         justifyContent: "center",
         width: "fit-content",
         "&:hover": {
-          color: "white",
-          backgroundColor: `${color}`,
+          color: color === "#FFF" ? "primary.main" : "#FFF",
+          backgroundColor: color === "#FFF" ? "#FFF" : `${color}`,
         },
+        zIndex: 3,
       }}
       onClick={handleDownload}
     >

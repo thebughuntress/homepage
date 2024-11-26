@@ -85,7 +85,9 @@ function Navigation() {
             </Button>
           ))}
         </Box>
-        <Box sx={{ flexGrow: 0, mr: "100px" }}>
+        <Box
+          sx={{ flexGrow: 0, mr: "50px", display: { xs: "none", md: "flex" } }}
+        >
           <DownloadButton
             label="Download CV"
             pathToFile="/downloads/cv.pdf"
