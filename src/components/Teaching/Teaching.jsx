@@ -60,7 +60,7 @@ const Teaching = () => {
             <TableHead>
               <TableRow>
                 {topics.map((topic, index) => (
-                  <TableCell key={index} align="center" sx={{ fontWeight: "bold" }}>
+                  <TableCell key={index} align="center" sx={{ fontWeight: "500" }}>
                     {/* Display the icon */}
                     <Box>{topic.icon}</Box>
                     <Typography variant="h6">{topic.title}</Typography>

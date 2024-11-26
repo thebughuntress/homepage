@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import DownloadButton from "../DownloadButton/DownloadButton";
 //import Logo from "../../assets/logo.png";
 
 const pages = [];
@@ -21,13 +22,13 @@ function Navigation() {
     <AppBar
       position="static"
       sx={{
-        height: "8vh",
+        height: { xs: "8vh", md: "10vh" },
         display: "flex",
         justifyContent: "center",
         backgroundColor: { xs: "primary.main", md: "transparent" },
         boxShadow: {
           xs: 1,
-          md: "none", 
+          md: "none",
         },
         zIndex: 1,
       }}
@@ -51,12 +52,12 @@ function Navigation() {
         /> */}
 
         <Typography
-          variant="h6"
+          variant="h3"
           sx={{
             mr: 2,
-            fontFamily: "Playwrite DE LA, cursive",
+            fontSize: { xs: "25px", md: "35px" },
             fontWeight: 500,
-            color: {xs: "white", md: "black"},
+            color: { xs: "white", md: "primary.main" },
           }}
         >
           Antonia Alice Frey
@@ -73,10 +74,10 @@ function Navigation() {
                 color: "white",
                 display: "block",
                 borderRadius: 0,
-                textTransform: "none", 
-                borderBottom: "1px solid transparent", 
+                textTransform: "none",
+                borderBottom: "1px solid transparent",
                 "&:hover": {
-                  borderBottom: "1px solid #fff", 
+                  borderBottom: "1px solid #fff",
                 },
               }}
             >
@@ -84,9 +85,14 @@ function Navigation() {
             </Button>
           ))}
         </Box>
-        {/*  <Box sx={{ flexGrow: 0, mr: "100px" }}>
-          <ActionButton label="Anmelden" />
-        </Box> */}
+        <Box sx={{ flexGrow: 0, mr: "100px" }}>
+          <DownloadButton
+            label="Download CV"
+            pathToFile="/downloads/cv.pdf"
+            downloadFileName="cv.pdf"
+            color="primary.main"
+          />
+        </Box>
       </Toolbar>
     </AppBar>
   );

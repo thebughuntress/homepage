@@ -1,7 +1,6 @@
 import { Box, Divider, Link, Typography } from "@mui/material";
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { FaCoffee } from "react-icons/fa";
+import { FaReact, FaCoffee } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,8 +12,9 @@ const Footer = () => {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
-        backgroundColor: "#A0A0A5",
-        padding: "20px 0 10px 0",
+        backgroundColor: "primary.dark",
+        //backgroundColor: "#A0A0A5", // gray
+        padding: "10px 0 10px 0",
         margin: 0,
         boxSizing: "border-box",
         overflowX: "hidden",
@@ -25,6 +25,7 @@ const Footer = () => {
           borderColor: "white",
           borderWidth: "1px",
           width: "90%",
+          marginTop: 3,
           marginBottom: 3,
         }}
       />
@@ -38,9 +39,10 @@ const Footer = () => {
           }}
         />
         <Typography
-          variant="body2"
+          variant="body1"
           sx={{
             color: "#3DD1E7",
+            fontSize: { xs: "16px", md: "18px" },
           }}
         >
           Crafted with React &{" "}
@@ -48,7 +50,7 @@ const Footer = () => {
           <br />
           View the source code{" "}
           <Link
-            href="https://github.com/thisisfrey/homepage"
+            href="https://github.com/thisisalicee/homepage"
             target="_blank"
             sx={{
               color: "#3DD1E7",
@@ -64,7 +66,7 @@ const Footer = () => {
       <Typography
         variant="body2"
         sx={{
-          color: "black",
+          color: "white",
           wordWrap: "break-word",
           paddingTop: "15px",
           fontSize: "12px",

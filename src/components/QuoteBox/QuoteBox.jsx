@@ -15,10 +15,11 @@ const QuoteBox = () => {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h3"
           sx={{
-            fontSize: {xs: "25px", md: "30px"},
-            fontStyle: "italic",
+            fontSize: {xs: "22px", md: "30px"},
+            fontWeight: 700,
+            //fontStyle: "italic",
             color: "primary.main",
             my: 2,
           }}
@@ -26,11 +27,10 @@ const QuoteBox = () => {
           "Technology is best when it brings people together."
         </Typography>
         <Typography
-          variant="body2"
+          variant="body1"
           sx={{
             textAlign: "right",
             color: "primary.main",
-            fontSize: "0.8rem",
           }}
         >
           Matt Mullenweg

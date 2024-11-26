@@ -4,6 +4,7 @@ import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 import heroImg from "../../assets/hero-img.jpg";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import ContactButtons from "../ContactButtons/ContactButtons";
+import theme from "../../theme/theme";
 
 function Hero() {
   // Check if the screen is small (phone)
@@ -17,7 +18,7 @@ function Hero() {
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
-        minHeight: "92vh",
+        minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
       }}
     >
@@ -45,7 +46,7 @@ function Hero() {
         sx={{
           width: { xs: "100%", md: "50%" },
           background: {
-            xs: "linear-gradient(to bottom, white, #fffdf4)",
+            xs: `linear-gradient(to bottom, white, ${theme.palette.bgColor.main})`,
             md: "inherit",
           },
           display: "flex",
@@ -57,13 +58,12 @@ function Hero() {
         }}
       >
         <Typography
-          variant="h4"
-          fontWeight={500}
+          variant="h1"
+          fontWeight={600}
           sx={{
-            fontSize: { xs: "inherit", md: "50px" },
+            fontSize: {xs: "28px", md: "50px"},
             width: { xs: "85%", md: "100%" },
-            paddingTop: { xs: "0.5rem", md: 0 },
-            marginTop: { xs: 1, md: 1 },
+            marginTop: { xs: 2, md: 0 },
             marginBottom: { xs: 1, md: 1 },
           }}
         >
@@ -75,17 +75,12 @@ function Hero() {
           sx={{
             width: { xs: "90%", md: "100%" },
             marginBottom: 1,
-            fontSize: { xs: "14px", md: "1.2rem" },
+            fontSize: { xs: "15px", md: "1.2rem" },
           }}
         >
           I build software and teach programming.
         </Typography>
         <ContactButtons color="primary.main" />
-       {/*  <DownloadButton
-          label="Download CV"
-          pathToFile="/downloads/cv.pdf"
-          downloadFileName="cv.pdf"
-        /> */}
       </Box>
     </Box>
   );

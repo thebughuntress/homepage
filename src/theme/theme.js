@@ -1,75 +1,71 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
-      main: "#094236",
+      main: "#6E07F3",
     },
     secondary: {
-      main: "#A4C8FF",
+      main: "#DAF7A6",
+    },
+    bgColor: {
+      main: "#ffffff",
+    },
+    red: {
+      main: "#ff6363",
     },
   },
   typography: {
     fontFamily: "Inter, Arial, sans-serif",
     h1: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "3.5em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "50px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     h2: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "3em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "41px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     h3: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "2.5em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "35px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     h4: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "2em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "28px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     h5: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "1.5em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "24px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     h6: {
-      fontFamily: "DM Serif Text, sans-serif",
-      fontSize: "1.25em",
-      fontWeight: 300,
+      fontFamily: "Poppins, sans-serif",
+      fontSize: "16px",
+      fontWeight: 500,
       lineHeight: 1.3,
-      marginTop: 0,
-      marginBottom: 0,
     },
     body1: {
       fontFamily: "Montserrat, sans-serif",
-      fontSize: "1rem",
+      fontSize: "14px",
       lineHeight: 1.5,
     },
     body2: {
       fontFamily: "Montserrat, sans-serif",
-      fontSize: "0.875rem",
+      fontSize: "12px",
       lineHeight: 1.43,
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;

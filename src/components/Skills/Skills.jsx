@@ -16,20 +16,21 @@ const Skills = () => {
     <Box
       sx={{
         backgroundColor: "primary.main",
-        padding: { xs: 3, md: "2rem 10rem 2rem 10rem" },
+        padding: 5,
       }}
     >
       {/* Center the Skills heading */}
       <Box
         sx={{
           textAlign: "left",
-          marginBottom: 6,
         }}
       >
         <Typography
-          variant="h4"
+          variant="h3"
           sx={{
+            fontSize: { xs: "25px", md: "35px" },
             color: "rgba(255, 255, 255, 1)",
+            marginBottom: 3,
           }}
         >
           Professional Skills
@@ -37,12 +38,16 @@ const Skills = () => {
       </Box>
 
       {/* Skills section layout */}
-      <Box>
+      <Box sx={{ padding: { xs: 0, md: "0 1rem 0 1rem" } }}>
         {skillsList.map((skill, index) => (
           <Box key={index} sx={{ marginBottom: 3 }}>
             <Typography
               variant="body1"
-              sx={{ color: "white", marginBottom: 1 }}
+              sx={{
+                fontSize: { xs: "16px", md: "18px" },
+                color: "white",
+                marginBottom: 1,
+              }}
             >
               {skill.name}
             </Typography>
@@ -51,9 +56,9 @@ const Skills = () => {
               value={skill.value}
               sx={{
                 height: 7,
-                backgroundColor: "primary.dark", 
+                backgroundColor: "primary.dark",
                 "& .MuiLinearProgress-bar": {
-                  backgroundColor: "#85ff5b", 
+                  backgroundColor: "#85ff5b",
                 },
               }}
             />

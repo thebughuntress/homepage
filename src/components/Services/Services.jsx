@@ -12,15 +12,17 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import React from "react";
+import PlaceIcon from "@mui/icons-material/Place";
 import superprofImg from "../../assets/superprof.svg";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import theme from "../../theme/theme";
 
 const TOPICS = [
   "Programming Fundamentals",
   "Python",
   "Java",
   "JavaScript",
-  "WebDev: HTML, CSS",
-  "Deploying",
+  "WebDev: HTML, CSS, Deployment",
   "Versioning with Git",
   "LaTex",
   "Matlab",
@@ -31,10 +33,10 @@ const Services = () => {
   return (
     <Box
       sx={{
+        margin: 1,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        margin: 2,
       }}
     >
       <Box
@@ -43,7 +45,7 @@ const Services = () => {
           borderRadius: 2,
           backgroundColor: "primary.main",
           color: "white",
-          padding: { xs: 2, md: 2 },
+          padding: 2,
         }}
       >
         <Box
@@ -53,9 +55,9 @@ const Services = () => {
           }}
         >
           <Typography
-            variant="h5"
+            variant="h3"
             sx={{
-              color: "rgba(255, 255, 255, 1)",
+              fontSize: { xs: "25px", md: "35px" },
             }}
           >
             Teaching & Freelancing
@@ -71,7 +73,7 @@ const Services = () => {
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
           >
-            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            <Typography variant="h6" sx={{ fontWeight: "600" }}>
               Programming Classes
             </Typography>
           </AccordionSummary>
@@ -100,13 +102,63 @@ const Services = () => {
                       fontSize: "16px",
                     }}
                   />
-                  <ListItemText primary={topic} />
+                  <ListItemText
+                    sx={{ fontSize: { xs: "14px", md: "16px" } }}
+                    primary={topic}
+                  />
                 </ListItem>
               ))}
             </List>
+            <Typography
+              sx={{
+                color: "black",
+                padding: 1,
+                backgroundColor: theme.palette.red.main,
+                marginBottom: 2,
+                borderRadius: 1,
+              }}
+            >
+              To schedule a programming class, we first arrange a time in{" "}
+              <a
+                href="https://wa.me/4915146782868"
+                target="_blank"
+                style={{ color: "inherit" }}
+              >
+                WhatsApp
+              </a>
+              . After that, please add me to your contacts on{" "}
+              <a
+                href="https://discord.com/users/1138415841344503899"
+                target="_blank"
+                style={{ color: "inherit" }}
+              >
+                Discord
+              </a>
+              .
+            </Typography>
             <Chip
-              sx={{ marginTop: 2, color: "white" }}
+              icon={<MonetizationOnIcon />}
+              sx={{
+                marginRight: 1,
+                color: "white",
+                backgroundColor: "primary.light",
+                "& .MuiChip-icon": {
+                  color: "white",
+                },
+              }}
               label="25 Euro / Hour"
+            />
+            <Chip
+              icon={<PlaceIcon />}
+              label="Discord"
+              sx={{
+                marginRight: 1,
+                color: "white",
+                backgroundColor: "primary.light",
+                "& .MuiChip-icon": {
+                  color: "white",
+                },
+              }}
             />
           </AccordionDetails>
         </Accordion>
@@ -122,17 +174,21 @@ const Services = () => {
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
           >
-            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            <Typography variant="h6" sx={{ fontWeight: "600" }}>
               Freelancing
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography sx={{ fontSize: { xs: "16px", md: "18px" } }}>
               I provide freelance services in the field of IT.
             </Typography>
             <Chip
-              sx={{ marginTop: 2, color: "white" }}
-              label="Price upon request."
+              sx={{
+                marginTop: 2,
+                color: "white",
+                backgroundColor: "primary.light",
+              }}
+              label="Price upon request"
             />
           </AccordionDetails>
         </Accordion>
@@ -143,7 +199,7 @@ const Services = () => {
           variant="body2"
           sx={{
             marginTop: 2,
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
           Kindly contact me for additional details.

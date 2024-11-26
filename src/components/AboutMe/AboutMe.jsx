@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Typography, Avatar } from "@mui/material";
-import meImg from "../../assets/aaf.jpg";
+import { Box, Typography } from "@mui/material";
 
 const AboutMe = () => {
   return (
@@ -12,11 +11,10 @@ const AboutMe = () => {
         alignItems: "center",
         minHeight: "40vh",
         backgroundColor: "primary.main",
-        padding: 4,
       }}
     >
       {/* Image Section */}
-      <Box
+      {/* <Box
         sx={{
           flex: { xs: 1, md: 3 },
           display: "flex",
@@ -33,37 +31,40 @@ const AboutMe = () => {
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
           }}
         />
-      </Box>
+      </Box> */}
 
       {/* Text Section */}
       <Box
         sx={{
           flex: { xs: 1, md: 7 },
           textAlign: { xs: "center", md: "left" },
-          paddingRight: "7%",
+          padding: 5,
         }}
       >
         <Typography
-          variant="h4"
+          variant="h3"
           sx={{
-            fontWeight: "bold",
-            margin: {xs: "25px 0 20px 0", md: "0 0 20px 0"},
+            fontSize: { xs: "25px", md: "35px" },
+            margin: { xs: "25px 0 20px 0", md: "0 0 20px 0" },
             color: "white",
           }}
         >
-          Hi, mein Name ist Antonia
+          Hi, I'm Antonia
         </Typography>
         <Typography
           variant="body1"
           sx={{
-            fontSize: "18px",
+            fontSize: { xs: "16px", md: "18px" },
             color: "white",
           }}
         >
-          Ich bin eine leidenschaftliche Entwicklerin mit einem Interesse an
-          kreativen Technologien und Design. In meiner Freizeit liebe ich es,
-          neue Herausforderungen zu meistern und innovative Lösungen zu
-          entwickeln.
+          During my studies in Electrical Engineering, I
+          discovered my passion for IT and programming. Since graduating in
+          2020, I have been working as a software engineer in IT consulting.
+          Over the past few years, I've had the opportunity to contribute to diverse projects
+          and gain experience across various industries, including automotive, energy, and telecommunications. 
+          I'm always eager to explore new technologies and enjoy creating and
+          implementing innovative solutions. Design and automation continually inspire and drive my work.
         </Typography>
       </Box>
     </Box>

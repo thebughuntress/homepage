@@ -6,7 +6,9 @@ import Home from "./pages/Home/Home";
 import theme from "./theme/theme";
 import { ThemeProvider } from "@mui/material/styles";
 
+
 function App() {
+  
   return (
     <Router>
       <ThemeProvider theme={theme}>
@@ -18,7 +20,7 @@ function App() {
             alignItems: "center",
             minHeight: "100vh",
             width: "100vw",
-            backgroundColor: "#fffdf4", //"#f4f4f4", // "#fffdf4"
+            backgroundColor: theme.palette.bgColor.main,
           }}
         >
           <Navigation />
