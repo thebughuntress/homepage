@@ -24,14 +24,16 @@ function Hero() {
       {/* Image Box */}
       <Box
         sx={{
-          marginTop: {xs: "10vh", md: 0},
-          marginBottom: {xs: "2vh", md: 0},
+          marginTop: { xs: "10vh", md: 0 },
+          marginBottom: { xs: "2vh", md: 0 },
           width: { xs: "100%", md: "50%" },
           backgroundColor: { xs: "white", md: "transparent" },
         }}
       >
         <Box
           component="img"
+          // GitHub avatar image URL
+          //src={"https://avatars.githubusercontent.com/u/23038441?v=4"}
           src={isMobile ? heroImgMobile : heroImg}
           alt="heroImg"
           loading="eager"
@@ -62,7 +64,7 @@ function Hero() {
           variant="h1"
           fontWeight={600}
           sx={{
-            fontSize: {xs: "28px", md: "50px"},
+            fontSize: { xs: "28px", md: "50px" },
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: 2, md: 0 },
             marginBottom: { xs: 1, md: 1 },

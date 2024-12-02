@@ -7,7 +7,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import "./Navigation.css";
-import { contacts, urls, cv } from "../../data/data";
+import { cv } from "../../data/data";
 //import Logo from "../../assets/logo.png";
 
 const pages = [];
