@@ -1,5 +1,6 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React, { useEffect } from "react";
+import theme from "../../theme/theme";
 
 const BadgeCollection = () => {
   useEffect(() => {
@@ -15,85 +16,60 @@ const BadgeCollection = () => {
     };
   }, []);
 
+  // List of badge objects
+  const badges = [
+    {
+      name: "Professional Scrum Master I (PSM I)",
+      id: "7b5d324e-72a9-49da-943d-0e7fcbf835c4",
+    },
+    {
+      name: "Certified Professional Python Programmer Level 1",
+      id: "efb5b4b1-47f8-4cd3-b497-6ab45b427232",
+    },
+    {
+      name: "AWS Certified Cloud Practitioner",
+      id: "d7c6436d-91aa-4124-a530-67f185f6f372",
+    },
+    {
+      name: "Associate Cloud Engineer Certification",
+      id: "4c6cef95-abb8-4a7f-acd9-467d0b6831f1",
+    },
+  ];
+
   return (
-    <Box
-      sx={{
-        //backgroundColor: "#e6e3d3",
-        height: "fit-content",
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        justifyContent: "center", 
-        alignItems: "center", 
-        padding: "5rem 2rem 1.5rem 2rem",
-        gap: 5
-      }}
-    >
-      {/* Badge 1 */}
-      <Box
+    <Box>
+      <Typography
+        variant="h3"
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginBottom: { xs: 0, md: 0 },
+          marginTop: "3rem",
+          fontSize: { xs: "24px", md: "30px" },
+          fontWeight: 600,
+          color: "rgba(0, 0, 0, 0.5)",
+          textAlign: "center",
         }}
       >
-        <div
-          data-iframe-width="230"
-          data-iframe-height="300"
-          data-share-badge-id="7b5d324e-72a9-49da-943d-0e7fcbf835c4"
-          data-share-badge-host="https://www.credly.com"
-        ></div>
-      </Box>
+        Badge Collection
+      </Typography>
 
-      {/* Badge 2 */}
       <Box
         sx={{
+          height: "fit-content",
           display: "flex",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "center",
           alignItems: "center",
-          marginBottom: { xs: 0, md: 0 },
+          padding: "2rem 2rem 1.5rem 2rem",
+          gap: 5,
         }}
       >
-        <div
-          data-iframe-width="230"
-          data-iframe-height="300"
-          data-share-badge-id="efb5b4b1-47f8-4cd3-b497-6ab45b427232"
-          data-share-badge-host="https://www.credly.com"
-        ></div>
-      </Box>
-
-      {/* Badge 3 */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginBottom: { xs: 0, md: 0 },
-        }}
-      >
-        <div
-          data-iframe-width="230"
-          data-iframe-height="300"
-          data-share-badge-id="d7c6436d-91aa-4124-a530-67f185f6f372"
-          data-share-badge-host="https://www.credly.com"
-        ></div>
-      </Box>
-
-      {/* Badge 4 */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginBottom: { xs: 0, md: 0 },
-        }}
-      >
-        <div
-          data-iframe-width="230"
-          data-iframe-height="300"
-          data-share-badge-id="4c6cef95-abb8-4a7f-acd9-467d0b6831f1"
-          data-share-badge-host="https://www.credly.com"
-        ></div>
+        {badges.map((badge, index) => (
+          <div
+            data-iframe-width="230"
+            data-iframe-height="300"
+            data-share-badge-id={badge.id}
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+        ))}
       </Box>
     </Box>
   );

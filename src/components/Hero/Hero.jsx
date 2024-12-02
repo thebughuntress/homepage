@@ -2,9 +2,8 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 import heroImg from "../../assets/hero-img.jpg";
-import DownloadButton from "../DownloadButton/DownloadButton";
-import ContactButtons from "../ContactButtons/ContactButtons";
 import theme from "../../theme/theme";
+import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {
   // Check if the screen is small (phone)
@@ -18,13 +17,15 @@ function Hero() {
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
-        minHeight: { xs: "92vh", md: "90vh" },
+        minHeight: { xs: "90vh", md: "90vh" },
         width: "100vw",
       }}
     >
       {/* Image Box */}
       <Box
         sx={{
+          marginTop: {xs: "10vh", md: 0},
+          marginBottom: {xs: "2vh", md: 0},
           width: { xs: "100%", md: "50%" },
           backgroundColor: { xs: "white", md: "transparent" },
         }}
@@ -35,8 +36,8 @@ function Hero() {
           alt="heroImg"
           loading="eager"
           sx={{
-            width: { xs: "100%", md: "80%" },
-            borderRadius: { xs: 0, md: "8px" },
+            width: { xs: "60%", md: "80%" },
+            borderRadius: { xs: "50%", md: "8px" },
           }}
         />
       </Box>

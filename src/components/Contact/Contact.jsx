@@ -17,42 +17,40 @@ import {
 } from "@mui/icons-material";
 import { FaDiscord } from "react-icons/fa";
 import DownloadButton from "../DownloadButton/DownloadButton";
+import { contacts, urls, cv } from "../../data/data";
 
 const Contact = () => {
   const contactItems = [
     {
       icon: <Email />,
-      text: "antonia.frey@outlook.com",
-      link: "mailto:antonia.frey@outlook.com",
+      text: contacts.email,
+      link: `mailto:${contacts.email}`,
     },
     {
       icon: <Phone />,
-      text: "+49 1514 6782868",
-      link: "https://wa.me/4915146782868",
+      text: contacts.mobile,
+      link: urls.whatsapp,
     },
     {
       icon: <GitHub />,
-      text: "thisisalicee",
-      link: "https://github.com/thisisalicee",
+      text: contacts.github,
+      link: urls.github,
     },
     {
       icon: <LinkedIn />,
-      text: "Antonia Frey",
-      link: "https://www.linkedin.com/in/antonia-alice-frey/",
+      text: contacts.linkedin,
+      link: urls.linkedin,
     },
     {
       icon: <FaDiscord />,
-      text: "thisisalice",
-      link: "https://discord.com/users/1138415841344503899",
+      text: contacts.discord,
+      link: urls.discord,
     },
     {
       icon: <LocationOn />,
-      text: "Freiburg, Germany",
+      text: contacts.location,
       onClick: () => {
-        window.open(
-          "https://www.google.com/maps/place/Freiburg,+Germany",
-          "_blank"
-        );
+        window.open(urls.location, "_blank");
       },
     },
   ];
@@ -124,8 +122,8 @@ const Contact = () => {
       <Box sx={{ backgroundColor: "red", display: { xs: "flex", md: "none" } }}>
         <DownloadButton
           label="Download CV"
-          pathToFile="/downloads/cv.pdf"
-          downloadFileName="cv.pdf"
+          pathToFile={cv.path}
+          downloadFileName={cv.filename}
           color="#FFF"
         />
       </Box>

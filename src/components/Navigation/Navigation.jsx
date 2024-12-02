@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import DownloadButton from "../DownloadButton/DownloadButton";
+import "./Navigation.css";
+import { contacts, urls, cv } from "../../data/data";
 //import Logo from "../../assets/logo.png";
 
 const pages = [];
@@ -25,11 +27,8 @@ function Navigation() {
         height: { xs: "8vh", md: "10vh" },
         display: "flex",
         justifyContent: "center",
-        backgroundColor: { xs: "primary.main", md: "transparent" },
-        boxShadow: {
-          xs: 1,
-          md: "none",
-        },
+        backgroundColor: "transparent",
+        boxShadow: "none",
         zIndex: 1,
       }}
     >
@@ -53,15 +52,17 @@ function Navigation() {
 
         <Typography
           variant="h3"
+          className="nav-title"
           sx={{
             mr: 2,
-            fontSize: { xs: "25px", md: "35px" },
+            fontSize: { xs: "23px", md: "35px" },
             fontWeight: 500,
-            color: { xs: "white", md: "primary.main" },
+            color: "primary.main",
           }}
         >
           Antonia Alice Frey
         </Typography>
+        
 
         <Box sx={{ flexGrow: 1, display: "flex" }}>
           {pages.map((page) => (
@@ -86,12 +87,16 @@ function Navigation() {
           ))}
         </Box>
         <Box
-          sx={{ flexGrow: 0, mr: "50px", display: { xs: "none", md: "flex" } }}
+          sx={{
+            flexGrow: 0,
+            mr: { md: "5rem" },
+            display: { xs: "none", md: "flex" },
+          }}
         >
           <DownloadButton
             label="Download CV"
-            pathToFile="/downloads/cv.pdf"
-            downloadFileName="cv.pdf"
+            pathToFile={cv.path}
+            downloadFileName={cv.filename}
             color="primary.main"
           />
         </Box>

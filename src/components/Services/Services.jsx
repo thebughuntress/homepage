@@ -22,7 +22,8 @@ const TOPICS = [
   "Python",
   "Java",
   "JavaScript",
-  "WebDev: HTML, CSS, Deployment",
+  "WebDev: React, Vue, HTML, CSS",
+  "Deployment: Firebase, GitHub Pages",
   "Versioning with Git",
   "LaTex",
   "Matlab",
@@ -33,19 +34,23 @@ const Services = () => {
   return (
     <Box
       sx={{
-        margin: 1,
+        margin: 0,
+        marginTop: 5,
+        backgroundColor: "red",
         display: "flex",
-        alignItems: "center",
         justifyContent: "center",
+        width: "100%",
       }}
     >
       <Box
         sx={{
-          width: "90%",
           borderRadius: 2,
           backgroundColor: "primary.main",
           color: "white",
-          padding: 2,
+          padding: 3,
+          width: "75%", 
+          maxWidth: "1200px",
+          margin: 0,
         }}
       >
         <Box
@@ -199,7 +204,7 @@ const Services = () => {
           variant="body2"
           sx={{
             marginTop: 2,
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           Kindly contact me for additional details.

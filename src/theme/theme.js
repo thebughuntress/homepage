@@ -14,6 +14,9 @@ let theme = createTheme({
     red: {
       main: "#ff6363",
     },
+    dark: {
+      main: "#141c3a"
+    }
   },
   typography: {
     fontFamily: "Inter, Arial, sans-serif",
