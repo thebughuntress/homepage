@@ -1,14 +1,19 @@
-import React from "react";
+import React from "react"; 
 import { Button, styled } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
-// DownloadButton component that accepts color as a prop
-const DownloadButton = ({ label, pathToFile, downloadFileName, color }) => {
+// DownloadButton component that accepts color, label, pathToFile, downloadFileName, and url as props
+const DownloadButton = ({ label, pathToFile, downloadFileName, color, url }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = pathToFile;
+    // Use the provided URL if it exists, otherwise fall back to pathToFile
+    const fileUrl = url || pathToFile;
+    link.href = fileUrl;
     link.download = downloadFileName;
-    link.click();
+    //link.click();
+
+    // Open the file in a new tab instead of downloading
+    window.open(fileUrl, "_blank");
   };
 
   return (
@@ -16,6 +21,7 @@ const DownloadButton = ({ label, pathToFile, downloadFileName, color }) => {
       variant="outlined"
       startIcon={<FileDownloadIcon />}
       sx={{
+        fontSize: "14px",
         color: `${color}`,
         border: `2px solid`,
         borderColor: `${color}`,

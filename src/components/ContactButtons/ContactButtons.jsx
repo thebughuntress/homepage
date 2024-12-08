@@ -8,7 +8,7 @@ import { contacts, urls, cv } from "../../data/data";
 
 const ContactButtons = ({ color }) => {
   // Declare iconStyle properly
-  const iconStyle = { fontSize: { xs: "25px", md: "35px" } };
+  const iconStyle = { fontSize: { xs: "25px", md: "30px", lg: "35px" } };
 
   // List of social media/contact buttons data
   const contactInfo = [

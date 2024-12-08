@@ -16,11 +16,11 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
       {/* Main Content */}
-      <Box sx={{ marginTop: "0" }}>
+      <Box>
         <BuyMeACoffee />
         <AboutMe />
         <Skills />
-        <Services />
+        {/* <Services /> */}
         <BadgeCollection />
         <QuoteBox />
         <Contact />

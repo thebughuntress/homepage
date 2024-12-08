@@ -1,7 +1,8 @@
 import { Box, Divider, Link, Typography } from "@mui/material";
 import React from "react";
 import { FaReact, FaCoffee } from "react-icons/fa";
-import { urls } from '../../data/data';
+import { urls } from "../../data/data";
+import muiLogo from "../../assets/mui.svg";
 
 import "./Footer.css";
 
@@ -22,19 +23,10 @@ const Footer = () => {
         overflowX: "hidden",
       }}
     >
-      <Divider
-        sx={{
-          borderColor: "white",
-          borderWidth: "1px",
-          width: "90%",
-          marginTop: 3,
-          marginBottom: 3,
-        }}
-      />
-
       <Box sx={{ marginTop: 2, width: "80%", textAlign: "center" }}>
         <FaReact
           style={{
+            marginBottom: 5,
             fontSize: "35px",
             color: "#61DAFB",
             animation: "rotate 5s linear infinite",
@@ -56,11 +48,13 @@ const Footer = () => {
           Using{" "}
           <Box
             component="img"
-            src="https://mui.com/static/logo.png"
-            alt="Material UI Logo"
+            src={muiLogo}
+            alt="MUI Logo"
             sx={{
-              height: "16px",
+              height: "14px",
               verticalAlign: "middle",
+              marginRight: "1px",
+              marginLeft: "1px",
             }}
           />{" "}
           Material UI

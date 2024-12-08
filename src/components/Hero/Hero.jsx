@@ -64,7 +64,7 @@ function Hero() {
           variant="h1"
           fontWeight={600}
           sx={{
-            fontSize: { xs: "28px", md: "50px" },
+            fontSize: { xs: "28px", md: "40px", lg:"50px" },
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: 2, md: 0 },
             marginBottom: { xs: 1, md: 1 },

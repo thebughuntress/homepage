@@ -63,12 +63,14 @@ const BadgeCollection = () => {
         }}
       >
         {badges.map((badge, index) => (
-          <div
-            data-iframe-width="230"
-            data-iframe-height="300"
-            data-share-badge-id={badge.id}
-            data-share-badge-host="https://www.credly.com"
-          ></div>
+          <Box key={index}>
+            <div
+              data-iframe-width="230"
+              data-iframe-height="300"
+              data-share-badge-id={badge.id}
+              data-share-badge-host="https://www.credly.com"
+            ></div>
+          </Box>
         ))}
       </Box>
     </Box>

@@ -5,10 +5,10 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import theme from "./theme/theme";
 import { ThemeProvider } from "@mui/material/styles";
-
+import Blog from "./pages/Blog/Blog";
+import BlogPost from "./pages/BlogPost/BlogPost";
 
 function App() {
-  
   return (
     <Router>
       <ThemeProvider theme={theme}>
@@ -24,11 +24,11 @@ function App() {
           }}
         >
           <Navigation />
-          <Box>
-            <Routes>
-              <Route path="/" element={<Home />} />
-            </Routes>
-          </Box>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:postId" element={<BlogPost />} />
+          </Routes>
           <Footer />
         </Box>
       </ThemeProvider>
