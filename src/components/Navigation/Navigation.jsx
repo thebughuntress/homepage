@@ -89,7 +89,7 @@ function Navigation() {
                 <DownloadButton
                   label="Download CV"
                   url={cv.url}
-                  pathToFile={cv.path}
+                  //pathToFile={cv.path}
                   downloadFileName={cv.filename}
                   color="primary.main"
                 />
