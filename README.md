@@ -17,4 +17,4 @@ The website is deployed [here](https://homepage-bdc65.web.app).
 
 ## Feedback & Contributions
 
-If you like my homepage, feel free to use it as inspiration or suggest improvements to the design and code. I’d love to hear your feedback!
+If you like my homepage, feel free to use it as inspiration or suggest improvements to the design and code.
