@@ -1,6 +1,6 @@
 # Homepage
 
-This is my homepage, providing an overview of my skills, contact information, and more. 
+This is my homepage, providing an overview of my skills, contact information, and more.<br/>
 The website is deployed [here](https://homepage-bdc65.web.app).
 
 ## Tech Stack
