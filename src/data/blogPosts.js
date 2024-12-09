@@ -108,14 +108,15 @@ const blogPosts = [
     summary:
       "Git is a powerful version control system that helps developers manage and track changes in their code. It enables efficient collaboration by allowing multiple developers to work on the same project simultaneously. With its branching and merging capabilities, Git streamlines code management and ensures a smooth development workflow.",
     id: 14,
-    imageUrl: "https://github.blog/wp-content/uploads/2024/07/github-logo.png",
+    imageUrl:
+      "https://www.arocom.de/sites/default/files/images/2024-06/git.png",
     date: "December 6, 2024",
     content: [
       { type: "heading", value: "Why Use Git?" },
       {
         type: "paragraph",
         value:
-          "The evolution of project organization is a timeless classic. It all begins with a neatly named folder, “project,” a symbol of structure and optimism. Inevitably, the first revision leads to “project_final,” soon followed by “project_final_v2,” because there is always one more adjustment to make. As the deadline looms and chaos takes over, the names become increasingly desperate, culminating in something like “project_FINAL_FINAL_no_really_this_is_it_FINAL_DEC8”. Years later, one stumbles across “final_project_45_last_version_OMG_JUST_SUBMIT_DEC8_2015”—a relic of past struggles—and wonders whether it was indeed the version that was ultimately submitted.",
+          "The evolution of project organization is a timeless classic. It all begins with a neatly named folder, “project,” a symbol of structure and optimism. Inevitably, the first revision leads to “project_final,” soon followed by “project_final_v2,” because there is always one more adjustment to make. As the deadline looms and chaos takes over, the names become increasingly desperate, culminating in something like “project_FINAL2_DEC5”. Years later, one stumbles across “project_final99_last_version_SUBMIT_10.12.15” — a relic of past struggles—and wonders whether it was indeed the version that was ultimately submitted.",
       },
       {
         type: "paragraph",
@@ -212,6 +213,22 @@ const blogPosts = [
         type: "paragraph",
         value:
           "The `.gitignore` file in Git is used to tell Git which files or directories to ignore in a project. This is useful when there are files that don't need to be tracked, such as build files, temporary files, or sensitive information like API keys. By listing these files in the `.gitignore` file, Git will exclude them from version control and prevent them from being committed to the repository. This helps keep your repository clean and ensures that only relevant code and files are tracked.",
+      },
+      {
+        type: "heading",
+        value: "Understanding Branches",
+      },
+      {
+        type: "image",
+        url: "https://www.nobledesktop.com/image/gitresources/git-branches-merge.png",
+      },
+      {
+        type: "heading",
+        value: "Code Portals",
+      },
+      {
+        type: "image",
+        url: "https://media.licdn.com/dms/image/v2/C5612AQFYNZLJdFHzcQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1628418875304?e=2147483647&v=beta&t=G0R7Sk8qes6arieaZgMJzXqm7QzxnHz_eEh46DQ92OQ",
       },
     ],
   },

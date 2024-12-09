@@ -12,12 +12,12 @@ const BlogContent = ({ content }) => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "left",
+              alignItems: "flex-start", // Correct alignment
               marginBottom: 2,
             }}
           >
+            {/* Number and Label Row */}
             <Box
-              key={index}
               sx={{
                 display: "flex",
                 flexDirection: "row",
@@ -27,8 +27,8 @@ const BlogContent = ({ content }) => {
               {/* Circle with the number */}
               <Box
                 sx={{
-                  width: 20,
-                  height: 20,
+                  width: 24,
+                  height: 24,
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -36,32 +36,41 @@ const BlogContent = ({ content }) => {
                   backgroundColor: "primary.main",
                   color: "#fff",
                   fontWeight: "bold",
-                  marginRight: "8px",
+                  marginRight: 1,
                 }}
               >
                 <Typography
                   variant="body1"
-                  sx={{ fontSize: "0.8rem", fontWeight: 600 }}
+                  sx={{
+                    fontSize: "0.8rem",
+                    fontWeight: 600,
+                  }}
                 >
                   {block.number}
                 </Typography>
               </Box>
 
-              {/* Step label */}
-              <Box>
-                <Typography
-                  variant="body1"
-                  sx={{ fontSize: "1rem", fontWeight: 600 }}
-                >
-                  {block.label}
-                </Typography>
-              </Box>
-            </Box>
-            <Box>
-              <Typography variant="body1" sx={{ marginLeft: 4 }}>
-                {block.description}
+              {/* Step Label */}
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: "1.1rem",
+                  fontWeight: 600,
+                }}
+              >
+                {block.label}
               </Typography>
             </Box>
+
+            {/* Description */}
+            <Typography
+              variant="body1"
+              sx={{
+                marginLeft: "calc(24px + 8px)",
+              }}
+            >
+              {block.description}
+            </Typography>
           </Box>
         );
       case "link":
@@ -131,11 +140,19 @@ const BlogContent = ({ content }) => {
         );
       case "image":
         return (
-          <Box key={index} sx={{ textAlign: {xs: "left", md: "left"}, marginY: 3, maxWidth: {sx: "60%", md: "100%"} }}>
+          <Box
+            key={index}
+            sx={{
+              textAlign: { xs: "left", md: "left" },
+              marginY: 3,
+              marginX: 1,
+              maxWidth: "100%" ,
+            }}
+          >
             <img
               src={block.url}
               alt={block.caption}
-              style={{ maxWidth: "80%", borderRadius: "8px" }}
+              style={{ maxWidth: "100%", borderRadius: "8px" }}
             />
             {block.caption && (
               <Typography

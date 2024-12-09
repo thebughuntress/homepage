@@ -74,6 +74,7 @@ const BlogPost = () => {
         marginBottom: 5,
         mx: "auto",
         px: { xs: 2, sm: 3 },
+        maxWidth: {xs: "85%", md: "100%"}
       }}
     >
       {/* Blog Post Image */}

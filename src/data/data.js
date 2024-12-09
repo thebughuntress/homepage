@@ -1,7 +1,7 @@
 const contacts = {
   email: "antonia.frey@outlook.com",
   mobile: "+49 1514 6782868",
-  github: "thisisalicee",
+  github: "thebughuntress",
   linkedin: "Antonia Frey",
   discord: "thisisalice",
   location: "Freiburg, Germany",
