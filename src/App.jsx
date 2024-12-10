@@ -11,18 +11,26 @@ import darkTheme from "./theme/darkTheme";
 import lightTheme from "./theme/lightTheme";
 
 function App() {
-  // Default to the system preference if not found in localStorage
-  const savedPreference = localStorage.getItem("theme");
-  const [isDarkMode, setIsDarkMode] = useState(savedPreference === "dark");
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Save the user's preference to localStorage
+
   useEffect(() => {
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  }, [isDarkMode]);
+    const savedPreference = localStorage.getItem("theme");
+    const isBrowserInDarkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    setIsDarkMode(
+      !(savedPreference === "light") &&
+        (savedPreference === "dark" || isBrowserInDarkMode)
+    );
+  }, []);
+
+  useEffect(() => {}, []);
 
   // Function to handle the switch toggle
   const handleThemeToggle = () => {
     setIsDarkMode((prevMode) => !prevMode);
+    localStorage.setItem("theme", !isDarkMode ? "dark" : "light");
   };
 
   const theme = isDarkMode ? darkTheme : lightTheme;
