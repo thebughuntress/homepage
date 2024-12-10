@@ -1,22 +1,14 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
-let theme = createTheme({
+const lightTheme = createTheme({
   palette: {
+    mode: "light",
     primary: {
       main: "#6E07F3",
     },
     secondary: {
-      main: "#DAF7A6",
+      main: "#34eb52",
     },
-    bgColor: {
-      main: "#ffffff",
-    },
-    red: {
-      main: "#ff6363",
-    },
-    dark: {
-      main: "#141c3a"
-    }
   },
   typography: {
     fontFamily: "Inter, Arial, sans-serif",
@@ -69,6 +61,4 @@ let theme = createTheme({
   },
 });
 
-theme = responsiveFontSizes(theme);
-
-export default theme;
+export default lightTheme;

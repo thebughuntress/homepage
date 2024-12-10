@@ -15,7 +15,7 @@ import React from "react";
 import PlaceIcon from "@mui/icons-material/Place";
 import superprofImg from "../../assets/superprof.svg";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import theme from "../../theme/theme";
+import theme from "../../theme/lightTheme";
 
 const TOPICS = [
   "Programming Fundamentals",
@@ -36,7 +36,6 @@ const Services = () => {
       sx={{
         margin: 0,
         marginTop: 5,
-        backgroundColor: "red",
         display: "flex",
         justifyContent: "center",
         width: "100%",
@@ -48,7 +47,7 @@ const Services = () => {
           backgroundColor: "primary.main",
           color: "white",
           padding: 3,
-          width: "75%", 
+          width: "75%",
           maxWidth: "1200px",
           margin: 0,
         }}

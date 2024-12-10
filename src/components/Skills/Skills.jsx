@@ -58,7 +58,7 @@ const Skills = () => {
                 height: 7,
                 backgroundColor: "primary.dark",
                 "& .MuiLinearProgress-bar": {
-                  backgroundColor: "#85ff5b",
+                  backgroundColor: "secondary.main",
                 },
               }}
             />

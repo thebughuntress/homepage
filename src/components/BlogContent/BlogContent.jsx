@@ -54,6 +54,7 @@ const BlogContent = ({ content }) => {
               <Typography
                 variant="body1"
                 sx={{
+                  color: "text.primary",
                   fontSize: "1.1rem",
                   fontWeight: 600,
                 }}
@@ -66,6 +67,7 @@ const BlogContent = ({ content }) => {
             <Typography
               variant="body1"
               sx={{
+                color: "text.primary",
                 marginLeft: "calc(24px + 8px)",
               }}
             >
@@ -92,7 +94,7 @@ const BlogContent = ({ content }) => {
               <Typography
                 variant="caption"
                 display="block"
-                sx={{ marginTop: 1 }}
+                sx={{ color: "text.primary", marginTop: 1 }}
               >
                 {block.description}
               </Typography>
@@ -104,7 +106,12 @@ const BlogContent = ({ content }) => {
           <Typography
             key={index}
             variant="h5"
-            sx={{ fontWeight: "bold", marginTop: 3, marginBottom: 1 }}
+            sx={{
+              fontWeight: "bold",
+              marginTop: 3,
+              marginBottom: 1,
+              color: "text.primary",
+            }}
           >
             {block.value}
           </Typography>
@@ -114,7 +121,7 @@ const BlogContent = ({ content }) => {
           <Typography
             key={index}
             variant="body1"
-            sx={{ lineHeight: 1.8, marginBottom: 2 }}
+            sx={{ color: "text.primary", lineHeight: 1.8, marginBottom: 2 }}
           >
             {block.value}
           </Typography>
@@ -146,7 +153,7 @@ const BlogContent = ({ content }) => {
               textAlign: { xs: "left", md: "left" },
               marginY: 3,
               marginX: 1,
-              maxWidth: "100%" ,
+              maxWidth: "100%",
             }}
           >
             <img
@@ -158,7 +165,7 @@ const BlogContent = ({ content }) => {
               <Typography
                 variant="caption"
                 display="block"
-                sx={{ marginTop: 1 }}
+                sx={{ marginTop: 1, color: "text.primary" }}
               >
                 {block.caption}
               </Typography>

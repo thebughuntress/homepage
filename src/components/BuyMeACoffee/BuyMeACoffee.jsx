@@ -7,7 +7,7 @@ const BuyMeACoffee = () => {
         <img
           src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
           alt="Buy Me A Coffee"
-          style={{height: "60px ", width: "217px !important"}}
+          style={{height: "50px ", width: "217px !important"}}
         />
       </a>
     </div>

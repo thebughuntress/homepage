@@ -54,6 +54,7 @@ const BlogPost = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
+          color: "text.primary"
         }}
       >
         <Typography variant="h5" color="error">
@@ -112,7 +113,7 @@ const BlogPost = () => {
 
       {/* Post Title */}
       <Box sx={{ marginTop: 2 }}>
-        <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+        <Typography variant="h3" sx={{ color: "text.primary", fontWeight: "bold", marginBottom: 2 }}>
           {post.title}
         </Typography>
       </Box>

@@ -2,7 +2,7 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 import heroImg from "../../assets/hero-img.jpg";
-import theme from "../../theme/theme";
+import theme from "../../theme/lightTheme";
 import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {
@@ -27,13 +27,10 @@ function Hero() {
           marginTop: { xs: "10vh", md: 0 },
           marginBottom: { xs: "2vh", md: 0 },
           width: { xs: "100%", md: "50%" },
-          backgroundColor: { xs: "white", md: "transparent" },
         }}
       >
         <Box
           component="img"
-          // GitHub avatar image URL
-          //src={"https://avatars.githubusercontent.com/u/23038441?v=4"}
           src={isMobile ? heroImgMobile : heroImg}
           alt="heroImg"
           loading="eager"
@@ -48,10 +45,6 @@ function Hero() {
       <Box
         sx={{
           width: { xs: "100%", md: "50%" },
-          background: {
-            xs: `linear-gradient(to bottom, white, ${theme.palette.bgColor.main})`,
-            md: "inherit",
-          },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -64,10 +57,11 @@ function Hero() {
           variant="h1"
           fontWeight={600}
           sx={{
-            fontSize: { xs: "28px", md: "40px", lg:"50px" },
+            fontSize: { xs: "28px", md: "40px", lg: "50px" },
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: 2, md: 0 },
             marginBottom: { xs: 1, md: 1 },
+            color: "text.primary",
           }}
         >
           Full Stack Developer, <br />
@@ -79,6 +73,7 @@ function Hero() {
             width: { xs: "90%", md: "100%" },
             marginBottom: 1,
             fontSize: { xs: "15px", md: "1.2rem" },
+            color: "text.primary",
           }}
         >
           I build software and teach programming.

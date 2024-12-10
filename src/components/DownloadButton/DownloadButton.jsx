@@ -25,6 +25,7 @@ const DownloadButton = ({ label, pathToFile, downloadFileName, color, url }) => 
         color: `${color}`,
         border: `2px solid`,
         borderColor: `${color}`,
+        height:  "40px",
         borderRadius: 100,
         cursor: "pointer",
         fontWeight: 600,

@@ -5,7 +5,7 @@ import blogPosts from "../../data/blogPosts";
 
 const Blog = () => {
   return (
-    <Box sx={{ width: "80vw", marginBottom: 3 }}>
+    <Box sx={{ width: "80vw", marginBottom: 0 }}>
       <Typography
         variant="h2"
         sx={{

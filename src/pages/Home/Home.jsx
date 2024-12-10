@@ -13,9 +13,7 @@ import Skills from "../../components/Skills/Skills.jsx";
 const Home = () => {
   return (
     <>
-      {/* Hero Section */}
       <Hero />
-      {/* Main Content */}
       <Box>
         <BuyMeACoffee />
         <AboutMe />
@@ -23,7 +21,6 @@ const Home = () => {
         {/* <Services /> */}
         <BadgeCollection />
         <QuoteBox />
-        <Contact />
         {/* <Teaching /> */}
       </Box>
     </>

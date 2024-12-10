@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import theme from "../../theme/theme";
+import theme from "../../theme/lightTheme";
 
 const BadgeCollection = () => {
   useEffect(() => {
@@ -44,8 +44,8 @@ const BadgeCollection = () => {
           marginTop: "3rem",
           fontSize: { xs: "24px", md: "30px" },
           fontWeight: 600,
-          color: "rgba(0, 0, 0, 0.5)",
           textAlign: "center",
+          color: "text.primary",
         }}
       >
         Badge Collection

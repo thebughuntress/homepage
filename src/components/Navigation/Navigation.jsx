@@ -1,16 +1,17 @@
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import DownloadButton from "../DownloadButton/DownloadButton";
-import "./Navigation.css";
+import { useLocation, useNavigate } from "react-router-dom";
 import { cv } from "../../data/data";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import DownloadButton from "../DownloadButton/DownloadButton";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import "./Navigation.css";
 
-function Navigation() {
+function Navigation({ isDarkMode, onThemeToggle }) {
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === "/";
@@ -18,18 +19,19 @@ function Navigation() {
   const isBlogPost = location.pathname.includes("/blog/");
 
   const sxButton = {
-    fontSize: "14px",
+    fontSize: { xs: "14px", md: "16px" },
     fontWeight: 600,
-    color: { md: "black", xs: "primary.main" },
+    color: { xs: "primary.main", md: "text.primary" },
     border: { xs: `2px solid`, md: "none" },
     borderColor: { xs: "primary.main" },
-    borderRadius: { xs: 100 },
+    borderRadius: { xs: 50 },
+    height: "40px",
     cursor: { md: "pointer" },
     justifyContent: { xs: "center" },
     width: { xs: "fit-content" },
     "&:hover": {
-      color: { xs: "primary.main", md: "primary.main" },
-      backgroundColor: { xs: "white", md: "transparent" },
+      color: "primary.main",
+      backgroundColor: "transparent" ,
     },
   };
 
@@ -60,7 +62,7 @@ function Navigation() {
           onClick={() => navigate("/")}
           sx={{
             mr: 2,
-            fontSize: { xs: "23px", md: "30px", lg: "35px" },
+            fontSize: { xs: "20px", md: "30px", lg: "35px" },
             fontWeight: 500,
             color: "primary.main",
             cursor: isHome ? "default" : "pointer",
@@ -76,8 +78,10 @@ function Navigation() {
         <Box
           sx={{
             display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             flexGrow: 0,
-            mr: { xs: 4, md: "5rem" },
+            mr: { xs: 2, md: "5rem" },
           }}
         >
           {isHome && (
@@ -85,6 +89,7 @@ function Navigation() {
               <Button onClick={() => navigate("blog")} sx={sxButton}>
                 Blog
               </Button>
+
               <Box sx={{ display: { xs: "none", md: "inherit" } }}>
                 <DownloadButton
                   label="Download CV"
@@ -96,6 +101,7 @@ function Navigation() {
               </Box>
             </>
           )}
+
           {isBlog && (
             <Button
               onClick={() => navigate("/")}
@@ -107,6 +113,7 @@ function Navigation() {
               Home
             </Button>
           )}
+
           {isBlogPost && (
             <Button
               onClick={() => navigate("/blog")}
@@ -118,6 +125,8 @@ function Navigation() {
               Blogs
             </Button>
           )}
+
+          <ThemeToggle isDarkMode={isDarkMode} onThemeToggle={onThemeToggle} />
         </Box>
       </Toolbar>
     </AppBar>

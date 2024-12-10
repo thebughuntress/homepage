@@ -316,21 +316,21 @@ const blogPosts = [
       },
       {
         type: "link",
-        label: "VSCode",
+        label: "VSCode (Editor)",
         url: "https://code.visualstudio.com/",
         description:
           "Visual Studio Code is a lightweight and powerful code editor with great Python support.",
       },
       {
         type: "link",
-        label: "Spyder",
+        label: "Spyder (Editor)",
         url: "https://www.spyder-ide.org/",
         description:
           "Spyder is an IDE for Python, specifically geared towards scientific development.",
       },
       {
         type: "link",
-        label: "PyCharm",
+        label: "PyCharm (Editor)",
         url: "https://www.jetbrains.com/pycharm/",
         description:
           "PyCharm is a popular Python IDE, offering both professional and community versions.",
@@ -351,7 +351,7 @@ const blogPosts = [
       },
       {
         type: "link",
-        label: "The Zen of Python (PEP 20)",
+        label: "PEP 20 - The Zen of Python",
         url: "https://peps.python.org/pep-0020/",
         description:
           "PEP 20 contains the Zen of Python, guiding principles for writing computer programs in Python.",
@@ -362,6 +362,13 @@ const blogPosts = [
         url: "https://peps.python.org/pep-0257/",
         description:
           "PEP 257 provides conventions for writing docstrings, which describe the purpose and usage of Python functions, classes, and modules.",
+      },
+      {
+        type: "link",
+        label: "Python Institute Certification",
+        url: "https://pythoninstitute.org/",
+        description:
+          "The Python Institute offers globally recognized certifications for Python programming skills, including entry-level (PCAP), intermediate (PCPP), and expert-level credentials. Ideal for validating programming expertise in Python.",
       },
       { type: "heading", value: "Naming Conventions" },
       {

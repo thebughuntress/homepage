@@ -63,20 +63,19 @@ const Contact = () => {
         width: "100%",
         display: "flex",
         alignItems: "center",
-        flexDirection: "column"
+        flexDirection: "column",
       }}
     >
       <Box
         sx={{
-          backgroundColor: "primary.dark",
           width: "100%",
           color: "white",
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
-          paddingTop: 3,
           alignItems: { xs: "center", md: "start" },
           paddingLeft: { xs: 0, md: "10%" },
+          my: 3,
         }}
       >
         {/* Left Side: Contact */}
@@ -129,9 +128,7 @@ const Contact = () => {
             ))}
           </List>
         </Box>
-        <Box
-          sx={{ backgroundColor: "red", display: { xs: "flex", md: "none" } }}
-        >
+        <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <DownloadButton
             label="Download CV"
             url={cv.url}
@@ -148,7 +145,6 @@ const Contact = () => {
           borderWidth: "1px",
           paddingLeft: 1,
           paddingRight: 1,
-          marginTop: 3,
         }}
       />
     </Box>

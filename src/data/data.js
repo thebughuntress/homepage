@@ -18,7 +18,7 @@ const urls = {
 
 const cv = {
   path: "/downloads/cv.pdf",
-  filename: "cv.pdf",
+  filename: "CV_AntoniaFrey.pdf",
   url: "https://raw.githubusercontent.com/thebughuntress/CV/main/cv.pdf",
 };
 
