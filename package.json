@@ -10,7 +10,7 @@
     "prebuild": "npm run check-git-status",
     "build": "vite build",
     "deploy": "npm run build && firebase deploy",
-    "generate-version": "echo \"export const APP_VERSION = 'v$(date +\"%Y%m%d%H%M\")';\" > src/utils/version.js",
+    "generate-version": "powershell -Command \"Get-Date -Format 'yyyyMMddHHmm' | Out-File -FilePath version.txt -Force\"",
     "predeploy": "npm run generate-version && firebase deploy"
   },
   "dependencies": {

@@ -10,7 +10,6 @@ import { useLocation } from "react-router-dom";
 import "./Footer.css";
 import Contact from "../Contact/Contact";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
-import { APP_VERSION } from "../../utils/version";
 
 const Footer = () => {
   const location = useLocation();
@@ -114,9 +113,10 @@ const Footer = () => {
           variant="body2"
           sx={{
             color: "white",
+            fontWeight: 600,
           }}
         >
-          Version: {APP_VERSION}
+          v{APP_VERSION.replace(/[^\x20-\x7E]/g, "")}
         </Typography>
 
         <Typography
