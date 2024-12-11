@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom";
 import "./Footer.css";
 import Contact from "../Contact/Contact";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
+import { APP_VERSION } from "../../utils/version";
 
 const Footer = () => {
   const location = useLocation();
@@ -48,7 +49,6 @@ const Footer = () => {
           alignItems: "center",
           width: "100%",
           backgroundColor: "primary.dark",
-          //backgroundColor: "#A0A0A5", // gray
           padding: "20px 0 10px 0",
           margin: 0,
           boxSizing: "border-box",
@@ -57,56 +57,67 @@ const Footer = () => {
       >
         <Box sx={{ width: "80%", textAlign: "center" }}>
           <BuyMeACoffee />
-          <FaReact
-            style={{
-              marginTop: "1.2rem",
-              marginBottom: 5,
-              fontSize: "35px",
-              color: "#61DAFB",
-              animation: "rotate 5s linear infinite",
-            }}
-          />
-          <Typography
-            variant="body2"
-            sx={{
-              color: "#3DD1E7",
-            }}
-          >
-            Crafted by <b>Antonia Alice Frey </b>
-            <br />
-            Made with React &{" "}
-            <FaCoffee
-              style={{ fontSize: "14px", verticalAlign: "middle" }}
-            />{" "}
-            <br />
-            Using{" "}
-            <Box
-              component="img"
-              src={muiLogo}
-              alt="MUI Logo"
-              sx={{
-                height: "14px",
-                verticalAlign: "middle",
-                marginRight: "1px",
-                marginLeft: "1px",
+          <Box sx={{ marginY: 3 }}>
+            <FaReact
+              style={{
+                marginTop: "1.2rem",
+                marginBottom: 5,
+                fontSize: "35px",
+                color: "#61DAFB",
+                animation: "rotate 5s linear infinite",
               }}
-            />{" "}
-            Material UI
-            <br />
-            View the source code{" "}
-            <Link
-              href={urls.repo}
-              target="_blank"
+            />
+            <Typography
+              variant="body2"
               sx={{
                 color: "#3DD1E7",
-                textDecoration: "underline",
-                textDecorationColor: "#3DD1E7",
               }}
             >
-              here
-            </Link>
-          </Typography>
+              Crafted by <b>Antonia Alice Frey </b>
+              <br />
+              Made with React &{" "}
+              <FaCoffee
+                style={{ fontSize: "14px", verticalAlign: "middle" }}
+              />{" "}
+              <br />
+              Using{" "}
+              <Box
+                component="img"
+                src={muiLogo}
+                alt="MUI Logo"
+                sx={{
+                  height: "14px",
+                  verticalAlign: "middle",
+                  marginRight: "1px",
+                  marginLeft: "1px",
+                }}
+              />{" "}
+              Material UI
+              <br />
+              View the source code{" "}
+              <Link
+                href={urls.repo}
+                target="_blank"
+                sx={{
+                  color: "#3DD1E7",
+                  textDecoration: "underline",
+                  textDecorationColor: "#3DD1E7",
+                }}
+              >
+                here
+              </Link>
+            </Typography>
+          </Box>
         </Box>
+
+        <Typography
+          variant="body2"
+          sx={{
+            color: "white",
+          }}
+        >
+          Version: {APP_VERSION}
+        </Typography>
 
         <Typography
           variant="body2"

@@ -9,7 +9,9 @@
     "check-git-status": "git diff-index --quiet HEAD -- || (echo 'Uncommitted changes detected. Please commit before building.' && exit 1)",
     "prebuild": "npm run check-git-status",
     "build": "vite build",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "generate-version": "echo \"export const APP_VERSION = 'v$(date +\"%Y%m%d%H%M\")';\" > src/utils/version.js",
+    "predeploy": "npm run generate-version && firebase deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
