@@ -6,12 +6,11 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "check-git-status": "git diff-index --quiet HEAD -- || (echo 'Uncommitted changes detected. Please commit before building.' && exit 1)",
-    "prebuild": "npm run check-git-status",
     "build": "vite build",
     "deploy": "npm run build && firebase deploy",
+    "check-git-status": "git diff-index --quiet HEAD -- || (echo 'Uncommitted changes detected. Please commit before building.' && exit 1)",
     "generate-version": "powershell -Command \"Get-Date -Format 'yyyyMMddHHmm' | Out-File -FilePath version.txt -Force\"",
-    "predeploy": "npm run generate-version && firebase deploy"
+    "predeploy": "npm run check-git-status && npm run generate-version && firebase deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
