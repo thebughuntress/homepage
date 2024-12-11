@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
+    "check-git-status": "git diff-index --quiet HEAD -- || (echo 'Uncommitted changes detected. Please commit before building.' && exit 1)",
+    "prebuild": "npm run check-git-status",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
