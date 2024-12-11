@@ -24,7 +24,7 @@ const Contact = () => {
   const contactItems = [
     {
       icon: <Email />,
-      text: contacts.email,
+      text: contacts.emailObfuscated,
       link: `mailto:${contacts.email}`,
     },
     {

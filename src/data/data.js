@@ -1,5 +1,6 @@
 const contacts = {
   email: "antonia.frey@outlook.com",
+  emailObfuscated: "antonia[dot]frey[at]outlook[dot]com",
   mobile: "+49 1514 6782868",
   github: "thebughuntress",
   linkedin: "Antonia Frey",
