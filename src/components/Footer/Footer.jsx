@@ -49,15 +49,17 @@ const Footer = () => {
           width: "100%",
           backgroundColor: "primary.dark",
           //backgroundColor: "#A0A0A5", // gray
-          padding: "10px 0 10px 0",
+          padding: "20px 0 10px 0",
           margin: 0,
           boxSizing: "border-box",
           overflowX: "hidden",
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center" }}>
+          <BuyMeACoffee />
           <FaReact
             style={{
+              marginTop: "1.2rem",
               marginBottom: 5,
               fontSize: "35px",
               color: "#61DAFB",

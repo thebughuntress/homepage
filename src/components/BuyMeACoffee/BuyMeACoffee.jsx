@@ -32,7 +32,6 @@ const BuyMeACoffee = () => {
             src={santaClausHatImg}
             alt="Santa Claus Hat"
             sx={{
-              display: { xs: "block", sm: "none" },
               position: "absolute",
               top: -29,
               right: -25,
@@ -51,7 +50,7 @@ const BuyMeACoffee = () => {
               <img
                 src={gluehweinImg}
                 alt="Gluehwein"
-                style={{ width: "30px", height: "30px", marginRight: "5px" }}
+                style={{ width: "35px", height: "35px", marginRight: "3px" }}
               />
             }
             variant="contained"
@@ -70,7 +69,6 @@ const BuyMeACoffee = () => {
           >
             Buy me a Glühwein
           </Button>
-       
         </Box>
       ) : (
         <a
