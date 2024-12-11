@@ -13,7 +13,6 @@ import lightTheme from "./theme/lightTheme";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-
   useEffect(() => {
     const savedPreference = localStorage.getItem("theme");
     const isBrowserInDarkMode = window.matchMedia(
@@ -38,27 +37,30 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={theme}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            minHeight: "100vh",
-            width: "100vw",
-            backgroundColor: theme.palette.background.default,
-          }}
-        >
-          <Navigation
-            isDarkMode={isDarkMode}
-            onThemeToggle={handleThemeToggle}
-          />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:postId" element={<BlogPost />} />
-          </Routes>
-          <Footer />
+        <Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              minHeight: "100vh",
+              width: "100vw",
+              maxWidth: "100vw",
+              backgroundColor: theme.palette.background.default,
+            }}
+          >
+            <Navigation
+              isDarkMode={isDarkMode}
+              onThemeToggle={handleThemeToggle}
+            />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:postId" element={<BlogPost />} />
+            </Routes>
+            <Footer />
+          </Box>
         </Box>
       </ThemeProvider>
     </Router>

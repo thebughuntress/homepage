@@ -10,6 +10,24 @@ import { cv } from "../../data/data";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Navigation.css";
+import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
+
+export const sxButton = {
+  fontSize: { xs: "14px", md: "16px" },
+  fontWeight: 600,
+  color: { xs: "primary.main", md: "text.primary" },
+  border: { xs: `2px solid`, md: "none" },
+  borderColor: { xs: "primary.main" },
+  borderRadius: { xs: 50 },
+  height: "37px",
+  cursor: { md: "pointer" },
+  justifyContent: { xs: "center" },
+  width: { xs: "fit-content" },
+  "&:hover": {
+    color: "primary.main",
+    backgroundColor: "transparent",
+  },
+};
 
 function Navigation({ isDarkMode, onThemeToggle }) {
   const navigate = useNavigate();
@@ -17,23 +35,6 @@ function Navigation({ isDarkMode, onThemeToggle }) {
   const isHome = location.pathname === "/";
   const isBlog = location.pathname === "/blog";
   const isBlogPost = location.pathname.includes("/blog/");
-
-  const sxButton = {
-    fontSize: { xs: "14px", md: "16px" },
-    fontWeight: 600,
-    color: { xs: "primary.main", md: "text.primary" },
-    border: { xs: `2px solid`, md: "none" },
-    borderColor: { xs: "primary.main" },
-    borderRadius: { xs: 50 },
-    height: "40px",
-    cursor: { md: "pointer" },
-    justifyContent: { xs: "center" },
-    width: { xs: "fit-content" },
-    "&:hover": {
-      color: "primary.main",
-      backgroundColor: "transparent" ,
-    },
-  };
 
   return (
     <AppBar
@@ -56,24 +57,48 @@ function Navigation({ isDarkMode, onThemeToggle }) {
           width: "100%",
         }}
       >
-        <Typography
-          variant="h3"
-          className="nav-title"
-          onClick={() => navigate("/")}
+        <Box
           sx={{
-            mr: 2,
-            fontSize: { xs: "20px", md: "30px", lg: "35px" },
-            fontWeight: 500,
-            color: "primary.main",
-            cursor: isHome ? "default" : "pointer",
-            transition: "color 0.3s",
-            "&:hover": {
-              color: isHome ? "primary.main" : "primary.dark",
-            },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            mr: { xs: 0, md: "5rem" },
           }}
         >
-          Antonia Alice Frey
-        </Typography>
+          <Typography
+            variant="h3"
+            className="nav-title"
+            onClick={() => navigate("/")}
+            sx={{
+              mr: 2,
+              fontSize: { xs: "20px", md: "30px", lg: "35px" },
+              fontWeight: 500,
+              color: "primary.main",
+              cursor: isHome ? "default" : "pointer",
+              transition: "color 0.3s",
+              "&:hover": {
+                color: isHome ? "primary.main" : "primary.dark",
+              },
+            }}
+          >
+            Antonia Alice Frey
+          </Typography>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <DownloadButton
+              label="Download CV"
+              url={cv.url}
+              //pathToFile={cv.path}
+              downloadFileName={cv.filename}
+              color="primary.main"
+            />
+          </Box>
+        </Box>
 
         <Box
           sx={{
@@ -81,7 +106,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
             justifyContent: "center",
             alignItems: "center",
             flexGrow: 0,
-            mr: { xs: 2, md: "5rem" },
+            mr: { xs: 1, md: "5rem" },
           }}
         >
           {isHome && (
@@ -89,16 +114,6 @@ function Navigation({ isDarkMode, onThemeToggle }) {
               <Button onClick={() => navigate("blog")} sx={sxButton}>
                 Blog
               </Button>
-
-              <Box sx={{ display: { xs: "none", md: "inherit" } }}>
-                <DownloadButton
-                  label="Download CV"
-                  url={cv.url}
-                  //pathToFile={cv.path}
-                  downloadFileName={cv.filename}
-                  color="primary.main"
-                />
-              </Box>
             </>
           )}
 
@@ -107,7 +122,9 @@ function Navigation({ isDarkMode, onThemeToggle }) {
               onClick={() => navigate("/")}
               sx={sxButton}
               startIcon={
-                <ArrowBackIosIcon sx={{ marginLeft: 1, marginRight: "-5px" }} />
+                <ArrowBackIosIcon
+                  sx={{ marginLeft: 1, marginRight: "-10px" }}
+                />
               }
             >
               Home
@@ -119,7 +136,9 @@ function Navigation({ isDarkMode, onThemeToggle }) {
               onClick={() => navigate("/blog")}
               sx={sxButton}
               startIcon={
-                <ArrowBackIosIcon sx={{ marginLeft: 1, marginRight: "-5px" }} />
+                <ArrowBackIosIcon
+                  sx={{ marginLeft: 1, marginRight: "-10px" }}
+                />
               }
             >
               Blogs

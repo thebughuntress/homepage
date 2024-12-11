@@ -75,7 +75,7 @@ const Contact = () => {
           justifyContent: "space-between",
           alignItems: { xs: "center", md: "start" },
           paddingLeft: { xs: 0, md: "10%" },
-          my: 3,
+          my: 5,
         }}
       >
         {/* Left Side: Contact */}

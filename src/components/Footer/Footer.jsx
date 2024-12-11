@@ -1,16 +1,22 @@
-import { Box, Divider, Link, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import React from "react";
 import { FaReact, FaCoffee } from "react-icons/fa";
 import { urls } from "../../data/data";
 import muiLogo from "../../assets/mui.svg";
-import devicesImg from "../../assets/devices.svg";
+import devicesLightThemeImg from "../../assets/devices-light-theme.svg";
+import devicesDarkThemeImg from "../../assets/devices-dark-theme.svg";
 import { useLocation } from "react-router-dom";
 import "./Footer.css";
 import Contact from "../Contact/Contact";
+import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 
 const Footer = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
+  const theme = useTheme();
+  const isDarkTheme = theme.palette.mode === "dark";
+  const imageSrc = isDarkTheme ? devicesDarkThemeImg : devicesLightThemeImg;
 
   return (
     <>
@@ -25,7 +31,7 @@ const Footer = () => {
         <Box
           textAlign="center"
           component="img"
-          src={devicesImg}
+          src={imageSrc}
           alt="devicesImg"
           loading="eager"
           sx={{
@@ -108,7 +114,6 @@ const Footer = () => {
             fontSize: "12px",
             marginTop: 4,
             marginBottom: 1,
-            
           }}
         >
           © {new Date().getFullYear()} Antonia Alice Frey. All rights reserved.
