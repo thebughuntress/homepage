@@ -10,7 +10,10 @@ export default defineConfig({
   define: {
     // Read the version from version.txt located in the root folder with 'utf8' encoding
     APP_VERSION: JSON.stringify(
-      fs.readFileSync(path.resolve(__dirname, "version.txt"), "utf8").trim()
+      fs
+        .readFileSync(path.resolve(__dirname, "version.txt"), "utf8")
+        .replace(/[^\x20-\x7E]/g, "")
+        .trim()
     ),
   },
 });

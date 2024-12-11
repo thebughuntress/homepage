@@ -113,10 +113,9 @@ const Footer = () => {
           variant="body2"
           sx={{
             color: "white",
-            fontWeight: 600,
           }}
         >
-          v{APP_VERSION.replace(/[^\x20-\x7E]/g, "")}
+          Version: <span> {APP_VERSION}</span>
         </Typography>
 
         <Typography
@@ -125,8 +124,7 @@ const Footer = () => {
             color: "white",
             wordWrap: "break-word",
             fontSize: "12px",
-            marginTop: 4,
-            marginBottom: 1,
+            marginY: 1,
           }}
         >
           © {new Date().getFullYear()} Antonia Alice Frey. All rights reserved.
