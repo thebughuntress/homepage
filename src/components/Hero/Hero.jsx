@@ -35,7 +35,7 @@ function Hero() {
           alt="heroImg"
           loading="eager"
           sx={{
-            width: { xs: "60%", md: "80%" },
+            width: { xs: "60%", md: "70%" },
             borderRadius: { xs: "50%", md: "8px" },
           }}
         />

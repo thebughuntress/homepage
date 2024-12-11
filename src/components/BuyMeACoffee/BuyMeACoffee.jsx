@@ -10,6 +10,18 @@ const BuyMeACoffee = () => {
     currentDate.getDate() >= 1 &&
     currentDate.getDate() <= 25;
 
+  const sxBMACButton = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "3px 16px",
+    fontSize: "27px",
+    textTransform: "none",
+    fontFamily: "Cookie",
+    borderRadius: 2,
+    minWidth: "220px",
+  };
+
   return (
     <Box
       sx={{
@@ -56,15 +68,7 @@ const BuyMeACoffee = () => {
             variant="contained"
             sx={{
               backgroundColor: "#0f4524",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "3px 16px",
-              textTransform: "none",
-              fontSize: "27px",
-              fontFamily: "Cookie",
-              borderRadius: 2,
-              minWidth: "220px",
+              ...sxBMACButton,
             }}
           >
             Buy me a Glühwein
