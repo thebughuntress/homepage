@@ -122,19 +122,17 @@ const Footer = () => {
           <Typography
             variant="body2"
             sx={{
-              color: "white",
+              color: "#FFFF",
             }}
           >
             Version: <span> {APP_VERSION}</span>
           </Typography>
-          <Tooltip
-            title="Timestamp of deploy on Firebase"
-            arrow
-          >
+          <Tooltip title="Timestamp of deploy on Firebase" arrow>
             <IconButton
               sx={{
                 padding: 0.5,
                 fontSize: "small",
+                color: "#FFFF",
               }}
             >
               <InfoIcon fontSize="small" />
