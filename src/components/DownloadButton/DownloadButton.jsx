@@ -2,7 +2,6 @@ import React from "react";
 import { Button, styled } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
-// DownloadButton component that accepts color, label, pathToFile, downloadFileName, and url as props
 const DownloadButton = ({
   label,
   pathToFile,
@@ -10,16 +9,31 @@ const DownloadButton = ({
   color,
   url,
 }) => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    // Use the provided URL if it exists, otherwise fall back to pathToFile
+  const handleDownload = async () => {
     const fileUrl = url || pathToFile;
-    link.href = fileUrl;
-    link.download = downloadFileName;
-    //link.click();
+
+    try {
+      const response = await fetch(fileUrl);
+      if (!response.ok) {
+        throw new Error("Failed to fetch the file.");
+      }
+      const blob = await response.blob();
+      const link = document.createElement("a");
+
+      // Create an object URL for the blob
+      const objectUrl = URL.createObjectURL(blob);
+      link.href = objectUrl;
+      link.download = downloadFileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(objectUrl);
+    } catch (error) {
+      console.error("Error downloading or saving the file:", error);
+    }
 
     // Open the file in a new tab instead of downloading
-    window.open(fileUrl, "_blank");
+    //window.open(fileUrl, "_blank");
   };
 
   return (
