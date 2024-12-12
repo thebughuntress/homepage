@@ -12,7 +12,7 @@ const BlogContent = ({ content }) => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "flex-start", // Correct alignment
+              alignItems: "flex-start",
               marginBottom: 2,
             }}
           >
@@ -54,7 +54,7 @@ const BlogContent = ({ content }) => {
               <Typography
                 variant="body1"
                 sx={{
-                  color: "text.primary",
+                  color: "primary.main",
                   fontSize: "1.1rem",
                   fontWeight: 600,
                 }}
