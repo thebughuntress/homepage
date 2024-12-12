@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import santaClausHatImg from "../../assets/santa-claus-hat.png";
+import santaClausHatSvg from "../../assets/santa-claus-hat.svg";
 import gluehweinImg from "../../assets/gluehwein.png";
 
 const BuyMeACoffee = ({ withDeco = false }) => {
@@ -42,15 +43,15 @@ const BuyMeACoffee = ({ withDeco = false }) => {
           {withDeco && (
             <Box
               component="img"
-              src={santaClausHatImg}
+              src={santaClausHatSvg}
               alt="Santa Claus Hat"
               sx={{
                 position: "absolute",
-                top: -29,
-                right: -25,
+                top: -26,//-29,
+                right: -35, //-25,
                 width: 70,
                 height: 72,
-                transform: "rotate(-5deg) scaleX(-1)",
+                transform: "rotate(40deg)", //"rotate(-5deg) scaleX(-1)",
                 zIndex: 11,
               }}
             />

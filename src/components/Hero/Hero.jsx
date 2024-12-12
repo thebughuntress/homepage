@@ -2,7 +2,6 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 import heroImg from "../../assets/hero-img.jpg";
-import theme from "../../theme/lightTheme";
 import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {

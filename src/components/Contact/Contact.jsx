@@ -53,6 +53,7 @@ const Contact = () => {
       onClick: () => {
         window.open(urls.location, "_blank");
       },
+      link: urls.location,
     },
   ];
 
