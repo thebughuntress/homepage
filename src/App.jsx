@@ -11,7 +11,7 @@ import darkTheme from "./theme/darkTheme";
 import lightTheme from "./theme/lightTheme";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState();
 
   useEffect(() => {
     const savedPreference = localStorage.getItem("theme");
@@ -37,7 +37,7 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={theme}>
-        <Box>
+        {isDarkMode !== undefined && (
           <Box
             sx={{
               display: "flex",
@@ -61,7 +61,7 @@ function App() {
             </Routes>
             <Footer />
           </Box>
-        </Box>
+        )}
       </ThemeProvider>
     </Router>
   );

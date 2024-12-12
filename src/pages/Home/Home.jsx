@@ -15,13 +15,13 @@ const Home = () => {
         <Box
           sx={{
             display: {
-              xs: "block", 
+              xs: "block",
               sm: "none",
             },
-            marginY: 3
+            marginY: 6,
           }}
         >
-          <BuyMeACoffee withDeco={true}/>
+          <BuyMeACoffee withDeco={true} />
         </Box>
         <AboutMe />
         <Skills />
