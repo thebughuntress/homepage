@@ -9,6 +9,9 @@ const darkTheme = createTheme({
     secondary: {
       main: "#5BE9B9",
     },
+    background: {
+      default: '#282828',
+    },
   },
   typography: {
     fontFamily: "Inter, Arial, sans-serif",
