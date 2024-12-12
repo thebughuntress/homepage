@@ -128,7 +128,7 @@ const Footer = () => {
             Version: <span> {APP_VERSION}</span>
           </Typography>
           <Tooltip
-            title="Timestamp of the most recent deploy on Firebase"
+            title="Timestamp of deploy on Firebase"
             arrow
           >
             <IconButton
