@@ -111,23 +111,24 @@ const Footer = () => {
             </Typography>
           </Box>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 0,
-          }}
-        >
-          <Typography
-            variant="body2"
+        <Tooltip title="Timestamp of deploy on Firebase" arrow>
+          <Box
             sx={{
-              color: "#FFFF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              p: 1,
             }}
           >
-            Version: <span> {APP_VERSION}</span>
-          </Typography>
-          <Tooltip title="Timestamp of deploy on Firebase" arrow>
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#FFFF",
+              }}
+            >
+              Version: <span> {APP_VERSION}</span>
+            </Typography>
+
             <IconButton
               sx={{
                 padding: 0.5,
@@ -137,8 +138,8 @@ const Footer = () => {
             >
               <InfoIcon fontSize="small" />
             </IconButton>
-          </Tooltip>
-        </Box>
+          </Box>
+        </Tooltip>
 
         <Typography
           variant="body2"
