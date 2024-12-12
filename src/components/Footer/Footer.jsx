@@ -10,6 +10,9 @@ import { useLocation } from "react-router-dom";
 import "./Footer.css";
 import Contact from "../Contact/Contact";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import InfoIcon from "@mui/icons-material/Info";
 
 const Footer = () => {
   const location = useLocation();
@@ -108,15 +111,36 @@ const Footer = () => {
             </Typography>
           </Box>
         </Box>
-
-        <Typography
-          variant="body2"
+        <Box
           sx={{
-            color: "white",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 0,
           }}
         >
-          Version: <span> {APP_VERSION}</span>
-        </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: "white",
+            }}
+          >
+            Version: <span> {APP_VERSION}</span>
+          </Typography>
+          <Tooltip
+            title="Timestamp of the most recent deploy on Firebase"
+            arrow
+          >
+            <IconButton
+              sx={{
+                padding: 0.5,
+                fontSize: "small",
+              }}
+            >
+              <InfoIcon fontSize="small" />
+            </IconButton>
+          </Tooltip>
+        </Box>
 
         <Typography
           variant="body2"
