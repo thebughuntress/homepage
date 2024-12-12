@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import santaClausHatImg from "../../assets/santa-claus-hat.png";
 import gluehweinImg from "../../assets/gluehwein.png";
 
-const BuyMeACoffee = () => {
+const BuyMeACoffee = ({ withDeco = false }) => {
   const currentDate = new Date();
   const isGluhweinSeason =
     currentDate.getMonth() === 11 &&
@@ -39,20 +39,22 @@ const BuyMeACoffee = () => {
             display: "inline-block",
           }}
         >
-          <Box
-            component="img"
-            src={santaClausHatImg}
-            alt="Santa Claus Hat"
-            sx={{
-              position: "absolute",
-              top: -29,
-              right: -25,
-              width: 70,
-              height: 72,
-              transform: "rotate(-5deg) scaleX(-1)",
-              zIndex: 11,
-            }}
-          />
+          {withDeco && (
+            <Box
+              component="img"
+              src={santaClausHatImg}
+              alt="Santa Claus Hat"
+              sx={{
+                position: "absolute",
+                top: -29,
+                right: -25,
+                width: 70,
+                height: 72,
+                transform: "rotate(-5deg) scaleX(-1)",
+                zIndex: 11,
+              }}
+            />
+          )}
 
           <Button
             onClick={() =>
