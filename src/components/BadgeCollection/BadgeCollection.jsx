@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import "./BadgeCollection.css";
 
 const BadgeCollection = () => {
   useEffect(() => {
