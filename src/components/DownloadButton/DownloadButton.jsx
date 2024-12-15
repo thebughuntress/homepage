@@ -42,20 +42,19 @@ const DownloadButton = ({
       startIcon={<FileDownloadIcon />}
       sx={{
         fontSize: "13px",
-        color: `${color}`,
-        border: `2px solid`,
-        borderColor: `${color}`,
         height: "37px",
         borderRadius: 100,
         cursor: "pointer",
         fontWeight: 600,
         justifyContent: "center",
         width: "fit-content",
+        color: `${color}`,
+        border: `2px solid`,
+        borderColor: `${color}`,
         "&:hover": {
           color: "#FFF",
           backgroundColor: "primary.main",
         },
-       
       }}
       onClick={handleDownload}
     >

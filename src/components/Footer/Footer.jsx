@@ -58,6 +58,8 @@ const Footer = () => {
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center" }}>
+      
+
           <BuyMeACoffee />
           <Box sx={{ marginY: 3 }}>
             <FaReact
@@ -151,7 +153,7 @@ const Footer = () => {
             color: "white",
             wordWrap: "break-word",
             fontSize: "12px",
-            marginY: 1,
+            marginBottom: 1,
           }}
         >
           © {new Date().getFullYear()} Antonia Alice Frey. All rights reserved.

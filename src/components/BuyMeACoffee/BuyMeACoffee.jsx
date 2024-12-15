@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
-import santaClausHatImg from "../../assets/santa-claus-hat.png";
 import santaClausHatSvg from "../../assets/santa-claus-hat.svg";
 import gluehweinImg from "../../assets/gluehwein.png";
+import coffeeSvg from "../../assets/bmc-full-logo.svg";
 
 const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
   const currentDate = new Date();
@@ -15,12 +15,16 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "3px 16px",
+    padding: "10px 16px",
     fontSize: "27px",
     textTransform: "none",
     fontFamily: "Cookie",
-    borderRadius: 2,
-    minWidth: "220px",
+    height: "45px",
+    borderRadius: 100,
+    cursor: "pointer",
+    justifyContent: "center",
+    width: "fit-content",
+    minWidth: "45vw",
   };
 
   return (
@@ -47,7 +51,7 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
               alt="Santa Claus Hat"
               sx={{
                 position: "absolute",
-                top: -26,//-29,
+                top: -26, //-29,
                 right: -35, //-25,
                 width: 70,
                 height: 72,
@@ -78,17 +82,24 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
           </Button>
         </Box>
       ) : (
-        <a
-          href="https://www.buymeacoffee.com/antoniafrey"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Button
+          onClick={() =>
+            window.open("https://www.buymeacoffee.com/antoniafrey", "_blank")
+          }
+          variant="contained"
+          sx={{
+            backgroundColor: "#FFDD00",
+            color: "black",
+            ...sxBMACButton,
+          }}
         >
+          
           <img
-            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-            alt="Buy Me A Coffee"
-            style={{ maxHeight: "40px", width: "317px !important" }}
+            src={coffeeSvg}
+            alt="coffee"
+            style={{ width: "auto", height: "26px" }}
           />
-        </a>
+        </Button>
       )}
     </Box>
   );
