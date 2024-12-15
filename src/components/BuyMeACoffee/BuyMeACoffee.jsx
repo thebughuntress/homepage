@@ -4,7 +4,7 @@ import santaClausHatImg from "../../assets/santa-claus-hat.png";
 import santaClausHatSvg from "../../assets/santa-claus-hat.svg";
 import gluehweinImg from "../../assets/gluehwein.png";
 
-const BuyMeACoffee = ({ withDeco = false }) => {
+const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
   const currentDate = new Date();
   const isGluhweinSeason =
     currentDate.getMonth() === 11 &&
@@ -33,7 +33,7 @@ const BuyMeACoffee = ({ withDeco = false }) => {
         marginLeft: 2,
       }}
     >
-      {isGluhweinSeason ? (
+      {isGluhweinSeason && !coffeeVersion ? (
         <Box
           sx={{
             position: "relative",
@@ -86,7 +86,7 @@ const BuyMeACoffee = ({ withDeco = false }) => {
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
             alt="Buy Me A Coffee"
-            style={{ maxHeight: "40px", width: "217px !important" }}
+            style={{ maxHeight: "40px", width: "317px !important" }}
           />
         </a>
       )}

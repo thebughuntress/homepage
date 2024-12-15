@@ -155,7 +155,7 @@ const Services = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography sx={{ fontSize: { xs: "16px", md: "18px" } }}>
+            <Typography sx={{ mb: 1 }}>
               Freelance services in the field of IT.
             </Typography>
             <Chip

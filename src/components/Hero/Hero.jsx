@@ -1,7 +1,8 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
-import heroImgMobile from "../../assets/hero-img-mobile.jpg";
-import heroImg from "../../assets/hero-img.jpg";
+//import heroImgMobile from "../../assets/hero-img-mobile.jpg";
+//import heroImg from "../../assets/hero-img.jpg";
+import heroImg from "../../assets/heroImg2.png";
 import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {
@@ -30,7 +31,7 @@ function Hero() {
       >
         <Box
           component="img"
-          src={isMobile ? heroImgMobile : heroImg}
+          src={isMobile ? heroImg  : heroImg}
           alt="heroImg"
           loading="eager"
           sx={{

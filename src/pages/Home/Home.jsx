@@ -22,7 +22,7 @@ const Home = () => {
             marginY: 6,
           }}
         >
-          <BuyMeACoffee withDeco={true} />
+          <BuyMeACoffee coffeeVersion={true} />
         </Box>
         <AboutMe />
         <Skills />

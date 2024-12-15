@@ -55,6 +55,7 @@ const DownloadButton = ({
           color: "#FFF",
           backgroundColor: "primary.main",
         },
+       
       }}
       onClick={handleDownload}
     >
