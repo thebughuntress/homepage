@@ -6,6 +6,7 @@ import Hero from "../../components/Hero/Hero.jsx";
 import AboutMe from "../../components/AboutMe/AboutMe.jsx";
 import QuoteBox from "../../components/QuoteBox/QuoteBox.jsx";
 import Skills from "../../components/Skills/Skills.jsx";
+import Services from "../../components/Services/Services.jsx"
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         </Box>
         <AboutMe />
         <Skills />
+        <Services/>
         <BadgeCollection />
         <QuoteBox />
       </Box>

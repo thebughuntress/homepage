@@ -15,15 +15,14 @@ import React from "react";
 import PlaceIcon from "@mui/icons-material/Place";
 import superprofImg from "../../assets/superprof.svg";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import theme from "../../theme/lightTheme";
 
 const TOPICS = [
   "Programming Fundamentals",
   "Python",
   "Java",
-  "JavaScript",
+  "JavaScript, TypeScript",
   "WebDev: React, Vue, HTML, CSS",
-  "Deployment: Firebase, GitHub Pages",
+  "Deployment",
   "Versioning with Git",
   "LaTex",
   "Matlab",
@@ -46,8 +45,8 @@ const Services = () => {
           borderRadius: 2,
           backgroundColor: "primary.main",
           color: "white",
-          padding: 3,
-          width: "75%",
+          padding: 2,
+          width: "85%",
           maxWidth: "1200px",
           margin: 0,
         }}
@@ -113,33 +112,6 @@ const Services = () => {
                 </ListItem>
               ))}
             </List>
-            <Typography
-              sx={{
-                color: "black",
-                padding: 1,
-                backgroundColor: theme.palette.red.main,
-                marginBottom: 2,
-                borderRadius: 1,
-              }}
-            >
-              To schedule a programming class, we first arrange a time in{" "}
-              <a
-                href="https://wa.me/4915146782868"
-                target="_blank"
-                style={{ color: "inherit" }}
-              >
-                WhatsApp
-              </a>
-              . After that, please add me to your contacts on{" "}
-              <a
-                href="https://discord.com/users/1138415841344503899"
-                target="_blank"
-                style={{ color: "inherit" }}
-              >
-                Discord
-              </a>
-              .
-            </Typography>
             <Chip
               icon={<MonetizationOnIcon />}
               sx={{
@@ -184,7 +156,7 @@ const Services = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ fontSize: { xs: "16px", md: "18px" } }}>
-              I provide freelance services in the field of IT.
+              Freelance services in the field of IT.
             </Typography>
             <Chip
               sx={{
