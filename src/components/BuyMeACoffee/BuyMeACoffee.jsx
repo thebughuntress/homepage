@@ -15,7 +15,7 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "10px 16px",
+    padding: "10px 25px",
     fontSize: "27px",
     textTransform: "none",
     fontFamily: "Cookie",
@@ -23,7 +23,6 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
     borderRadius: 100,
     cursor: "pointer",
     width: "fit-content",
-    minWidth: "55vw",
   };
 
   return (
