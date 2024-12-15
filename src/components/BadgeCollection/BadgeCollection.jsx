@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import theme from "../../theme/lightTheme";
+import "./BadgeCollection.css";
 
 const BadgeCollection = () => {
   useEffect(() => {
@@ -69,6 +69,7 @@ const BadgeCollection = () => {
               data-iframe-height="300"
               data-share-badge-id={badge.id}
               data-share-badge-host="https://www.credly.com"
+              data-custom-style="color:white;"
             ></div>
           </Box>
         ))}

@@ -25,7 +25,6 @@ const Home = () => {
         </Box>
         <AboutMe />
         <Skills />
-        {/* <Services /> */}
         <BadgeCollection />
         <QuoteBox />
       </Box>

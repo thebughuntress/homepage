@@ -111,13 +111,17 @@ const Footer = () => {
             </Typography>
           </Box>
         </Box>
-        <Tooltip title="Timestamp of deploy on Firebase" arrow>
+        <Tooltip
+          title="Timestamp of deploy on Firebase"
+          arrow
+          disableTouchListener={false}
+          disableHoverListener={false}
+        >
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              p: 1,
             }}
           >
             <Typography
