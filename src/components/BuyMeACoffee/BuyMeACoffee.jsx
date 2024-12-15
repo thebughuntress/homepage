@@ -22,9 +22,8 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
     height: "45px",
     borderRadius: 100,
     cursor: "pointer",
-    justifyContent: "center",
     width: "fit-content",
-    minWidth: "45vw",
+    minWidth: "55vw",
   };
 
   return (
@@ -93,7 +92,6 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
             ...sxBMACButton,
           }}
         >
-          
           <img
             src={coffeeSvg}
             alt="coffee"
