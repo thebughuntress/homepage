@@ -13,7 +13,7 @@ import "./Navigation.css";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 
 export const sxButton = {
-  fontSize: { xs: "14px", md: "16px" },
+  fontSize: { xs: "14px", md: "22px" },
   fontWeight: 600,
   color: { xs: "primary.main", md: "text.primary" },
   border: { xs: `2px solid`, md: "none" },
@@ -23,10 +23,12 @@ export const sxButton = {
   cursor: { md: "pointer" },
   justifyContent: { xs: "center" },
   width: { xs: "fit-content" },
+  textTransform: "none",
   "&:hover": {
     color: "primary.main",
     backgroundColor: "transparent",
   },
+  //fontFamily: "Leckerli One, cursive",
 };
 
 function Navigation({ isDarkMode, onThemeToggle }) {
@@ -111,7 +113,12 @@ function Navigation({ isDarkMode, onThemeToggle }) {
         >
           {isHome && (
             <>
-              <Button onClick={() => navigate("blog")} sx={sxButton}>
+              <Button
+                onClick={() => navigate("blog")}
+                sx={{
+                  ...sxButton,
+                }}
+              >
                 Blog
               </Button>
             </>

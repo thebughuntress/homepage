@@ -22,6 +22,7 @@ const QuoteBox = () => {
             //fontStyle: "italic",
             color: "primary.main",
             my: 2,
+            //fontFamily: "Leckerli One, cursive",
           }}
         >
           "Technology is best when it brings people together."

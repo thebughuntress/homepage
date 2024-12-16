@@ -84,7 +84,10 @@ const Contact = () => {
           <Typography variant="h2">Contact</Typography>
           <Typography
             variant="body1"
-            sx={{ fontSize: { xs: "16px", md: "18px" } }}
+            sx={{
+              fontSize: { xs: "16px", md: "18px" },
+              fontWeight: "normal",
+            }}
           >
             Talking is better in person
           </Typography>

@@ -58,8 +58,6 @@ const Footer = () => {
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center" }}>
-      
-
           <BuyMeACoffee />
           <Box sx={{ marginY: 3 }}>
             <FaReact
@@ -113,39 +111,42 @@ const Footer = () => {
             </Typography>
           </Box>
         </Box>
-        <Tooltip
-          title="Timestamp of deploy on Firebase"
-          arrow
-          disableTouchListener={false}
-          disableHoverListener={false}
+
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <Box
+          <Typography
+            variant="body2"
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              color: "#FFFF",
             }}
           >
-            <Typography
-              variant="body2"
-              sx={{
-                color: "#FFFF",
-              }}
-            >
-              Version: <span> {APP_VERSION}</span>
-            </Typography>
-
+            Version: <span> {APP_VERSION}</span>
+          </Typography>
+          <Tooltip
+            title="Timestamp of latest deploy on Firebase"
+            placement="right"
+            arrow
+          >
             <IconButton
               sx={{
-                padding: 0.5,
+                display: { xs: "none", md: "block" },
+                p: 0,
+                margin: 0.5,
                 fontSize: "small",
                 color: "#FFFF",
+                display: "flex",
+                alignItems: "center",
               }}
             >
               <InfoIcon fontSize="small" />
             </IconButton>
-          </Box>
-        </Tooltip>
+          </Tooltip>
+        </Box>
 
         <Typography
           variant="body2"
