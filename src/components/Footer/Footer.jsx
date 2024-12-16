@@ -134,12 +134,11 @@ const Footer = () => {
           >
             <IconButton
               sx={{
-                display: { xs: "none", md: "block" },
+                display: { xs: "none", md: "flex" },
                 p: 0,
                 margin: 0.5,
                 fontSize: "small",
                 color: "#FFFF",
-                display: "flex",
                 alignItems: "center",
               }}
             >
