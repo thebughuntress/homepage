@@ -93,8 +93,9 @@ const BlogPost = () => {
               justifyContent: "center",
               alignItems: "center",
               overflow: "hidden",
+              margin: "0 auto", // Centers the card
               width: "100%",
-              maxWidth: "100%",
+              maxWidth: "800px", // Matches the image's max width
             }}
           >
             <CardMedia
@@ -103,8 +104,9 @@ const BlogPost = () => {
               sx={{
                 width: "100%",
                 height: "auto",
-                maxHeight: "80vh",
-                objectFit: "cover",
+                maxWidth: "800px", // Sets the max width of the image
+                maxHeight: "533px", // 3:2 aspect ratio
+                objectFit: "cover", // Ensures the image doesn't stretch
               }}
               image={post.imageUrl}
               title={post.title}

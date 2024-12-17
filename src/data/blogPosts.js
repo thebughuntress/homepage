@@ -1,6 +1,6 @@
 const blogPosts = [
   {
-    title: "My Favorite Tools",
+    title: "Must-Have Tools",
     subtitle: "A collection of links to great tools",
     author: "Antonia Frey",
     summary:
