@@ -564,7 +564,7 @@ const blogPosts = [
     summary: "Essential HTML elements needed to start creating websites.",
     id: 8,
     imageUrl:
-      "https://cdn.midjourney.com/0c815d1d-b29e-4120-9f8a-863e369b723b/0_2.png",
+      "https://cdn.midjourney.com/dce57ad7-c568-4ffe-9f13-28a1999b130c/0_1.png",
     date: "",
     content: [
       {

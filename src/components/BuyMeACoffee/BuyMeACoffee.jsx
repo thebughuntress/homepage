@@ -81,23 +81,29 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
           </Button>
         </Box>
       ) : (
-        <Button
-          onClick={() =>
-            window.open("https://www.buymeacoffee.com/antoniafrey", "_blank")
-          }
-          variant="contained"
+        <Box
+          component="a"
+          href="https://www.buymeacoffee.com/antoniafrey"
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{
-            backgroundColor: "#FFDD00",
-            color: "black",
-            ...sxBMACButton,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textDecoration: "none",
+            padding: "20px",
           }}
         >
-          <img
-            src={coffeeSvg}
-            alt="coffee"
-            style={{ width: "auto", height: "26px" }}
+          <Box
+            component="img"
+            src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=antoniafrey&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+            alt="Buy me a coffee"
+            sx={{
+              height: "50px", // Adjust height if needed
+              width: "auto",
+            }}
           />
-        </Button>
+        </Box>
       )}
     </Box>
   );
