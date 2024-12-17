@@ -7,7 +7,7 @@ const blogPosts = [
       "My favorite development tools that I use to create, develop, and collaborate.",
     id: 1,
     imageUrl:
-      "https://cdn.midjourney.com/bfda20ed-0bb4-45e5-a060-9342fd8e34fc/0_0.png",
+      "https://cdn.midjourney.com/832491e8-88bd-43cf-8d00-1be23012bad4/0_1.png",
     date: "December 6, 2024",
     content: [
       {
@@ -109,7 +109,7 @@ const blogPosts = [
       "Version control system that tracks code changes and enables collaboration.",
     id: 14,
     imageUrl:
-      "https://cdn.midjourney.com/58b6178c-73b9-4599-b8ba-0ba00615d558/0_1.png",
+      "https://cdn.midjourney.com/d9937caf-92ae-4765-be8c-712f77bbb2b4/0_3.png",
     date: "December 6, 2024",
     content: [
       { type: "heading", value: "Why Use Git?" },
@@ -239,7 +239,7 @@ const blogPosts = [
     summary: "Understanding the fundamentals of Python programming.",
     id: 2,
     imageUrl:
-      "https://cdn.midjourney.com/12cbbb8f-080b-4efa-823b-f23b2ee7e9e2/0_1.png",
+      "https://cdn.midjourney.com/73365917-ede6-400d-8d5e-f41d05b191a4/0_2.png",
     date: "December 7, 2024",
     content: [
       { type: "heading", value: "Why Python?" },
@@ -476,7 +476,7 @@ const blogPosts = [
     summary: "A guide to building modern user interfaces with React.",
     id: 4,
     imageUrl:
-      "https://cdn.midjourney.com/d22be195-e908-476b-a936-d863682f3ce9/0_2.png",
+      "https://cdn.midjourney.com/7f07ba52-63ca-4ba8-84f6-dda556a699c6/0_1.png",
     date: "",
     content: [],
   },
@@ -485,7 +485,7 @@ const blogPosts = [
     author: "Antonia Frey",
     summary: "Choosing between JavaScript and TypeScript for your project.",
     id: 5,
-    imageUrl: "",
+    imageUrl: "https://cdn.midjourney.com/589c6f27-297d-42ac-971d-c9c7b36cbb7a/0_2.png",
     date: "",
     content: [
       {
@@ -545,14 +545,14 @@ const blogPosts = [
   },
 
   {
-    title: "What is the Cloud?",
+    title: "The Cloud",
     subtitle: "Understanding Cloud Computing",
     author: "Antonia Frey",
     summary:
       "A simple explanation of what the cloud is and how it impacts modern computing.",
     id: 7,
     imageUrl:
-      "https://cdn.midjourney.com/c6cfa400-5043-4aee-95a1-8ae4736eb6b1/0_3.png",
+      "https://cdn.midjourney.com/d2ecd3df-7bb6-4e23-92ef-b3b50a5a152c/0_1.png",
     date: "",
     content: [],
   },
@@ -564,7 +564,7 @@ const blogPosts = [
     summary: "Essential HTML elements needed to start creating websites.",
     id: 8,
     imageUrl:
-      "https://cdn.midjourney.com/dce57ad7-c568-4ffe-9f13-28a1999b130c/0_1.png",
+      "https://cdn.midjourney.com/608d4f77-10a7-4cf7-8d0c-a080fed1d05b/0_0.png",
     date: "",
     content: [
       {
@@ -711,7 +711,7 @@ const blogPosts = [
     summary: "Learn how to use CSS to add style and layout to your HTML pages.",
     id: 9,
     imageUrl:
-      "https://cdn.midjourney.com/40af8e49-ac0e-40e4-b55d-5bd484c3d439/0_1.png",
+      "https://cdn.midjourney.com/c300414d-6e2e-4cd2-8ad6-37e8ae60b762/0_2.png",
     date: "",
     content: [],
   },
@@ -766,7 +766,7 @@ const blogPosts = [
       "Exploring how explaining a problem to an inanimate object can help you understand it better.",
     id: 13,
     imageUrl:
-      "https://cdn.midjourney.com/79d6caf4-1c06-4707-b5d1-c49c3f9a0f0c/0_0.png",
+      "https://cdn.midjourney.com/c13ac4f5-2fc5-42e9-90a9-8740789be766/0_3.png",
     date: "",
     content: [
       {
