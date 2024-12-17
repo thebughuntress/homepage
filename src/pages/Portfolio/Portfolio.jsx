@@ -1,23 +1,22 @@
 import React from "react";
 import BlogPreview from "../../components/BlogPreview/BlogPreview";
 import { Box, Typography } from "@mui/material";
-import blogPosts from "../../data/blogPosts";
+import portfolio from "../../data/portfolio";
 
-const Blog = () => {
+const Portfolio = () => {
   return (
     <Box sx={{ width: "80vw", marginBottom: 0 }}>
       <Typography
-        variant="h2"
+        variant="h4"
         sx={{
           textAlign: "center",
-          fontFamily: "Leckerli One, cursive",
+          //fontFamily: "Leckerli One, cursive",
           color: "primary.main",
-          marginTop: 2,
-          marginBottom: 2,
+          marginY: 5,
           flex: 1,
         }}
       >
-        Portfolio
+        Work, Write, Create
       </Typography>
 
       <Box
@@ -31,9 +30,9 @@ const Blog = () => {
           paddingBottom: "3rem",
         }}
       >
-        {blogPosts &&
-          blogPosts.length > 0 &&
-          blogPosts.map((post, index) => (
+        {portfolio &&
+          portfolio.length > 0 &&
+          portfolio.map((post, index) => (
             <BlogPreview post={post} key={index} />
           ))}
       </Box>
@@ -41,4 +40,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Portfolio;

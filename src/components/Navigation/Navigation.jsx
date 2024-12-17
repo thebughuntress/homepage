@@ -119,7 +119,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
                   ...sxButton,
                 }}
               >
-                Blog
+                Portfolio
               </Button>
             </>
           )}
@@ -148,7 +148,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
                 />
               }
             >
-              Blogs
+              Portfolio
             </Button>
           )}
 
