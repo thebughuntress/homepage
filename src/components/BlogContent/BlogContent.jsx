@@ -150,10 +150,14 @@ const BlogContent = ({ content }) => {
           <Box
             key={index}
             sx={{
+              display: "flex",
+              flexDirection: "column",
               textAlign: { xs: "left", md: "left" },
               marginY: 3,
-              marginX: 1,
-              maxWidth: "100%",
+              width: "100%",
+              height: "auto",
+              maxHeight: "auto",
+              maxWidth: "750px",
             }}
           >
             <img
@@ -161,6 +165,16 @@ const BlogContent = ({ content }) => {
               alt={block.caption}
               style={{ maxWidth: "100%", borderRadius: "8px" }}
             />
+            <Typography variant="body2" color="text.secondary">
+              Image source:{" "}
+              <a
+                href={block.url.match(/^https?:\/\/[^/]+/)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               {block.url.replace(/https?:\/\/([^/]+).*/, "$1")}
+              </a>
+            </Typography>
             {block.caption && (
               <Typography
                 variant="caption"

@@ -15,6 +15,7 @@ const BlogPost = () => {
   const { postId } = useParams();
   const [loading, setLoading] = useState(true);
   const [post, setPost] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false); // State to track image loading
 
   useEffect(() => {
     setLoading(true);
@@ -28,6 +29,10 @@ const BlogPost = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [post]);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true); // Update state when image is loaded
+  };
 
   if (loading) {
     // If loading is true, show the loading spinner
@@ -107,9 +112,12 @@ const BlogPost = () => {
                 maxWidth: "800px", // Sets the max width of the image
                 maxHeight: "533px", // 3:2 aspect ratio
                 objectFit: "cover", // Ensures the image doesn't stretch
+                filter: imageLoaded ? "none" : "blur(10px)", // Apply blur until image is loaded
+                transition: "filter 0.3s ease", // Smooth transition to remove blur
               }}
               image={post.imageUrl}
               title={post.title}
+              onLoad={handleImageLoad} // Remove blur once the image is loaded
             />
           </Card>
         </Box>

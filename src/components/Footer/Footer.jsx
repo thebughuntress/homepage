@@ -62,15 +62,21 @@ const Footer = () => {
           <BuyMeACoffee coffeeVersion={true} />
 
           <Box sx={{ marginY: 2 }}>
-            <FaReact
-              style={{
-                marginTop: "1.2rem",
-                marginBottom: 5,
-                fontSize: "35px",
-                color: "#61DAFB",
-                animation: "rotate 5s linear infinite",
-              }}
-            />
+            <a
+              href="https://www.react.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaReact
+                style={{
+                  marginTop: "1.2rem",
+                  marginBottom: 5,
+                  fontSize: "35px",
+                  color: "#61DAFB",
+                  animation: "rotate 5s linear infinite",
+                }}
+              />
+            </a>
             <Typography
               variant="body2"
               sx={{
@@ -114,16 +120,22 @@ const Footer = () => {
           </Box>
 
           <Box>
-            <Box
-              component="img"
-              src={midjourneyLogo}
-              alt="Midjourney Logo"
-              sx={{
-                height: "70px",
-                verticalAlign: "middle",
-                marginBottom: "-5px",
-              }}
-            />
+            <a
+              href="https://www.midjourney.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Box
+                component="img"
+                src={midjourneyLogo}
+                alt="Midjourney Logo"
+                sx={{
+                  height: "70px",
+                  verticalAlign: "middle",
+                  marginBottom: "-5px",
+                }}
+              />
+            </a>
             <Typography variant="body2" sx={{ color: "#FFFFFF" }}>
               Images generated using Midjourney AI
             </Typography>
