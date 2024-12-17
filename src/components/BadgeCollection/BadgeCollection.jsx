@@ -103,7 +103,7 @@ const BadgeCollection = () => {
             <Card
               key={index}
               sx={{
-                width: 345,
+                width: {xs: "70vw", md: 345},
                 height: 280, // Set consistent height
                 margin: "1rem",
                 textAlign: "center",
@@ -113,7 +113,7 @@ const BadgeCollection = () => {
                 alignItems: "center",
                 boxShadow: "none",
                 border: "1px solid gray",
-                borderRadius: 5,
+                borderRadius: 1,
               }}
             >
               <CardMedia
