@@ -32,7 +32,6 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginY: 3,
         marginLeft: 2,
       }}
     >
