@@ -239,7 +239,7 @@ const blogPosts = [
     summary: "Understanding the fundamentals of Python programming.",
     id: 2,
     imageUrl:
-      "https://cdn.midjourney.com/de0a7ea1-6fb2-4cf6-a8ee-a41c28f76b2d/0_1.png",
+      "https://cdn.midjourney.com/d9422292-dbe2-4893-ad29-6bb509e2e40b/0_0.png",
     date: "December 7, 2024",
     content: [
       { type: "heading", value: "Why Python?" },
@@ -766,7 +766,7 @@ const blogPosts = [
       "Exploring how explaining a problem to an inanimate object can help you understand it better.",
     id: 13,
     imageUrl:
-      "https://cdn.midjourney.com/fd13edab-414c-4adb-a6e7-004a75612fdc/0_3.png",
+      "https://cdn.midjourney.com/79d6caf4-1c06-4707-b5d1-c49c3f9a0f0c/0_0.png",
     date: "",
     content: [
       {
