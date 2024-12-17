@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; // for fetching dynamic URL parameters like postId
+import { useParams } from "react-router-dom";
 import blogPosts from "../../data/blogPosts";
 import {
   Typography,
@@ -15,7 +15,7 @@ const BlogPost = () => {
   const { postId } = useParams();
   const [loading, setLoading] = useState(true);
   const [post, setPost] = useState(null);
-  const [imageLoaded, setImageLoaded] = useState(false); // State to track image loading
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -23,12 +23,12 @@ const BlogPost = () => {
       const blogPost = blogPosts.find((post) => post.id == postId);
       setPost(blogPost);
       setLoading(false);
-    }, 0);
+    }, 500);
   }, [postId]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [post]);
+    document.body.scrollTop = 0;
+  }, [postId]);
 
   const handleImageLoad = () => {
     setImageLoaded(true); // Update state when image is loaded
@@ -98,9 +98,9 @@ const BlogPost = () => {
               justifyContent: "center",
               alignItems: "center",
               overflow: "hidden",
-              margin: "0 auto", // Centers the card
+              margin: "0 auto",
               width: "100%",
-              maxWidth: "800px", // Matches the image's max width
+              maxWidth: "800px",
             }}
           >
             <CardMedia
@@ -109,15 +109,15 @@ const BlogPost = () => {
               sx={{
                 width: "100%",
                 height: "auto",
-                maxWidth: "800px", // Sets the max width of the image
-                maxHeight: "533px", // 3:2 aspect ratio
-                objectFit: "cover", // Ensures the image doesn't stretch
-                filter: imageLoaded ? "none" : "blur(10px)", // Apply blur until image is loaded
-                transition: "filter 0.3s ease", // Smooth transition to remove blur
+                maxWidth: "800px",
+                maxHeight: "533px",
+                objectFit: "cover",
+                filter: imageLoaded ? "none" : "blur(10px)",
+                transition: "filter 0.3s ease",
               }}
               image={post.imageUrl}
               title={post.title}
-              onLoad={handleImageLoad} // Remove blur once the image is loaded
+              onLoad={handleImageLoad}
             />
           </Card>
         </Box>

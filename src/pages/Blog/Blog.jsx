@@ -17,7 +17,7 @@ const Blog = () => {
           flex: 1,
         }}
       >
-        Latest Blogs
+        Blogs
       </Typography>
 
       <Box
