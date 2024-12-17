@@ -71,7 +71,7 @@ const Footer = () => {
                 style={{
                   marginTop: "1.2rem",
                   marginBottom: 5,
-                  fontSize: "35px",
+                  fontSize: "40px",
                   color: "#61DAFB",
                   animation: "rotate 5s linear infinite",
                 }}
@@ -130,14 +130,15 @@ const Footer = () => {
                 src={midjourneyLogo}
                 alt="Midjourney Logo"
                 sx={{
-                  height: "70px",
+                  height: "65px",
                   verticalAlign: "middle",
                   marginBottom: "-5px",
                 }}
               />
             </a>
             <Typography variant="body2" sx={{ color: "#FFFFFF" }}>
-              Images generated using Midjourney AI
+              Images generated using Midjourney AI<br/>
+              if no other source is given.
             </Typography>
           </Box>
         </Box>
