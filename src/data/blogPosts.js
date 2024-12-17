@@ -101,137 +101,20 @@ const blogPosts = [
       },
     ],
   },
+
   {
-    title: "Git",
-    subtitle: "The Power of Git",
+    title: "VPN Server using PiVPN",
+    subtitle: "Setting up a VPN Client on Raspberry Pi",
     author: "Antonia Frey",
     summary:
-      "Version control system that tracks code changes and enables collaboration.",
-    id: 14,
+      "Creating a VPN server on your Raspberry Pi allows you to access your home network securely from anywhere.",
+    id: 10,
     imageUrl:
-      "https://cdn.midjourney.com/d9937caf-92ae-4765-be8c-712f77bbb2b4/0_3.png",
-    date: "December 6, 2024",
-    content: [
-      { type: "heading", value: "Why Use Git?" },
-      {
-        type: "paragraph",
-        value:
-          "The evolution of project organization is a timeless classic. It all begins with a neatly named folder, “project,” a symbol of structure and optimism. Inevitably, the first revision leads to “project_final,” soon followed by “project_final_v2,” because there is always one more adjustment to make. As the deadline looms and chaos takes over, the names become increasingly desperate, culminating in something like “project_FINAL2_DEC5”. Years later, one stumbles across “project_final99_last_version_SUBMIT_10.12.15” — a relic of past struggles—and wonders whether it was indeed the version that was ultimately submitted.",
-      },
-      {
-        type: "paragraph",
-        value:
-          "This is precisely where Git shines. Instead of endlessly duplicating files and folders, Git provides a structured version control system that tracks every change, preserves a clear history, and allows you to seamlessly switch between versions. Collaboration becomes efficient, and those chaotic file names become a thing of the past. With Git, organization isn’t just possible—it’s easy.",
-      },
-      { type: "heading", value: "Git Commands" },
-      {
-        type: "image",
-        url: "https://pbs.twimg.com/media/GEYQHS8aYAAI2Dk.jpg:large",
-      },
-
-      { type: "heading", value: "Reasons for Using Git" },
-      {
-        type: "paragraph",
-        value:
-          "Git is a crucial tool in modern software development. Here are some key reasons why developers use Git:",
-      },
-      {
-        type: "step",
-        number: 1,
-        label: "Version Control",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git allows you to track every change made to your codebase, keeping a history of each modification. This makes it easy to revert to previous versions, ensuring you can experiment with confidence without fear of losing your work.",
-      },
-      {
-        type: "step",
-        number: 2,
-        label: "Collaboration",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git enables multiple developers to work on the same project at the same time without overwriting each other's changes. Developers can work in isolated branches and merge their changes together when ready, ensuring that collaboration is smooth and organized.",
-      },
-      {
-        type: "step",
-        number: 3,
-        label: "Branching and Merging",
-      },
-      {
-        type: "paragraph",
-        value:
-          "With Git's branching model, developers can create separate branches for new features or bug fixes. Once work is complete, branches can be merged back into the main project. This promotes better organization, safer experimentation, and cleaner code.",
-      },
-      {
-        type: "step",
-        number: 4,
-        label: "Distributed Version Control",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git is a distributed version control system, meaning that every developer has their own copy of the entire codebase. This allows developers to work offline and sync their changes later, ensuring no one is ever left out of the development process.",
-      },
-      {
-        type: "step",
-        number: 5,
-        label: "Efficient Performance",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git is highly efficient at managing large projects. Its performance remains fast even as the codebase grows, allowing teams to manage millions of lines of code without significant performance hits.",
-      },
-      {
-        type: "step",
-        number: 6,
-        label: "Integration with Other Tools",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git integrates with a variety of other tools, such as GitHub, GitLab, and Bitbucket. These platforms provide additional features for code review, issue tracking, and continuous integration, making Git an essential part of modern DevOps workflows.",
-      },
-      {
-        type: "step",
-        number: 7,
-        label: "Open Source",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Git is open-source and free to use, which makes it accessible to developers around the world. Its widespread adoption ensures an active community and continuous improvements to the tool.",
-      },
-      {
-        type: "heading",
-        value: "Understanding .gitignore",
-      },
-      {
-        type: "paragraph",
-        value:
-          "The `.gitignore` file in Git is used to tell Git which files or directories to ignore in a project. This is useful when there are files that don't need to be tracked, such as build files, temporary files, or sensitive information like API keys. By listing these files in the `.gitignore` file, Git will exclude them from version control and prevent them from being committed to the repository. This helps keep your repository clean and ensures that only relevant code and files are tracked.",
-      },
-      {
-        type: "heading",
-        value: "Understanding Branches",
-      },
-      {
-        type: "image",
-        url: "https://www.nobledesktop.com/image/gitresources/git-branches-merge.png",
-      },
-      {
-        type: "heading",
-        value: "Code Portals",
-      },
-      {
-        type: "image",
-        url: "https://media.licdn.com/dms/image/v2/C5612AQFYNZLJdFHzcQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1628418875304?e=2147483647&v=beta&t=G0R7Sk8qes6arieaZgMJzXqm7QzxnHz_eEh46DQ92OQ",
-      },
-    ],
+      "https://cdn.midjourney.com/e97010b4-d383-47d8-97eb-9e8d45835eea/0_2.png",
+    date: "",
+    content: [],
   },
+
   {
     title: "Python",
     subtitle: "The Programming Language",
@@ -485,7 +368,8 @@ const blogPosts = [
     author: "Antonia Frey",
     summary: "Choosing between JavaScript and TypeScript for your project.",
     id: 5,
-    imageUrl: "https://cdn.midjourney.com/589c6f27-297d-42ac-971d-c9c7b36cbb7a/0_2.png",
+    imageUrl:
+      "https://cdn.midjourney.com/589c6f27-297d-42ac-971d-c9c7b36cbb7a/0_2.png",
     date: "",
     content: [
       {
@@ -717,19 +601,6 @@ const blogPosts = [
   },
 
   {
-    title: "VPN Server using PiVPN",
-    subtitle: "Setting up a VPN Client on Raspberry Pi",
-    author: "Antonia Frey",
-    summary:
-      "Creating a VPN server on your Raspberry Pi allows you to access your home network securely from anywhere.",
-    id: 10,
-    imageUrl:
-      "https://cdn.midjourney.com/e97010b4-d383-47d8-97eb-9e8d45835eea/0_2.png",
-    date: "",
-    content: [],
-  },
-
-  {
     title: "Software Testing",
     subtitle: "Why testing is essential in software development",
     author: "Antonia Frey",
@@ -755,6 +626,137 @@ const blogPosts = [
       {
         type: "image",
         url: "https://images.prismic.io/sketchplanations/ba2ad269-530b-4f64-be40-6caf24a6199d_180715615931.jpg?auto=compress,format",
+      },
+    ],
+  },
+  {
+    title: "Git",
+    subtitle: "The Power of Git",
+    author: "Antonia Frey",
+    summary:
+      "Version control system that tracks code changes and enables collaboration.",
+    id: 14,
+    imageUrl:
+      "https://cdn.midjourney.com/d9937caf-92ae-4765-be8c-712f77bbb2b4/0_3.png",
+    date: "December 6, 2024",
+    content: [
+      { type: "heading", value: "Why Use Git?" },
+      {
+        type: "paragraph",
+        value:
+          "The evolution of project organization is a timeless classic. It all begins with a neatly named folder, “project,” a symbol of structure and optimism. Inevitably, the first revision leads to “project_final,” soon followed by “project_final_v2,” because there is always one more adjustment to make. As the deadline looms and chaos takes over, the names become increasingly desperate, culminating in something like “project_FINAL2_DEC5”. Years later, one stumbles across “project_final99_last_version_SUBMIT_10.12.15” — a relic of past struggles—and wonders whether it was indeed the version that was ultimately submitted.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is precisely where Git shines. Instead of endlessly duplicating files and folders, Git provides a structured version control system that tracks every change, preserves a clear history, and allows you to seamlessly switch between versions. Collaboration becomes efficient, and those chaotic file names become a thing of the past. With Git, organization isn’t just possible—it’s easy.",
+      },
+      { type: "heading", value: "Git Commands" },
+      {
+        type: "image",
+        url: "https://pbs.twimg.com/media/GEYQHS8aYAAI2Dk.jpg:large",
+      },
+
+      { type: "heading", value: "Reasons for Using Git" },
+      {
+        type: "paragraph",
+        value:
+          "Git is a crucial tool in modern software development. Here are some key reasons why developers use Git:",
+      },
+      {
+        type: "step",
+        number: 1,
+        label: "Version Control",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git allows you to track every change made to your codebase, keeping a history of each modification. This makes it easy to revert to previous versions, ensuring you can experiment with confidence without fear of losing your work.",
+      },
+      {
+        type: "step",
+        number: 2,
+        label: "Collaboration",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git enables multiple developers to work on the same project at the same time without overwriting each other's changes. Developers can work in isolated branches and merge their changes together when ready, ensuring that collaboration is smooth and organized.",
+      },
+      {
+        type: "step",
+        number: 3,
+        label: "Branching and Merging",
+      },
+      {
+        type: "paragraph",
+        value:
+          "With Git's branching model, developers can create separate branches for new features or bug fixes. Once work is complete, branches can be merged back into the main project. This promotes better organization, safer experimentation, and cleaner code.",
+      },
+      {
+        type: "step",
+        number: 4,
+        label: "Distributed Version Control",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git is a distributed version control system, meaning that every developer has their own copy of the entire codebase. This allows developers to work offline and sync their changes later, ensuring no one is ever left out of the development process.",
+      },
+      {
+        type: "step",
+        number: 5,
+        label: "Efficient Performance",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git is highly efficient at managing large projects. Its performance remains fast even as the codebase grows, allowing teams to manage millions of lines of code without significant performance hits.",
+      },
+      {
+        type: "step",
+        number: 6,
+        label: "Integration with Other Tools",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git integrates with a variety of other tools, such as GitHub, GitLab, and Bitbucket. These platforms provide additional features for code review, issue tracking, and continuous integration, making Git an essential part of modern DevOps workflows.",
+      },
+      {
+        type: "step",
+        number: 7,
+        label: "Open Source",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Git is open-source and free to use, which makes it accessible to developers around the world. Its widespread adoption ensures an active community and continuous improvements to the tool.",
+      },
+      {
+        type: "heading",
+        value: "Understanding .gitignore",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The `.gitignore` file in Git is used to tell Git which files or directories to ignore in a project. This is useful when there are files that don't need to be tracked, such as build files, temporary files, or sensitive information like API keys. By listing these files in the `.gitignore` file, Git will exclude them from version control and prevent them from being committed to the repository. This helps keep your repository clean and ensures that only relevant code and files are tracked.",
+      },
+      {
+        type: "heading",
+        value: "Understanding Branches",
+      },
+      {
+        type: "image",
+        url: "https://www.nobledesktop.com/image/gitresources/git-branches-merge.png",
+      },
+      {
+        type: "heading",
+        value: "Code Portals",
+      },
+      {
+        type: "image",
+        url: "https://media.licdn.com/dms/image/v2/C5612AQFYNZLJdFHzcQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1628418875304?e=2147483647&v=beta&t=G0R7Sk8qes6arieaZgMJzXqm7QzxnHz_eEh46DQ92OQ",
       },
     ],
   },
