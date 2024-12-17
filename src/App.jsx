@@ -35,7 +35,7 @@ function App() {
   const theme = isDarkMode ? darkTheme : lightTheme;
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ThemeProvider theme={theme}>
         {isDarkMode !== undefined && (
           <Box

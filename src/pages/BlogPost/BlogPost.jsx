@@ -17,17 +17,17 @@ const BlogPost = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [postId]);
-
-  useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       const blogPost = blogPosts.find((post) => post.id == postId);
       setPost(blogPost);
       setLoading(false);
-    }, 500);
+    }, 0);
   }, [postId]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [post]);
 
   if (loading) {
     // If loading is true, show the loading spinner
