@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, CardMedia } from "@mui/material";
-import blogImg from "../../assets/blog.jpg";
 import { useNavigate } from "react-router-dom";
 
 const BlogPreview = ({ post }) => {
+
+  const imgPlaceholder = "https://cdn.midjourney.com/b5352e43-894a-4c91-aec5-19a21306cf35/0_1.png"
   const navigate = useNavigate();
 
   return (
@@ -32,7 +33,7 @@ const BlogPreview = ({ post }) => {
           borderRadius: { xs: "0 0 8px 8px", md: "0" },
           display: "block",
         }}
-        image={post.imageUrl || blogImg}
+        image={post.imageUrl || imgPlaceholder}
       />
       {/* Text Content Section */}
       <Box sx={{ display: "flex", flexDirection: "column", flex: 1 }}>

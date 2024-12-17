@@ -4,6 +4,7 @@ import React from "react";
 import { FaReact, FaCoffee } from "react-icons/fa";
 import { urls } from "../../data/data";
 import muiLogo from "../../assets/mui.svg";
+import midjourneyLogo from "../../assets/midjourney-logo.svg";
 import devicesLightThemeImg from "../../assets/devices-light-theme.svg";
 import devicesDarkThemeImg from "../../assets/devices-dark-theme.svg";
 import { useLocation } from "react-router-dom";
@@ -57,9 +58,10 @@ const Footer = () => {
           overflowX: "hidden",
         }}
       >
-        <Box sx={{ width: "80%", textAlign: "center" }}>
-          <BuyMeACoffee />
-          <Box sx={{ marginY: 3 }}>
+        <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
+          <BuyMeACoffee coffeeVersion={true} />
+
+          <Box sx={{ marginY: 2 }}>
             <FaReact
               style={{
                 marginTop: "1.2rem",
@@ -110,6 +112,22 @@ const Footer = () => {
               </Link>
             </Typography>
           </Box>
+
+          <Box>
+            <Box
+              component="img"
+              src={midjourneyLogo}
+              alt="Midjourney Logo"
+              sx={{
+                height: "70px",
+                verticalAlign: "middle",
+                marginBottom: "-5px",
+              }}
+            />
+            <Typography variant="body2" sx={{ color: "#FFFFFF" }}>
+              Images generated using Midjourney AI
+            </Typography>
+          </Box>
         </Box>
 
         <Box
@@ -117,6 +135,7 @@ const Footer = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            marginTop: 1,
           }}
         >
           <Typography

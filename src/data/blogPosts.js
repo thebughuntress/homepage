@@ -7,7 +7,7 @@ const blogPosts = [
       "My favorite development tools that I use to create, develop, and collaborate.",
     id: 1,
     imageUrl:
-      "https://www.letsbuild.com/wp-content/uploads/2023/07/tools-864983_1280.jpg",
+      "https://cdn.midjourney.com/d5ce0387-b53a-4120-8fc3-c0360ad61441/0_0.jpeg",
     date: "December 6, 2024",
     content: [
       {
@@ -106,10 +106,10 @@ const blogPosts = [
     subtitle: "The Power of Git",
     author: "Antonia Frey",
     summary:
-      "Git is a powerful version control system that helps developers manage and track changes in their code. It enables efficient collaboration by allowing multiple developers to work on the same project simultaneously. With its branching and merging capabilities, Git streamlines code management and ensures a smooth development workflow.",
+      "Version control system that tracks code changes and enables collaboration.",
     id: 14,
     imageUrl:
-      "https://www.arocom.de/sites/default/files/images/2024-06/git.png",
+      "https://cdn.midjourney.com/58b6178c-73b9-4599-b8ba-0ba00615d558/0_1.png",
     date: "December 6, 2024",
     content: [
       { type: "heading", value: "Why Use Git?" },
@@ -239,7 +239,7 @@ const blogPosts = [
     summary: "Understanding the fundamentals of Python programming.",
     id: 2,
     imageUrl:
-      "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202303/MIT-Python-transformed.png?itok=VyffC6K5",
+      "https://cdn.midjourney.com/de0a7ea1-6fb2-4cf6-a8ee-a41c28f76b2d/0_1.png",
     date: "December 7, 2024",
     content: [
       { type: "heading", value: "Why Python?" },
@@ -385,7 +385,7 @@ const blogPosts = [
     summary: "A comprehensive introduction to Java programming.",
     id: 3,
     imageUrl:
-      "https://www.finoit.com/wp-content/uploads/2022/09/history-of-java-programming-language.jpg",
+      "https://cdn.midjourney.com/37ca19ee-7ed2-4a53-9518-08c1e43c2a14/0_1.png",
     date: "",
     content: [
       { type: "heading", value: `"Hello World" in Java` },
@@ -476,7 +476,7 @@ const blogPosts = [
     summary: "A guide to building modern user interfaces with React.",
     id: 4,
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/C4E12AQFdVr18zUa17Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1624637761724?e=2147483647&v=beta&t=uOrqjZV7ZeSvE6euFcZVEuj-2yuec1FppjnE6IUYdzY",
+      "https://cdn.midjourney.com/d22be195-e908-476b-a936-d863682f3ce9/0_2.png",
     date: "",
     content: [],
   },
@@ -485,10 +485,14 @@ const blogPosts = [
     author: "Antonia Frey",
     summary: "Choosing between JavaScript and TypeScript for your project.",
     id: 5,
-    imageUrl:
-      "https://d2ms8rpfqc4h24.cloudfront.net/uploads/2021/12/Understand-Typescript.jpg",
+    imageUrl: "",
     date: "",
-    content: [],
+    content: [
+      {
+        type: "image",
+        url: "https://d2ms8rpfqc4h24.cloudfront.net/uploads/2021/12/Understand-Typescript.jpg",
+      },
+    ],
   },
   {
     title: "SCRUM Basics",
@@ -498,9 +502,14 @@ const blogPosts = [
       "Learn the essentials of SCRUM, an Agile framework for managing software development.",
     id: 6,
     imageUrl:
-      "https://www.zentao.pm/file.php?f=202112/f_dc70a2fe837577b40e793736c1b69e8f&t=jpg&o=&s=&v=1640933673",
+      "https://cdn.midjourney.com/4c18574d-6c1e-4f07-93fe-ac55992bc2ce/0_2.png",
+
     date: "",
     content: [
+      {
+        type: "image",
+        url: "https://www.zentao.pm/file.php?f=202112/f_dc70a2fe837577b40e793736c1b69e8f&t=jpg&o=&s=&v=1640933673",
+      },
       {
         type: "heading",
         value: "Agile vs Scrum",
@@ -543,7 +552,7 @@ const blogPosts = [
       "A simple explanation of what the cloud is and how it impacts modern computing.",
     id: 7,
     imageUrl:
-      "https://ncas.ac.uk/app/uploads/2022/08/DCMEX-Cloud-Formation-1280px.jpg",
+      "https://cdn.midjourney.com/c6cfa400-5043-4aee-95a1-8ae4736eb6b1/0_3.png",
     date: "",
     content: [],
   },
@@ -552,11 +561,10 @@ const blogPosts = [
     title: "HTML Basics",
     subtitle: "The foundation of the web",
     author: "Antonia Frey",
-    summary:
-      "This post covers the essential HTML elements needed to start creating websites.",
+    summary: "Essential HTML elements needed to start creating websites.",
     id: 8,
     imageUrl:
-      "https://www.cnet.com/a/img/resize/b9b09bd80b3129a6a5da79d9bd17487b977c9677/hub/2014/10/27/40194e6e-2544-419e-a340-f7c17b2e83c5/html5-wow-image-w3c.jpg?auto=webp&width=768",
+      "https://cdn.midjourney.com/0c815d1d-b29e-4120-9f8a-863e369b723b/0_2.png",
     date: "",
     content: [
       {
@@ -703,20 +711,20 @@ const blogPosts = [
     summary: "Learn how to use CSS to add style and layout to your HTML pages.",
     id: 9,
     imageUrl:
-      "https://www.interviewbit.com/blog/wp-content/uploads/2021/10/HTML-and-CSS.png",
+      "https://cdn.midjourney.com/40af8e49-ac0e-40e4-b55d-5bd484c3d439/0_1.png",
     date: "",
     content: [],
   },
 
   {
-    title: "Raspberry Pi & VPNs",
-    subtitle: "Secure your connection with Raspberry Pi",
+    title: "VPN Server using PiVPN",
+    subtitle: "Setting up a VPN Client on Raspberry Pi",
     author: "Antonia Frey",
     summary:
-      "Explore how to set up a VPN using Raspberry Pi for secure internet access.",
+      "Creating a VPN server on your Raspberry Pi allows you to access your home network securely from anywhere.",
     id: 10,
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrS_B8LS1Dy7Vsz1k0lMsDtyT1ZQrckDBMHkmL1W3Q2CRArnSfPg3VXFZGUXh10aJIOuw&usqp=CAU",
+      "https://cdn.midjourney.com/e97010b4-d383-47d8-97eb-9e8d45835eea/0_2.png",
     date: "",
     content: [],
   },
@@ -729,7 +737,7 @@ const blogPosts = [
       "Understand the importance of software testing and its role in delivering high-quality software.",
     id: 11,
     imageUrl:
-      "https://eht5o54ucbt.exactdn.com/wp-content/uploads/2022/04/How-to-know-when-we-should-stop-our-testing_-1.jpg?lossy=1&quality=88&webp=88&ssl=1",
+      "https://cdn.midjourney.com/ef5d03b9-2fe9-425e-a338-fd6a99014e34/0_3.png",
     date: "",
     content: [],
   },
@@ -741,9 +749,14 @@ const blogPosts = [
       "Understanding how increased efficiency can result in greater overall resource usage.",
     id: 12,
     imageUrl:
-      "https://images.prismic.io/sketchplanations/ba2ad269-530b-4f64-be40-6caf24a6199d_180715615931.jpg?auto=compress,format",
+      "https://cdn.midjourney.com/01b9b044-1a10-45af-8613-c1386033c09c/0_1.png",
     date: "",
-    content: [],
+    content: [
+      {
+        type: "image",
+        url: "https://images.prismic.io/sketchplanations/ba2ad269-530b-4f64-be40-6caf24a6199d_180715615931.jpg?auto=compress,format",
+      },
+    ],
   },
   {
     title: "The Rubber Duck Effect",
@@ -753,7 +766,7 @@ const blogPosts = [
       "Exploring how explaining a problem to an inanimate object can help you understand it better.",
     id: 13,
     imageUrl:
-      "https://media.istockphoto.com/id/1175260730/photo/love-and-togetherness-concept.jpg?s=612x612&w=0&k=20&c=GOUYbj_T4KOqr_PMHOTkJhvWG92auWZ57dwW5fyJ2pI=",
+      "https://cdn.midjourney.com/fd13edab-414c-4adb-a6e7-004a75612fdc/0_3.png",
     date: "",
     content: [
       {

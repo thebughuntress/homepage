@@ -6,7 +6,7 @@ import Hero from "../../components/Hero/Hero.jsx";
 import AboutMe from "../../components/AboutMe/AboutMe.jsx";
 import QuoteBox from "../../components/QuoteBox/QuoteBox.jsx";
 import Skills from "../../components/Skills/Skills.jsx";
-import Services from "../../components/Services/Services.jsx"
+import Services from "../../components/Services/Services.jsx";
 
 const Home = () => {
   return (
@@ -21,12 +21,10 @@ const Home = () => {
             },
             marginY: 6,
           }}
-        >
-          <BuyMeACoffee coffeeVersion={true} />
-        </Box>
+        ></Box>
         <AboutMe />
         <Skills />
-        <Services/>
+        <Services />
         <BadgeCollection />
         <QuoteBox />
       </Box>

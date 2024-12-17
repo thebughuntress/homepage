@@ -54,7 +54,7 @@ const BlogPost = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          color: "text.primary"
+          color: "text.primary",
         }}
       >
         <Typography variant="h5" color="error">
@@ -75,45 +75,50 @@ const BlogPost = () => {
         marginBottom: 5,
         mx: "auto",
         px: { xs: 2, sm: 3 },
-        maxWidth: {xs: "85%", md: "100%"}
+        maxWidth: { xs: "85%", md: "100%" },
       }}
     >
       {/* Blog Post Image */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: { xs: "center", md: "flex-start" },
-          width: "100%",
-        }}
-      >
-        <Card
+      {post.imageUrl && (
+        <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            overflow: "hidden",
+            justifyContent: { xs: "center", md: "flex-start" },
             width: "100%",
-            maxWidth: "100%",
           }}
         >
-          <CardMedia
-            component="img"
-            alt={post.title}
+          <Card
             sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden",
               width: "100%",
-              height: "auto",
-              maxHeight: "80vh",
-              objectFit: "cover",
+              maxWidth: "100%",
             }}
-            image={post.imageUrl}
-            title={post.title}
-          />
-        </Card>
-      </Box>
+          >
+            <CardMedia
+              component="img"
+              alt={post.title}
+              sx={{
+                width: "100%",
+                height: "auto",
+                maxHeight: "80vh",
+                objectFit: "cover",
+              }}
+              image={post.imageUrl}
+              title={post.title}
+            />
+          </Card>
+        </Box>
+      )}
 
       {/* Post Title */}
       <Box sx={{ marginTop: 2 }}>
-        <Typography variant="h3" sx={{ color: "text.primary", fontWeight: "bold", marginBottom: 2 }}>
+        <Typography
+          variant="h3"
+          sx={{ color: "text.primary", fontWeight: "bold", marginBottom: 2 }}
+        >
           {post.title}
         </Typography>
       </Box>
