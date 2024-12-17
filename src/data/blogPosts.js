@@ -7,7 +7,7 @@ const blogPosts = [
       "My favorite development tools that I use to create, develop, and collaborate.",
     id: 1,
     imageUrl:
-      "https://cdn.midjourney.com/d5ce0387-b53a-4120-8fc3-c0360ad61441/0_0.jpeg",
+      "https://cdn.midjourney.com/bfda20ed-0bb4-45e5-a060-9342fd8e34fc/0_0.png",
     date: "December 6, 2024",
     content: [
       {
@@ -239,7 +239,7 @@ const blogPosts = [
     summary: "Understanding the fundamentals of Python programming.",
     id: 2,
     imageUrl:
-      "https://cdn.midjourney.com/d9422292-dbe2-4893-ad29-6bb509e2e40b/0_0.png",
+      "https://cdn.midjourney.com/12cbbb8f-080b-4efa-823b-f23b2ee7e9e2/0_1.png",
     date: "December 7, 2024",
     content: [
       { type: "heading", value: "Why Python?" },
