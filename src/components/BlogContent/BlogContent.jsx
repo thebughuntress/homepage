@@ -132,10 +132,13 @@ const BlogContent = ({ content }) => {
             key={index}
             sx={{
               backgroundColor: "#f5f5f5",
-              padding: 2,
               borderRadius: 1,
-              marginY: 1,
               fontFamily: "monospace",
+              minWidth: "60%",
+              width: "fit-content",
+              overflowX: "auto",
+              whiteSpace: "pre-wrap",
+              p: 1
             }}
           >
             <pre>
@@ -172,7 +175,7 @@ const BlogContent = ({ content }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               {block.url.replace(/https?:\/\/([^/]+).*/, "$1")}
+                {block.url.replace(/https?:\/\/([^/]+).*/, "$1")}
               </a>
             </Typography>
             {block.caption && (
