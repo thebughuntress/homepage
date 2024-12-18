@@ -33,11 +33,12 @@ const Services = () => {
   return (
     <Box
       sx={{
-        margin: 0,
-        marginTop: 5,
+        p:0,
+        m: 0,
+        marginTop: 10,
         display: "flex",
         justifyContent: "center",
-        width: "100%",
+        alignItems: "center",
       }}
     >
       <Box
@@ -45,10 +46,9 @@ const Services = () => {
           borderRadius: 2,
           backgroundColor: "primary.main",
           color: "white",
-          padding: 2,
-          width: "85%",
-          maxWidth: "1200px",
-          margin: 0,
+          p: 3,
+          width: "75%",
+          m: 0,
         }}
       >
         <Box
@@ -76,7 +76,14 @@ const Services = () => {
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
           >
-            <Typography variant="h6" sx={{ fontWeight: "600" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: { xs: "18px", md: "20px" },
+                color: "white",
+                marginBottom: 1,
+              }}
+            >
               Programming Classes
             </Typography>
           </AccordionSummary>
@@ -150,7 +157,14 @@ const Services = () => {
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
           >
-            <Typography variant="h6" sx={{ fontWeight: "600" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: { xs: "18px", md: "20px" },
+                color: "white",
+                marginBottom: 1,
+              }}
+            >
               Freelancing
             </Typography>
           </AccordionSummary>
@@ -172,7 +186,7 @@ const Services = () => {
         {/* <Divider sx={{ marginY: 3, borderColor: "white", borderWidth: "1px" }} /> */}
 
         <Typography
-          variant="body2"
+          variant="body1"
           sx={{
             marginTop: 2,
             textAlign: "center",

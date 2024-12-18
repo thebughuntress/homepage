@@ -17,7 +17,7 @@ function Hero() {
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
-        minHeight: { xs: "90vh", md: "90vh" },
+        minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
       }}
     >

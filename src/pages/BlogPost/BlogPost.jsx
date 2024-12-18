@@ -100,7 +100,7 @@ const BlogPost = () => {
               overflow: "hidden",
               margin: "0 auto",
               width: "100%",
-              maxWidth: "800px",
+              maxWidth: "700px",
             }}
           >
             <CardMedia
@@ -109,8 +109,8 @@ const BlogPost = () => {
               sx={{
                 width: "100%",
                 height: "auto",
-                maxWidth: "800px",
-                maxHeight: "533px",
+                maxWidth: "700px",
+                maxHeight: "467px",
                 objectFit: "cover",
                 filter: imageLoaded ? "none" : "blur(10px)",
                 transition: "filter 0.3s ease",
