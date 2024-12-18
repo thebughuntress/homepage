@@ -1,56 +1,122 @@
 import { Box, LinearProgress, Typography } from "@mui/material";
 import React from "react";
 
-const skillsList = [
-  { name: "Web Development", value: 90 },
-  { name: "Python", value: 85 },
-  { name: "Java", value: 60 },
-  { name: "Git", value: 95 },
-  { name: "Cloud (AWS/GCP)", value: 65 },
-  { name: "Excel/VBA", value: 80 },
-  { name: "Machine Learning", value: 55 },
+const skills = [
+  {
+    name: "Web Development",
+    value: 90,
+    technologies: [
+      "React",
+      "Vue",
+      "TypeScript",
+      "JavaScript",
+      "JSON Server",
+      "Bootstrap",
+      "Tailwind CSS",
+      "CSS",
+      "Styles",
+      "Components",
+      "Material UI",
+      "Angular",
+      "Standard Libraries (e.g., math, datetime, os, sys)",
+    ],
+  },
+  {
+    name: "Python",
+    value: 85,
+    technologies: [
+      "Django",
+      "File I/O",
+      "Modules and Packages",
+      "Error Handling",
+      "OOP",
+      "NumPy",
+      "Pandas",
+      "Tkinter",
+      "Sockets",
+      "BeautifulSoup (Web Scraping)",
+      "CSV (Working with CSV Files)",
+    ],
+  },
+  {
+    name: "Java",
+    value: 60,
+    technologies: [
+      "Foundations (Syntax, Data Structures, OOP)",
+      "Automating testing with Selenium",
+    ],
+  },
+  {
+    name: "Git",
+    value: 95,
+    technologies: ["GitHub", "GitLab (CI/CD Pipelines)", "Bitbucket"],
+  },
+  {
+    name: "Cloud (AWS/GCP)",
+    value: 65,
+    technologies: ["EC2", "S3", "Cloud Functions", "Firebase", "MongoDB Atlas"],
+  },
+  {
+    name: "Excel/VBA",
+    value: 80,
+    technologies: [
+      "Formulas",
+      "Formatting",
+      "Plotting",
+      "Pivot Tables",
+      "VBA Scripting",
+    ],
+  },
 ];
 
 const Skills = () => {
   return (
     <Box
       sx={{
+        display: "flex",
+        flexDirection: "column",
         backgroundColor: "primary.main",
-        padding: 5,
+        paddingTop: 3,
+        paddingX: { xs: 3, md: "10rem" },
+        paddingBottom: 5,
       }}
     >
-      {/* Center the Skills heading */}
-      <Box
+      <Typography
+        variant="h3"
         sx={{
-          textAlign: "left",
+          paddingTop: 5,
+          fontSize: { xs: "25px", md: "35px" },
+          color: "white",
         }}
       >
-        <Typography
-          variant="h3"
-          sx={{
-            fontSize: { xs: "25px", md: "35px" },
-            color: "rgba(255, 255, 255, 1)",
-            marginBottom: 3,
-          }}
-        >
-          Professional Skills
-        </Typography>
-      </Box>
+        Experience
+      </Typography>
 
       {/* Skills section layout */}
-      <Box sx={{ padding: { xs: 0, md: "0 1rem 0 1rem" } }}>
-        {skillsList.map((skill, index) => (
-          <Box key={index} sx={{ marginBottom: 3 }}>
+      <Box sx={{ paddingY: 2 }}>
+        {skills.map((skill, index) => (
+          <Box key={index} sx={{ marginBottom: 5 }}>
             <Typography
-              variant="body1"
+              variant="h6"
               sx={{
-                fontSize: { xs: "16px", md: "18px" },
+                fontSize: { xs: "18px", md: "20px" },
                 color: "white",
                 marginBottom: 1,
               }}
             >
               {skill.name}
             </Typography>
+
+            <Typography
+              variant="body1"
+              sx={{
+                color: "white",
+                marginBottom: "10px",
+              }}
+            >
+              {skill.technologies.join(", ")}
+            </Typography>
+
             <LinearProgress
               variant="determinate"
               value={skill.value}
