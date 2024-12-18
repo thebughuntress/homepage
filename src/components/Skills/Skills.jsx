@@ -77,7 +77,7 @@ const Skills = () => {
         flexDirection: "column",
         backgroundColor: "primary.main",
         paddingTop: 3,
-        paddingX: { xs: 3, md: "10rem" },
+        paddingX: { xs: 3, md: "15rem" },
         paddingBottom: 5,
       }}
     >

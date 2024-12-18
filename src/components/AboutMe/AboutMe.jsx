@@ -6,10 +6,10 @@ const AboutMe = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column" ,
+        flexDirection: "column",
         backgroundColor: "primary.main",
         paddingTop: 5,
-        paddingX: { xs: 3, md: "10rem" },
+        paddingX: { xs: 3, md: "15rem" },
       }}
     >
       <Typography
