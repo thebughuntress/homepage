@@ -10,25 +10,14 @@ import Services from "../../components/Services/Services.jsx";
 
 const Home = () => {
   return (
-    <>
+    <Box sx={{ maxWidth: "100vw" }}>
       <Hero />
-      <Box>
-        <Box
-          sx={{
-            display: {
-              xs: "block",
-              sm: "none",
-            },
-            marginY: 6,
-          }}
-        ></Box>
-        <AboutMe />
-        <Skills />
-        <Services />
-        <BadgeCollection />
-        <QuoteBox />
-      </Box>
-    </>
+      <AboutMe />
+      <Skills />
+      <Services />
+      <BadgeCollection />
+      <QuoteBox />
+    </Box>
   );
 };
 
