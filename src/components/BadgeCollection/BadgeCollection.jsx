@@ -35,7 +35,7 @@ const BadgeCollection = () => {
     {
       imgUrl:
         "https://images.credly.com/size/340x340/images/37e26478-d80c-43e8-80eb-ec492f3a26c1/image.png",
-      name: "Certified Professional Python Programmer Level 1",
+      name: "Professional Python Programmer Level 1",
       issuedBy: "Python Institute",
       id: "efb5b4b1-47f8-4cd3-b497-6ab45b427232",
     },
@@ -95,7 +95,7 @@ const BadgeCollection = () => {
         {badges.map((badge, index) => (
           <Link
             key={index}
-            href={`https://www.credly.com/earner/earned/badge/${badge.id}`}
+            href={`https://www.credly.com/badges/${badge.id}/public_url`}
             target="_blank"
             rel="noopener noreferrer"
             sx={{ textDecoration: "none" }}
@@ -103,17 +103,17 @@ const BadgeCollection = () => {
             <Card
               key={index}
               sx={{
-                maxWidth: {xs: "70vw", md: 345},
+                width: { xs: "60vw", md: 215 },
                 height: 280, // Set consistent height
-                margin: "1rem",
                 textAlign: "center",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between", // Ensure even spacing within the card
                 alignItems: "center",
                 boxShadow: "none",
-                border: "1px solid gray",
                 borderRadius: 1,
+                boxShadow:
+                  "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
               }}
             >
               <CardMedia
@@ -133,7 +133,6 @@ const BadgeCollection = () => {
               {/* Footer Section */}
               <CardActions
                 sx={{
-                  borderTop: "1px solid gray",
                   marginTop: "auto",
                   width: "100%",
                   padding: "0.5rem 1rem",
@@ -162,7 +161,7 @@ const BadgeCollection = () => {
                   </Link>
                 </Typography>
               </CardActions>
-            </Card>{" "}
+            </Card>
           </Link>
         ))}
       </Box>
