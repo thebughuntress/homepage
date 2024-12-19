@@ -4,7 +4,7 @@ const blogPosts = [
     subtitle: "A collection of links to great tools",
     author: "Antonia Frey",
     summary:
-      "My favorite development tools that I use to create, develop, and collaborate.",
+      "Tools that I use to create, develop, and collaborate.",
     id: 1,
     imageUrl:
       "https://cdn.midjourney.com/832491e8-88bd-43cf-8d00-1be23012bad4/0_1.png",
@@ -103,11 +103,11 @@ const blogPosts = [
   },
 
   {
-    title: "VPN Server using PiVPN",
-    subtitle: "Setting up a VPN Client on Raspberry Pi",
+    title: "PiVPN",
+    subtitle: "VPN on Raspberry Pi",
     author: "Antonia Frey",
     summary:
-      "Creating a VPN server on your Raspberry Pi allows you to access your home network securely from anywhere.",
+      "Setting up a VPN Client on your Raspberry Pi allows you to access your home network securely from anywhere.",
     id: 10,
     imageUrl:
       "https://cdn.midjourney.com/e97010b4-d383-47d8-97eb-9e8d45835eea/0_2.png",
@@ -361,23 +361,18 @@ const blogPosts = [
     imageUrl:
       "https://cdn.midjourney.com/7f07ba52-63ca-4ba8-84f6-dda556a699c6/0_1.png",
     date: "",
-    content: [],
-  },
-  {
-    title: "JavaScript vs TypeScript",
-    author: "Antonia Frey",
-    summary: "Choosing between JavaScript and TypeScript for your project.",
-    id: 5,
-    imageUrl:
-      "https://cdn.midjourney.com/589c6f27-297d-42ac-971d-c9c7b36cbb7a/0_2.png",
-    date: "",
     content: [
+      {
+        type: "heading",
+        value: "Choosing between JavaScript and TypeScript for your project",
+      },
       {
         type: "image",
         url: "https://d2ms8rpfqc4h24.cloudfront.net/uploads/2021/12/Understand-Typescript.jpg",
       },
     ],
   },
+
   {
     title: "SCRUM Basics",
     subtitle: "An introduction to the SCRUM framework",
@@ -429,7 +424,7 @@ const blogPosts = [
   },
 
   {
-    title: "The Cloud",
+    title: "Cloud",
     subtitle: "Understanding Cloud Computing",
     author: "Antonia Frey",
     summary:
