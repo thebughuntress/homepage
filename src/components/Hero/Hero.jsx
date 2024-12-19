@@ -2,7 +2,7 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 //import heroImgMobile from "../../assets/hero-img-mobile.jpg";
 //import heroImg from "../../assets/hero-img.jpg";
-import heroImg from "../../assets/heroImg2.png";
+import heroImg from "../../assets/heroImg.png";
 import ContactButtons from "../ContactButtons/ContactButtons";
 
 function Hero() {
@@ -13,7 +13,7 @@ function Hero() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row-reverse" },
+        flexDirection: "column", //{ xs: "column", md: "row-reverse" },
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
@@ -25,8 +25,8 @@ function Hero() {
       <Box
         sx={{
           marginTop: { xs: "10vh", md: 0 },
-          marginBottom: { xs: "2vh", md: 0 },
-          width: { xs: "100%", md: "50%" },
+          marginBottom: { xs: "2vh", md: 3 },
+          width: { xs: "100%", md: "22%" },
         }}
       >
         <Box
@@ -36,7 +36,7 @@ function Hero() {
           loading="eager"
           sx={{
             width: { xs: "60%", md: "70%" },
-            borderRadius: { xs: "50%", md: "8px" },
+            borderRadius: "50%", //{ xs: "50%", md: "8px" },
           }}
         />
       </Box>
@@ -44,7 +44,7 @@ function Hero() {
       {/* Text Box */}
       <Box
         sx={{
-          width: { xs: "100%", md: "50%" },
+          width: "100%", //{ xs: "100%", md: "50%" },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",

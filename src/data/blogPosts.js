@@ -104,7 +104,7 @@ const blogPosts = [
 
   {
     title: "PiVPN",
-    subtitle: "VPN on Raspberry Pi",
+    subtitle: "VPN Setup on Raspberry Pi",
     author: "Antonia Frey",
     summary:
       "Setting up a VPN Client on your Raspberry Pi allows you to access your home network securely from anywhere.",

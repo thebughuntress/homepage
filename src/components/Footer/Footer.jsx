@@ -14,6 +14,7 @@ import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
+import QuoteBox from "../QuoteBox/QuoteBox"
 
 const Footer = () => {
   const location = useLocation();
@@ -59,6 +60,7 @@ const Footer = () => {
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
+          <QuoteBox/>
           <BuyMeACoffee coffeeVersion={true} />
 
           <Box sx={{ marginY: 2 }}>

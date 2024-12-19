@@ -1,37 +1,37 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-const QuoteBox = () => {
+const QuoteBox = ({
+  quote = "Technology is best when it brings people together.",
+  color = "white",
+}) => {
   return (
     <Box
-      sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+      sx={{ display: "flex", alignItems: "center", justifyContent: "center", marginY: 2, }}
     >
       <Box
         sx={{
           padding: 3,
           borderRadius: 2,
           width: { xs: "85%", md: "fit-content" },
-          margin: 2,
+          
+          color: { color },
         }}
       >
         <Typography
           variant="h3"
           sx={{
-            fontSize: {xs: "22px", md: "30px"},
+            fontSize: { xs: "22px", md: "30px" },
             fontWeight: 700,
-            //fontStyle: "italic",
-            color: "primary.main",
             my: 2,
-            //fontFamily: "Leckerli One, cursive",
           }}
         >
-          "Technology is best when it brings people together."
+          {quote}
         </Typography>
         <Typography
           variant="body1"
           sx={{
             textAlign: "right",
-            color: "primary.main",
           }}
         >
           Matt Mullenweg

@@ -60,14 +60,14 @@ const BadgeCollection = () => {
       <Typography
         variant="h3"
         sx={{
-          marginTop: "3rem",
+          marginTop: "5rem",
           fontSize: { xs: "24px", md: "30px" },
           fontWeight: 600,
           textAlign: "center",
-          color: "text.primary",
+          color: "text.primary.light",
         }}
       >
-        Badge Collection
+        Badges
       </Typography>
 
       <Box
@@ -149,7 +149,7 @@ const BadgeCollection = () => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  Issued by:{" "}
+                  Issued by{" "}
                   <Link
                     href="#"
                     target="_blank"
