@@ -9,7 +9,7 @@ const AboutMe = () => {
         flexDirection: "column",
         backgroundColor: "primary.main",
         paddingTop: 5,
-        paddingX: { xs: 3, md: "15rem" },
+        paddingX: { xs: 3, md: "20rem" },
       }}
     >
       <Typography
