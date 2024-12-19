@@ -15,7 +15,7 @@ const AboutMe = () => {
       <Typography
         variant="h3"
         sx={{
-          paddingTop: 2,
+          paddingY: 2,
           fontSize: { xs: "25px", md: "35px" },
           color: "white",
         }}
@@ -25,7 +25,6 @@ const AboutMe = () => {
       <Typography
         variant="body1"
         sx={{
-          paddingTop: 3,
           fontSize: { xs: "16px", md: "18px" },
           color: "white",
         }}

@@ -81,15 +81,15 @@ const Skills = () => {
         display: "flex",
         flexDirection: "column",
         backgroundColor: "primary.main",
-        paddingTop: 3,
+        paddingTop: 5,
         paddingX: { xs: 3, md: "20rem" },
-        paddingBottom: 5,
+       
       }}
     >
       <Typography
         variant="h3"
         sx={{
-          paddingTop: 5,
+          paddingY: 2,
           fontSize: { xs: "25px", md: "35px" },
           color: "white",
         }}
@@ -98,7 +98,7 @@ const Skills = () => {
       </Typography>
 
       {/* Skills section layout */}
-      <Box sx={{ paddingY: 2 }}>
+      <Box >
         {skills.map((skill, index) => (
           <Box key={index} sx={{ marginBottom: 5 }}>
             <Typography

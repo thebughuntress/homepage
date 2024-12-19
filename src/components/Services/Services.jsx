@@ -33,44 +33,29 @@ const Services = () => {
   return (
     <Box
       sx={{
-        p:0,
-        m: 0,
-        marginTop: 10,
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        flexDirection: "column",
+        backgroundColor: "primary.main",
+        paddingY: 5,
+        paddingX: { xs: 3, md: "20rem" },
+        color: "white",
       }}
     >
-      <Box
+      <Typography
+        variant="h3"
         sx={{
-          borderRadius: 2,
-          backgroundColor: "primary.main",
+          paddingY: 2,
+          fontSize: { xs: "25px", md: "35px" },
           color: "white",
-          p: 3,
-          width: "75%",
-          m: 0,
         }}
       >
-        <Box
-          sx={{
-            textAlign: "left",
-            marginBottom: 3,
-          }}
-        >
-          <Typography
-            variant="h3"
-            sx={{
-              fontSize: { xs: "25px", md: "35px" },
-            }}
-          >
-            Teaching & Freelancing
-          </Typography>
-        </Box>
+        Teaching & Freelancing
+      </Typography>
 
+      <Box sx={{ gap: 3 }}>
         <Accordion
           sx={{
             backgroundColor: "primary.dark",
-            color: "white",
           }}
         >
           <AccordionSummary
@@ -182,19 +167,19 @@ const Services = () => {
             />
           </AccordionDetails>
         </Accordion>
-
-        {/* <Divider sx={{ marginY: 3, borderColor: "white", borderWidth: "1px" }} /> */}
-
-        <Typography
-          variant="body1"
-          sx={{
-            marginTop: 2,
-            textAlign: "center",
-          }}
-        >
-          Kindly contact me for additional details.
-        </Typography>
       </Box>
+
+      {/* <Divider sx={{ marginY: 3, borderColor: "white", borderWidth: "1px" }} /> */}
+
+      <Typography
+        variant="body1"
+        sx={{
+          marginTop: 2,
+          textAlign: "center",
+        }}
+      >
+        Kindly contact me for additional details.
+      </Typography>
     </Box>
   );
 };
