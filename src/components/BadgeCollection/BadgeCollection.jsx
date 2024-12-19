@@ -64,7 +64,7 @@ const BadgeCollection = () => {
           fontSize: { xs: "24px", md: "30px" },
           fontWeight: 600,
           textAlign: "center",
-          color: "text.primary.light",
+          color: "text.primary",
         }}
       >
         Badges
@@ -78,7 +78,7 @@ const BadgeCollection = () => {
           justifyContent: "center",
           alignItems: "center",
           padding: "2rem 2rem 1.5rem 2rem",
-          gap: 5,
+          gap: 3,
         }}
       >
         {/*  {badges.map((badge, index) => (

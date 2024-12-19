@@ -11,9 +11,9 @@ const QuoteBox = ({
     >
       <Box
         sx={{
-          padding: 3,
+          padding: 1,
           borderRadius: 2,
-          width: { xs: "85%", md: "fit-content" },
+          width: { xs: "95%", md: "fit-content" },
           
           color: { color },
         }}

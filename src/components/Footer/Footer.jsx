@@ -31,6 +31,7 @@ const Footer = () => {
         alignItems="center"
         sx={{
           width: "100%",
+          marginTop: 10,
         }}
       >
         <Box
@@ -40,7 +41,7 @@ const Footer = () => {
           alt="devicesImg"
           loading="eager"
           sx={{
-            width: { xs: "90%", md: "60%" },
+            width: { xs: "80%", md: "40%" },
           }}
         />
       </Box>

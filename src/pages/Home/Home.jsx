@@ -16,7 +16,6 @@ const Home = () => {
       <Skills />
       <Services />
       <BadgeCollection />
-      <QuoteBox />
     </Box>
   );
 };
