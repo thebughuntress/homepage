@@ -7,4 +7,23 @@
       transform: rotate(360deg);
     }
   }
+
+  @keyframes wave-animation {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(0, 0) rotate(8deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(-8deg);
+    }
+    75% {
+      transform: translate(0, 0) rotate(8deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+
   

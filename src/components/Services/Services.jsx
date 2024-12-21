@@ -84,7 +84,7 @@ const Services = () => {
                 }}
               />
             </Box>
-            <Typography sx={{ mb: 1 }}>
+            <Typography sx={{ mb: 1, color: "white" }}>
               Programming classes (online) for all levels, beginner to advanced.
             </Typography>
             <List>
@@ -98,7 +98,10 @@ const Services = () => {
                     }}
                   />
                   <ListItemText
-                    sx={{ fontSize: { xs: "14px", md: "16px" } }}
+                    sx={{
+                      fontSize: { xs: "14px", md: "16px" },
+                      color: "white",
+                    }}
                     primary={topic}
                   />
                 </ListItem>

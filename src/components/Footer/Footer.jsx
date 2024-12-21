@@ -137,6 +137,14 @@ const Footer = () => {
                   verticalAlign: "middle",
                   marginBottom: "-5px",
                 }}
+
+                style={{
+                  marginTop: "1.2rem",
+                  marginBottom: 1,
+                  fontSize: "40px",
+                  color: "#61DAFB",
+                  //animation: "wave-animation 5s ease-in-out infinite",
+                }}
               />
             </a>
             <Typography variant="body2" sx={{ color: "#FFFFFF" }}>
