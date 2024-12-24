@@ -72,8 +72,9 @@ function Navigation({ isDarkMode, onThemeToggle }) {
             className="nav-title"
             onClick={() => navigate("/")}
             sx={{
+              fontFamily: "Arial, sans-serif",
               mr: 2,
-              fontSize: { xs: "20px", md: "30px", lg: "35px" },
+              fontSize: { xs: "20px", md: "1.8rem", lg: "2rem" },
               fontWeight: 500,
               color: "primary.main",
               cursor: isHome ? "default" : "pointer",
@@ -83,7 +84,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
               },
             }}
           >
-            Antonia Alice Frey
+            antonia<b>frey</b>
           </Typography>
           <Box
             sx={{
