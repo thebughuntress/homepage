@@ -31,12 +31,12 @@ const AboutMe = () => {
       >
         During my studies in Electrical Engineering, I discovered my passion for
         IT and programming. Since graduating in 2020, I have been working as a
-        software engineer in IT consulting. Over the past few years, I've had
-        the opportunity to contribute to diverse projects and gain experience
-        across various industries, including automotive, energy, and
-        telecommunications. I'm always eager to explore new technologies and
-        enjoy creating and implementing innovative solutions. Design and
-        automation continually inspire and drive my work.
+        software engineer. Over the past few years, I've had the opportunity to
+        contribute to diverse projects and gain experience across various
+        industries, including automotive, energy, and telecommunications.
+        <br />I'm always eager to explore new technologies and enjoy creating
+        and implementing innovative solutions. Design and automation continually
+        inspire and drive my work.
       </Typography>
     </Box>
   );

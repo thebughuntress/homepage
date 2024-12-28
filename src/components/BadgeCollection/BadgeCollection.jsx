@@ -23,8 +23,8 @@ const BadgeCollection = () => {
     };
   }, []);
 
-  // List of badge objects
-  const badges = [
+  // List of cert objects
+  const certifications = [
     {
       imgUrl:
         "https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png",
@@ -56,18 +56,18 @@ const BadgeCollection = () => {
   ];
 
   return (
-    <Box>
+    <Box sx={{ marginY: "4rem" }}>
       <Typography
         variant="h3"
         sx={{
-          marginTop: "5rem",
-          fontSize: { xs: "24px", md: "30px" },
+          fontSize: { xs: "25px", md: "35px" },
           fontWeight: 600,
           textAlign: "center",
           color: "text.primary",
+          p: 2,
         }}
       >
-        Badges
+        Certifications
       </Typography>
 
       <Box
@@ -78,24 +78,13 @@ const BadgeCollection = () => {
           justifyContent: "center",
           alignItems: "center",
           padding: "2rem 2rem 1.5rem 2rem",
-          gap: 3,
+          gap: 4,
         }}
       >
-        {/*  {badges.map((badge, index) => (
-          <Box key={index}>
-            <div
-              data-iframe-width="230"
-              data-iframe-height="300"
-              data-share-badge-id={badge.id}
-              data-share-badge-host="https://www.credly.com"
-            ></div>
-          </Box>
-        ))} */}
-
-        {badges.map((badge, index) => (
+        {certifications.map((cert, index) => (
           <Link
             key={index}
-            href={`https://www.credly.com/badges/${badge.id}/public_url`}
+            href={`https://www.credly.com/badges/${cert.id}/public_url`}
             target="_blank"
             rel="noopener noreferrer"
             sx={{ textDecoration: "none" }}
@@ -113,13 +102,14 @@ const BadgeCollection = () => {
                 borderRadius: 1,
                 boxShadow:
                   "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+                borderColor: "text.primary",
               }}
             >
               <CardMedia
                 component="img"
                 height="140"
-                image={badge.imgUrl}
-                alt={badge.name}
+                image={cert.imgUrl}
+                alt={cert.name}
                 sx={{
                   objectFit: "contain",
                   backgroundColor: "transparent",
@@ -127,7 +117,7 @@ const BadgeCollection = () => {
                 }}
               />
               <CardContent>
-                <Typography variant="h6">{badge.name}</Typography>
+                <Typography variant="h6">{cert.name}</Typography>
               </CardContent>
               {/* Footer Section */}
               <CardActions
@@ -156,7 +146,7 @@ const BadgeCollection = () => {
                     rel="noopener noreferrer"
                     sx={{ textDecoration: "none" }}
                   >
-                    {badge.issuedBy}
+                    {cert.issuedBy}
                   </Link>
                 </Typography>
               </CardActions>
