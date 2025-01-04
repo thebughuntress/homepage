@@ -69,13 +69,12 @@ const Contact = () => {
     >
       <Box
         sx={{
-          width: "100%",
+          width: "85%",
           color: "white",
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
           alignItems: { xs: "center", md: "start" },
-          paddingLeft: { xs: 0, md: "10%" },
           my: 5,
         }}
       >
@@ -85,7 +84,7 @@ const Contact = () => {
           <Typography
             variant="body1"
             sx={{
-              fontSize: { xs: "16px", md: "18px" },
+              fontSize: { xs: "14px", md: "16px" },
               fontWeight: "normal",
             }}
           >
@@ -115,7 +114,7 @@ const Contact = () => {
                 <ListItemText
                   sx={{
                     "& .MuiListItemText-primary": {
-                      fontSize: { xs: "16px", md: "18px" },
+                      fontSize: { xs: "14px", md: "16px" },
                     },
                   }}
                   primary={

@@ -27,18 +27,26 @@ const BadgeCollection = () => {
   const certifications = [
     {
       imgUrl:
-        "https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png",
-      name: "Professional Scrum Master I (PSM I)",
-      issuedBy: "Scrum.org",
-      id: "7b5d324e-72a9-49da-943d-0e7fcbf835c4",
-    },
-    {
-      imgUrl:
         "https://images.credly.com/size/340x340/images/37e26478-d80c-43e8-80eb-ec492f3a26c1/image.png",
       name: "Professional Python Programmer Level 1",
       issuedBy: "Python Institute",
       id: "efb5b4b1-47f8-4cd3-b497-6ab45b427232",
     },
+    {
+      imgUrl:
+        "https://images.credly.com/size/680x680/images/12c64ffc-c5af-4be8-8fdc-8de91879be44/Brightest_CTFL.png",
+      name: "ISTQB Certified Tester Foundation Level (CTFL)",
+      issuedBy: "Issued by Brightest",
+      id: "",
+    },
+    {
+      imgUrl:
+        "https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png",
+      name: "Professional Scrum Master I (PSM I)",
+      issuedBy: "Scrum.org",
+      id: "7b5d324e-72a9-49da-943d-0e7fcbf835c4",
+    },
+    
     {
       imgUrl:
         "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
@@ -107,13 +115,14 @@ const BadgeCollection = () => {
             >
               <CardMedia
                 component="img"
-                height="140"
+                height="120"
                 image={cert.imgUrl}
                 alt={cert.name}
                 sx={{
                   objectFit: "contain",
                   backgroundColor: "transparent",
-                  padding: "1rem",
+                  paddingTop: 2,
+                  paddingBottom: 1,
                 }}
               />
               <CardContent>
