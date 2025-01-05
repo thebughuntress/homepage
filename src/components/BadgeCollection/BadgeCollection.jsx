@@ -33,10 +33,9 @@ const BadgeCollection = () => {
       id: "efb5b4b1-47f8-4cd3-b497-6ab45b427232",
     },
     {
-      imgUrl:
-        "https://images.credly.com/size/680x680/images/12c64ffc-c5af-4be8-8fdc-8de91879be44/Brightest_CTFL.png",
+      imgUrl: "https://bjleeper.com/wp-content/uploads/2021/07/CTFL-badge.png",
       name: "ISTQB Certified Tester Foundation Level (CTFL)",
-      issuedBy: "Issued by Brightest",
+      issuedBy: "ASTQB",
       id: "",
     },
     {
@@ -46,7 +45,7 @@ const BadgeCollection = () => {
       issuedBy: "Scrum.org",
       id: "7b5d324e-72a9-49da-943d-0e7fcbf835c4",
     },
-    
+
     {
       imgUrl:
         "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
@@ -62,6 +61,12 @@ const BadgeCollection = () => {
       id: "4c6cef95-abb8-4a7f-acd9-467d0b6831f1",
     },
   ];
+
+  const handleCardClick = (id) => {
+    if (id) {
+      window.open(`https://www.credly.com/badges/${id}/public_url`, "_blank");
+    }
+  };
 
   return (
     <Box sx={{ marginY: "4rem" }}>
@@ -90,77 +95,71 @@ const BadgeCollection = () => {
         }}
       >
         {certifications.map((cert, index) => (
-          <Link
+          <Card
             key={index}
-            href={`https://www.credly.com/badges/${cert.id}/public_url`}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ textDecoration: "none" }}
+            sx={{
+              width: { xs: "60vw", md: 215 },
+              height: 280, // Set consistent height
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderRadius: 1,
+              boxShadow:
+                "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+              borderColor: "text.primary",
+              cursor: cert.id ? "pointer" : "default",
+            }}
+            onClick={() => handleCardClick(cert.id)}
           >
-            <Card
-              key={index}
+            <CardMedia
+              component="img"
+              height="120"
+              image={cert.imgUrl}
+              alt={cert.name}
               sx={{
-                width: { xs: "60vw", md: 215 },
-                height: 280, // Set consistent height
+                objectFit: "contain",
+                backgroundColor: "transparent",
+                paddingTop: 2,
+                paddingBottom: 1,
+              }}
+            />
+            <CardContent>
+              <Typography variant="h6">{cert.name}</Typography>
+            </CardContent>
+            {/* Footer Section */}
+            <CardActions
+              sx={{
+                marginTop: "auto",
+                width: "90%",
+                padding: 2,
                 textAlign: "center",
                 display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "center",
-                borderRadius: 1,
-                boxShadow:
-                  "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
-                borderColor: "text.primary",
+                justifyContent: "center",
               }}
             >
-              <CardMedia
-                component="img"
-                height="120"
-                image={cert.imgUrl}
-                alt={cert.name}
+              <Typography
+                variant="body2"
+                color="text.secondary"
                 sx={{
-                  objectFit: "contain",
-                  backgroundColor: "transparent",
-                  paddingTop: 2,
-                  paddingBottom: 1,
-                }}
-              />
-              <CardContent>
-                <Typography variant="h6">{cert.name}</Typography>
-              </CardContent>
-              {/* Footer Section */}
-              <CardActions
-                sx={{
-                  marginTop: "auto",
-                  width: "100%",
-                  padding: "0.5rem 1rem",
-                  textAlign: "center",
-                  display: "flex",
-                  justifyContent: "center",
+                  textOverflow: "ellipsis",
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
                 }}
               >
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{
-                    textOverflow: "ellipsis",
-                    overflow: "hidden",
-                    whiteSpace: "nowrap",
-                  }}
+                Issued by{" "}
+                <Link
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ textDecoration: "none" }}
                 >
-                  Issued by{" "}
-                  <Link
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{ textDecoration: "none" }}
-                  >
-                    {cert.issuedBy}
-                  </Link>
-                </Typography>
-              </CardActions>
-            </Card>
-          </Link>
+                  {cert.issuedBy}
+                </Link>
+              </Typography>
+            </CardActions>
+          </Card>
         ))}
       </Box>
     </Box>
