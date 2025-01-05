@@ -120,7 +120,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
                   ...sxButton,
                 }}
               >
-                Portfolio
+                Programming Classes
               </Button>
             </>
           )}
@@ -149,7 +149,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
                 />
               }
             >
-              Portfolio
+              Programming Classes
             </Button>
           )}
 

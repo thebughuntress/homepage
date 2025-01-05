@@ -17,7 +17,7 @@ const Blog = () => {
           flex: 1,
         }}
       >
-        Portfolio
+         Programming Classes
       </Typography>
 
       <Box

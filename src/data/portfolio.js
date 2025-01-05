@@ -113,7 +113,6 @@ const portfolio = [
     date: "",
     content: [],
   },
-
   {
     title: "Python",
     subtitle: "The Programming Language",
