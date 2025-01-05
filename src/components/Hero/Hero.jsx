@@ -5,12 +5,8 @@ import ContactButtons from "../ContactButtons/ContactButtons";
 import "./Hero.css";
 
 function Hero() {
-  // Check if the screen is small (phone)
-  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
-
   return (
     <Box
-      className="fade-in-box"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -19,9 +15,25 @@ function Hero() {
         textAlign: "center",
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
-        backgroundImage: `url(${bgStarlitSky})`,
+        position: "relative",
       }}
     >
+      {/* Background image with fade-in effect */}
+      <Box
+        className="fade-in-bg"
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundImage: `url(${bgStarlitSky})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0,
+          zIndex: 1,
+        }}
+      />
       {/* Image Box */}
       {/* <Box
         sx={{
@@ -52,6 +64,7 @@ function Hero() {
           textAlign: "center",
           alignItems: "center",
           gap: 1,
+          zIndex: 2,
         }}
       >
         <Typography
