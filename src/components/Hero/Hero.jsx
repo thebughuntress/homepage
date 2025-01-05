@@ -15,7 +15,7 @@ function Hero() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: { xs: "normal", md: "center" },
+        justifyContent: "center",
         textAlign: "center",
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
