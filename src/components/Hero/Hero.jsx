@@ -13,7 +13,7 @@ function Hero() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column", //{ xs: "column", md: "row-reverse" },
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: { xs: "normal", md: "center" },
         textAlign: "center",
@@ -22,7 +22,7 @@ function Hero() {
       }}
     >
       {/* Image Box */}
-      <Box
+      {/* <Box
         sx={{
           marginTop: { xs: "10vh", md: 0 },
           marginBottom: { xs: "2vh", md: 3 },
@@ -39,7 +39,7 @@ function Hero() {
             borderRadius: "50%", //{ xs: "50%", md: "8px" },
           }}
         />
-      </Box>
+      </Box> */}
 
       {/* Text Box */}
       <Box
@@ -57,15 +57,16 @@ function Hero() {
           variant="h1"
           fontWeight={600}
           sx={{
-            fontSize: { xs: "28px", md: "40px", lg: "50px" },
+            fontSize: { xs: "35px", md: "50px", lg: "60px" },
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: 2, md: 0 },
-            marginBottom: { xs: 1, md: 1 },
+            marginBottom: { xs: 1, md: 3 },
             color: "text.primary",
           }}
         >
-          Full Stack Developer, <br />
-          Cloud Engineer & Tutor
+          Web Developer, <br />
+          Cloud Engineer <br/>
+          & Tutor
         </Typography>
         <Typography
           variant="body1"
