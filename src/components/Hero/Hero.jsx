@@ -26,7 +26,7 @@ function Hero() {
           top: 0,
           left: 0,
           width: "100vw",
-          height: "100vh",
+          height: { xs: "92vh", md: "90vh" },
           backgroundImage: `url(${bgStarlitSky})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
