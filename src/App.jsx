@@ -15,13 +15,7 @@ function App() {
 
   useEffect(() => {
     const savedPreference = localStorage.getItem("theme");
-    const isBrowserInDarkMode = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setIsDarkMode(
-      !(savedPreference === "light") &&
-        (savedPreference === "dark" || isBrowserInDarkMode)
-    );
+    setIsDarkMode(!(savedPreference === "light"));
   }, []);
 
   useEffect(() => {}, []);
