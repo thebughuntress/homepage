@@ -1,9 +1,8 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
-//import heroImgMobile from "../../assets/hero-img-mobile.jpg";
-//import heroImg from "../../assets/hero-img.jpg";
-import heroImg from "../../assets/heroImg.png";
+import bgStarlitSky from "../../assets/bg-starlit-sky.jpg";
 import ContactButtons from "../ContactButtons/ContactButtons";
+import "./Hero.css";
 
 function Hero() {
   // Check if the screen is small (phone)
@@ -11,6 +10,7 @@ function Hero() {
 
   return (
     <Box
+      className="fade-in-box"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -19,6 +19,7 @@ function Hero() {
         textAlign: "center",
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
+        backgroundImage: `url(${bgStarlitSky})`,
       }}
     >
       {/* Image Box */}
@@ -61,12 +62,11 @@ function Hero() {
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: 2, md: 0 },
             marginBottom: { xs: 1, md: 3 },
-            color: "text.primary",
+            color: "white", //"text.primary",
           }}
         >
           Web Developer, <br />
-          Cloud Engineer <br/>
-          & Tutor
+          Cloud Engineer <br />& Tutor
         </Typography>
         <Typography
           variant="body1"
@@ -74,7 +74,7 @@ function Hero() {
             width: { xs: "90%", md: "100%" },
             marginBottom: 1,
             fontSize: { xs: "15px", md: "1.2rem" },
-            color: "text.primary",
+            color: "white", //"text.primary",
           }}
         >
           I build software and teach programming.

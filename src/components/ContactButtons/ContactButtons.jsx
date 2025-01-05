@@ -42,9 +42,8 @@ const ContactButtons = ({ color }) => {
           href={item.link}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={item.label}
           sx={{
-            color,
+            color
           }}
         >
           {item.icon}
