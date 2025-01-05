@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import blogPosts from "../../data/blogPosts";
+import blogPosts from "../../data/content";
 import {
   Typography,
   Box,

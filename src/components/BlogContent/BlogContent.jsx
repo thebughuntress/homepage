@@ -86,7 +86,7 @@ const BlogContent = ({ content }) => {
               href={block.url}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: "underline", color: "#0000EE" }}
+              style={{ textDecoration: "underline", color: "#61DAFB",}}
             >
               {block.label}
             </a>{" "}

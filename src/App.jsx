@@ -50,8 +50,8 @@ function App() {
             />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:postId" element={<BlogPost />} />
+              <Route path="/classes" element={<Blog />} />
+              <Route path="/classes/:postId" element={<BlogPost />} />
             </Routes>
             <Footer />
           </Box>

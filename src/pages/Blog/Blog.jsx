@@ -1,7 +1,7 @@
 import React from "react";
 import BlogPreview from "../../components/BlogPreview/BlogPreview";
 import { Box, Typography } from "@mui/material";
-import blogPosts from "../../data/blogPosts";
+import content from "../../data/content";
 
 const Blog = () => {
   return (
@@ -17,7 +17,7 @@ const Blog = () => {
           flex: 1,
         }}
       >
-         Programming Classes
+        Programming Classes
       </Typography>
 
       <Box
@@ -31,9 +31,9 @@ const Blog = () => {
           paddingBottom: "3rem",
         }}
       >
-        {blogPosts &&
-          blogPosts.length > 0 &&
-          blogPosts.map((post, index) => (
+        {content &&
+          content.length > 0 &&
+          content.map((post, index) => (
             <BlogPreview post={post} key={index} />
           ))}
       </Box>

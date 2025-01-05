@@ -3,8 +3,7 @@ const blogPosts = [
     title: "Must-Have Tools",
     subtitle: "A collection of links to great tools",
     author: "Antonia Frey",
-    summary:
-      "Tools that I use to create, develop, and collaborate.",
+    summary: "Tools that I use to create, develop, and collaborate.",
     id: 1,
     imageUrl:
       "https://cdn.midjourney.com/832491e8-88bd-43cf-8d00-1be23012bad4/0_1.png",
@@ -98,6 +97,40 @@ const blogPosts = [
         label: "Postman",
         url: "https://www.postman.com/",
         description: "Postman is a tool for API development and testing.",
+      },
+    ],
+  },
+
+  {
+    title: "JavaScript",
+    subtitle: "",
+    author: "Antonia Frey",
+    summary: "",
+    id: 14,
+    imageUrl:
+      "https://www.datocms-assets.com/48401/1628644950-javascript.png",
+    date: "",
+    content: [
+      {
+        type: "link",
+        label: "Online JavaScript Compiler (Editor)",
+        url: "https://www.programiz.com/javascript/online-compiler/",
+        description:
+          "",
+      },
+      {
+        type: "link",
+        label: "Cheatsheet by ilovecoding.org",
+        url: "https://ilovecoding.org/blog/js-cheatsheet",
+        description:
+          "",
+      },
+      {
+        type: "link",
+        label: "Cheatsheet by codecadamy.com",
+        url: "https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet",
+        description:
+          "",
       },
     ],
   },
@@ -421,19 +454,6 @@ const blogPosts = [
         url: "https://i.pinimg.com/564x/78/54/08/7854084d3b6e46b9c5529f9932e6cb97.jpg",
       },
     ],
-  },
-
-  {
-    title: "Cloud",
-    subtitle: "Understanding Cloud Computing",
-    author: "Antonia Frey",
-    summary:
-      "A simple explanation of what the cloud is and how it impacts modern computing.",
-    id: 7,
-    imageUrl:
-      "https://cdn.midjourney.com/d2ecd3df-7bb6-4e23-92ef-b3b50a5a152c/0_1.png",
-    date: "",
-    content: [],
   },
 
   {

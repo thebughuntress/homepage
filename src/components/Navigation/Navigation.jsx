@@ -35,8 +35,8 @@ function Navigation({ isDarkMode, onThemeToggle }) {
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const isBlog = location.pathname === "/blog";
-  const isBlogPost = location.pathname.includes("/blog/");
+  const isBlog = location.pathname === "/classes";
+  const isBlogPost = location.pathname.includes("/classes/");
 
   return (
     <AppBar
@@ -115,12 +115,12 @@ function Navigation({ isDarkMode, onThemeToggle }) {
           {isHome && (
             <>
               <Button
-                onClick={() => navigate("blog")}
+                onClick={() => navigate("classes")}
                 sx={{
                   ...sxButton,
                 }}
               >
-                Programming Classes
+                Classes
               </Button>
             </>
           )}
@@ -141,7 +141,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
 
           {isBlogPost && (
             <Button
-              onClick={() => navigate("/blog")}
+              onClick={() => navigate("/classes")}
               sx={sxButton}
               startIcon={
                 <ArrowBackIosIcon
@@ -149,7 +149,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
                 />
               }
             >
-              Programming Classes
+              Classes
             </Button>
           )}
 

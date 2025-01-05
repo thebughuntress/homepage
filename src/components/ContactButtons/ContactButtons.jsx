@@ -8,7 +8,10 @@ import { contacts, urls, cv } from "../../data/data";
 
 const ContactButtons = ({ color }) => {
   // Declare iconStyle properly
-  const iconStyle = { fontSize: { xs: "25px", md: "30px", lg: "35px" } };
+  const iconStyle = {
+    fontSize: { xs: "25px", md: "30px", lg: "35px" },
+    filter: "drop-shadow(5px 5px 5px rgba(0, 0, 0, 1))",
+  };
 
   // List of social media/contact buttons data
   const contactInfo = [
@@ -30,7 +33,7 @@ const ContactButtons = ({ color }) => {
     {
       label: "WhatsApp",
       icon: <WhatsAppIcon sx={iconStyle} />,
-      link: urls.whatsapp
+      link: urls.whatsapp,
     },
   ];
 
@@ -43,7 +46,7 @@ const ContactButtons = ({ color }) => {
           target="_blank"
           rel="noopener noreferrer"
           sx={{
-            color
+            color,
           }}
         >
           {item.icon}
