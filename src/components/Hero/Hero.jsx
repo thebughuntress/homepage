@@ -25,11 +25,12 @@ function Hero() {
           position: "absolute",
           top: 0,
           left: 0,
-          width: "100vw",
+          width: "100%",
           height: { xs: "92vh", md: "90vh" },
           backgroundImage: `url(${bgStarlitSky})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat", 
           opacity: 0,
           zIndex: 1,
         }}
