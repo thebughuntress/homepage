@@ -41,12 +41,12 @@ const ContactForm = () => {
   const textFieldSlotProps = {
     input: {
       sx: {
-        fontSize: "1.2rem",
+        fontSize: "1rem",
       },
     },
     inputLabel: {
       sx: {
-        fontSize: "1.2rem",
+        fontSize: "1rem",
       },
     },
   };
