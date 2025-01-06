@@ -15,6 +15,8 @@ import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import QuoteBox from "../QuoteBox/QuoteBox";
+import DownloadButton from "../DownloadButton/DownloadButton";
+import { cv } from "../../data/contact";
 
 const Footer = () => {
   const location = useLocation();
@@ -31,7 +33,7 @@ const Footer = () => {
         alignItems="center"
         sx={{
           width: "100%",
-          marginTop: 10,
+          marginTop: 2,
         }}
       >
         <Box
@@ -62,8 +64,17 @@ const Footer = () => {
       >
         <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
           <QuoteBox />
-          <BuyMeACoffee coffeeVersion={true} />
+          <Box sx={{ mt: 4, mb: 4 }}>
+            <DownloadButton
+              label="Download CV"
+              url={cv.url}
+              pathToFile={cv.path}
+              downloadFileName={cv.filename}
+              color="#FFF"
+            />
+          </Box>
 
+          <BuyMeACoffee coffeeVersion={true} />
           <Box sx={{ marginY: 2 }}>
             <a
               href="https://www.react.dev"

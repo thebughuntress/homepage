@@ -41,7 +41,7 @@ const DownloadButton = ({
       variant="outlined"
       startIcon={<FileDownloadIcon />}
       sx={{
-        fontSize: "13px",
+        fontSize: "16px",
         height: "37px",
         borderRadius: 100,
         cursor: "pointer",
