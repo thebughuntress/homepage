@@ -64,6 +64,8 @@ const Footer = () => {
       >
         <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
           <QuoteBox />
+
+          <BuyMeACoffee coffeeVersion={true} />
           <Box sx={{ mt: 4, mb: 4 }}>
             <DownloadButton
               label="Download CV"
@@ -73,8 +75,6 @@ const Footer = () => {
               color="#FFF"
             />
           </Box>
-
-          <BuyMeACoffee coffeeVersion={true} />
           <Box sx={{ marginY: 2 }}>
             <a
               href="https://www.react.dev"
