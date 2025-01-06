@@ -16,6 +16,7 @@ function Hero() {
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
         position: "relative",
+        backgroundColor: "black",
       }}
     >
       {/* Background image with fade-in effect */}
@@ -76,7 +77,8 @@ function Hero() {
             width: { xs: "85%", md: "100%" },
             marginTop: { xs: "-8rem", md: 0 },
             marginBottom: { xs: 1, md: 3 },
-            color: "white", //"text.primary",
+            color: "white",
+            textShadow: "4px 4px 8px black",
           }}
         >
           Web Developer, <br />
@@ -89,6 +91,7 @@ function Hero() {
             marginBottom: 1,
             fontSize: { xs: "15px", md: "1.2rem" },
             color: "white", //"text.primary",
+            textShadow: "4px 4px 8px black",
           }}
         >
           I build software and teach programming.

@@ -17,7 +17,7 @@ const ContactButtons = ({
     fontSize: showLabel
       ? { xs: "20px", md: "25px" }
       : { xs: "25px", md: "35px" },
-    filter: iconShadow ? "drop-shadow(5px 5px 5px rgba(0, 0, 0, 1))" : "none",
+    filter: iconShadow ? "drop-shadow(4px 4px 8px #000)" : "none",
   };
 
   const contacts = [

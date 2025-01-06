@@ -42,29 +42,37 @@ const ContactForm = () => {
     input: {
       sx: {
         fontSize: "1rem",
+        color: "#FFF",
       },
     },
     inputLabel: {
       sx: {
         fontSize: "1rem",
+        color: "#FFF",
       },
     },
   };
 
   const textFieldSx = {
-    "& .MuiInputLabel-root.Mui-focused": {
-      color: "inherit", 
-    },
-    "& .MuiInputBase-root.Mui-focused": {
-      borderColor: "inherit", 
-    },
-    "& .MuiInputBase-input": {
-      color: "inherit", 
-    },
     "& .MuiOutlinedInput-root.Mui-focused": {
       borderColor: "inherit",
       "& .MuiOutlinedInput-notchedOutline": {
-        borderColor: "inherit", 
+        borderColor: "inherit",
+      },
+    },
+    "& .MuiInputLabel-root.Mui-focused": {
+      color: "#FFF",
+    },
+    "& .MuiInputBase-input": {
+      color: "#FFF",
+    },
+    "& .MuiOutlinedInput-root": {
+      borderColor: "#FFF",
+      "&.Mui-focused": {
+        borderColor: "#FFF", 
+      },
+      "& .MuiOutlinedInput-notchedOutline": {
+        borderColor: "#FFF", 
       },
     },
   };
