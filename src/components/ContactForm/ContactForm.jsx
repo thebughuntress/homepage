@@ -26,7 +26,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);
-          //alert("Email sent!");
+          alert("Email sent!");
           form.current.reset();
           setTimeout(() => setIsSending(false), 700);
         },
