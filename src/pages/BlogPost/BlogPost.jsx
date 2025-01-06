@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import blogPosts from "../../data/content";
+import classes from "../../data/classes";
 import {
   Typography,
   Box,
@@ -20,7 +20,7 @@ const BlogPost = () => {
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
-      const blogPost = blogPosts.find((post) => post.id == postId);
+      const blogPost = classes.find((post) => post.id == postId);
       setPost(blogPost);
       setLoading(false);
     }, 500);

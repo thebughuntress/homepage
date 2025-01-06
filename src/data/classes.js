@@ -1,4 +1,4 @@
-const blogPosts = [
+const classes = [
   {
     title: "Must-Have Tools",
     subtitle: "A collection of links to great tools",
@@ -650,7 +650,7 @@ const blogPosts = [
     author: "Antonia Frey",
     summary:
       "Version control system that tracks code changes and enables collaboration.",
-    id: 14,
+    id: 99,
     imageUrl:
       "https://cdn.midjourney.com/d9937caf-92ae-4765-be8c-712f77bbb2b4/0_3.png",
     date: "December 6, 2024",
@@ -799,4 +799,4 @@ const blogPosts = [
   },
 ];
 
-export default blogPosts;
+export default classes;

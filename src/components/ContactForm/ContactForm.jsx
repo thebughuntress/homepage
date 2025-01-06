@@ -2,32 +2,40 @@ import React, { useRef, useState, useEffect } from "react";
 import { Box, TextField, Button, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../emailConfig.js";
+
+const emailjsConfig = {
+  SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  TEMPLATE_ID: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+};
 
 const ContactForm = () => {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
 
-  useEffect(() => {
-    console.log(TEMPLATE_ID);
-  }, [TEMPLATE_ID]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      (result) => {
-        console.log("Email sent successfully:", result.text);
-        alert("Email sent!");
-        form.current.reset();
-        setTimeout(() => setIsSending(false), 700);
-      },
-      (error) => {
-        console.error("Error sending email:", error.text);
-        alert("Failed to send email.");
-        setIsSending(false);
-      }
-    );
+    emailjs
+      .sendForm(
+        emailjsConfig.SERVICE_ID,
+        emailjsConfig.TEMPLATE_ID,
+        form.current,
+        emailjsConfig.PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          //alert("Email sent!");
+          form.current.reset();
+          setTimeout(() => setIsSending(false), 700);
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          alert("Failed to send email.");
+          setIsSending(false);
+        }
+      );
   };
 
   const textFieldSlotProps = {
@@ -39,6 +47,24 @@ const ContactForm = () => {
     inputLabel: {
       sx: {
         fontSize: "1.2rem",
+      },
+    },
+  };
+
+  const textFieldSx = {
+    "& .MuiInputLabel-root.Mui-focused": {
+      color: "inherit", 
+    },
+    "& .MuiInputBase-root.Mui-focused": {
+      borderColor: "inherit", 
+    },
+    "& .MuiInputBase-input": {
+      color: "inherit", 
+    },
+    "& .MuiOutlinedInput-root.Mui-focused": {
+      borderColor: "inherit",
+      "& .MuiOutlinedInput-notchedOutline": {
+        borderColor: "inherit", 
       },
     },
   };
@@ -61,6 +87,7 @@ const ContactForm = () => {
           required
           margin="normal"
           slotProps={textFieldSlotProps}
+          sx={textFieldSx}
         />
         <TextField
           label="Email"
@@ -70,6 +97,7 @@ const ContactForm = () => {
           required
           margin="normal"
           slotProps={textFieldSlotProps}
+          sx={textFieldSx}
         />
         <TextField
           label="Message"
@@ -80,6 +108,7 @@ const ContactForm = () => {
           required
           margin="normal"
           slotProps={textFieldSlotProps}
+          sx={textFieldSx}
         />
         <Button
           type="submit"
