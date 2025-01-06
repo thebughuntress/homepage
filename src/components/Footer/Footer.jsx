@@ -9,12 +9,12 @@ import devicesLightThemeImg from "../../assets/devices-light-theme.svg";
 import devicesDarkThemeImg from "../../assets/devices-dark-theme.svg";
 import { useLocation } from "react-router-dom";
 import "./Footer.css";
-import Contact from "../Contact/Contact";
+import ContactSection from "../ContactSection/ContactSection";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
-import QuoteBox from "../QuoteBox/QuoteBox"
+import QuoteBox from "../QuoteBox/QuoteBox";
 
 const Footer = () => {
   const location = useLocation();
@@ -45,7 +45,7 @@ const Footer = () => {
           }}
         />
       </Box>
-  {isHome && <Contact />} 
+      {isHome && <ContactSection />}
       <Box
         sx={{
           display: "flex",
@@ -61,7 +61,7 @@ const Footer = () => {
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
-          <QuoteBox/>
+          <QuoteBox />
           <BuyMeACoffee coffeeVersion={true} />
 
           <Box sx={{ marginY: 2 }}>
@@ -137,7 +137,6 @@ const Footer = () => {
                   verticalAlign: "middle",
                   marginBottom: "-5px",
                 }}
-
                 style={{
                   marginTop: "1.2rem",
                   marginBottom: 1,
@@ -148,7 +147,8 @@ const Footer = () => {
               />
             </a>
             <Typography variant="body2" sx={{ color: "#FFFFFF" }}>
-              Images generated using Midjourney AI<br/>
+              Images generated using Midjourney AI
+              <br />
               if no other source is given.
             </Typography>
           </Box>

@@ -73,7 +73,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
             sx={{
               fontFamily: "Arial, sans-serif",
               mr: 2,
-              fontSize: { xs: "20px", md: "1.8rem", lg: "2rem" },
+              fontSize: { xs: "30px", md: "1.8rem", lg: "2rem" },
               fontWeight: 500,
               color: "primary.main",
               cursor: isHome ? "default" : "pointer",

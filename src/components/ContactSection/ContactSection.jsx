@@ -1,16 +1,11 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import { cv } from "../../data/contact";
 import ContactButtons from "../ContactButtons/ContactButtons";
+import ContactForm from "../ContactForm/ContactForm";
 
-const Contact = () => {
-
-
+const ContactSection = () => {
   return (
     <Box
       sx={{
@@ -33,21 +28,24 @@ const Contact = () => {
         }}
       >
         {/* Left Side: Contact */}
-        <Box sx={{ width: { xs: "80%", md: "50%" }, marginBottom: "2rem" }}>
-          <Typography variant="h2">Contact</Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              fontSize: { xs: "14px", md: "16px" },
-              fontWeight: "normal",
-            }}
-          >
-            Talking is better in person
-          </Typography>
+        <Box sx={{ width: { xs: "100%", md: "50%" }, marginBottom: "2rem" }}>
+          <Box sx={{marginBottom: 5}}>
+            <Typography variant="h2">Contact</Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: { xs: "14px", md: "16px" },
+                fontWeight: "normal",
+              }}
+            >
+              Talking is better in person
+            </Typography>
+          </Box>
+          <ContactButtons showLabel={true} flexDirection="column" />
         </Box>
 
-        {/* Right Side:  Contact List */}
-        <ContactButtons showLabel={true} flexDirection="column"/>
+        {/* Right Side:  Contact Form */}
+        <ContactForm />
 
         <Box sx={{ display: { xs: "flex", md: "none", marginTop: "2rem" } }}>
           <DownloadButton
@@ -63,4 +61,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

@@ -63,43 +63,42 @@ const ContactButtons = ({
       }}
     >
       {contacts.map((item, index) => (
-        <Link
-          href={item.url}
-          target="_blank"
+        <Box
+          key={index}
           sx={{
-            textDecoration: "none",
-            color: "inherit",
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
           }}
         >
-          <Box
-            key={index}
+          <IconButton
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: 1,
-              cursor: "pointer",
+              color,
             }}
           >
-            <IconButton
+            {item.icon}
+          </IconButton>
+          {showLabel && (
+            <Link
               href={item.url}
               target="_blank"
-              rel="noopener noreferrer"
               sx={{
-                color,
+                textDecoration: "none",
+                color: "inherit",
               }}
             >
-              {item.icon}
-            </IconButton>
-            {showLabel && (
               <Typography
                 variant="body1"
                 sx={{ color: "white", fontSize: { xs: "14px", md: "16px" } }}
               >
                 {item.label}
               </Typography>
-            )}
-          </Box>
-        </Link>
+            </Link>
+          )}
+        </Box>
       ))}
     </Box>
   );
