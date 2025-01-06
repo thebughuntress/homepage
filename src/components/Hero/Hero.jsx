@@ -30,7 +30,7 @@ function Hero() {
           backgroundImage: `url(${bgStarlitSky})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat", 
+          backgroundRepeat: "no-repeat",
           opacity: 0,
           zIndex: 1,
         }}
@@ -93,7 +93,7 @@ function Hero() {
         >
           I build software and teach programming.
         </Typography>
-        <ContactButtons color="primary.main" />
+        <ContactButtons color="primary.main" iconShadow={true} />
       </Box>
     </Box>
   );

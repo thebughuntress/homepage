@@ -6,11 +6,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { cv } from "../../data/data";
+import { cv } from "../../data/contact";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Navigation.css";
-import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 
 export const sxButton = {
   fontSize: { xs: "14px", md: "22px" },

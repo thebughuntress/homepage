@@ -2,7 +2,7 @@ import { Box, Link, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React from "react";
 import { FaReact, FaCoffee } from "react-icons/fa";
-import { urls } from "../../data/data";
+import { repo } from "../../data/contact";
 import muiLogo from "../../assets/mui.svg";
 import midjourneyLogo from "../../assets/midjourney-logo.svg";
 import devicesLightThemeImg from "../../assets/devices-light-theme.svg";
@@ -45,7 +45,7 @@ const Footer = () => {
           }}
         />
       </Box>
-      {isHome && <Contact />}
+  {isHome && <Contact />} 
       <Box
         sx={{
           display: "flex",
@@ -109,7 +109,7 @@ const Footer = () => {
               <br />
               View the source code{" "}
               <Link
-                href={urls.repo}
+                href={repo.url}
                 target="_blank"
                 sx={{
                   color: "#3DD1E7",

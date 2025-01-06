@@ -2,65 +2,19 @@ import React from "react";
 import {
   Box,
   Typography,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemText,
-  Divider,
+
 } from "@mui/material";
-import {
-  Email,
-  Phone,
-  LocationOn,
-  GitHub,
-  LinkedIn,
-} from "@mui/icons-material";
-import { FaDiscord } from "react-icons/fa";
 import DownloadButton from "../DownloadButton/DownloadButton";
-import { contacts, urls, cv } from "../../data/data";
+import { cv } from "../../data/contact";
+import ContactButtons from "../ContactButtons/ContactButtons";
 
 const Contact = () => {
-  const contactItems = [
-    {
-      icon: <Email />,
-      text: contacts.emailObfuscated,
-      link: `mailto:${contacts.email}`,
-    },
-    {
-      icon: <Phone />,
-      text: contacts.mobile,
-      link: urls.whatsapp,
-    },
-    {
-      icon: <GitHub />,
-      text: contacts.github,
-      link: urls.github,
-    },
-    {
-      icon: <LinkedIn />,
-      text: contacts.linkedin,
-      link: urls.linkedin,
-    },
-    {
-      icon: <FaDiscord />,
-      text: contacts.discord,
-      link: urls.discord,
-    },
-    {
-      icon: <LocationOn />,
-      text: contacts.location,
-      onClick: () => {
-        window.open(urls.location, "_blank");
-      },
-      link: urls.location,
-    },
-  ];
+
 
   return (
     <Box
       sx={{
-        backgroundColor: "primary.dark",
+        backgroundColor: "primary.light",
         width: "100%",
         display: "flex",
         alignItems: "center",
@@ -79,7 +33,7 @@ const Contact = () => {
         }}
       >
         {/* Left Side: Contact */}
-        <Box sx={{ width: { xs: "80%", md: "50%" } }}>
+        <Box sx={{ width: { xs: "80%", md: "50%" }, marginBottom: "2rem" }}>
           <Typography variant="h2">Contact</Typography>
           <Typography
             variant="body1"
@@ -92,46 +46,10 @@ const Contact = () => {
           </Typography>
         </Box>
 
-        {/* Right Side: Contact Info */}
-        <Box
-          sx={{
-            width: { xs: "80%", md: "50%" },
-            padding: { xs: 3, md: 0 },
-          }}
-        >
-          {/* Contact List */}
-          <List>
-            {contactItems.map((item, index) => (
-              <ListItem key={index} sx={{ padding: "2px" }}>
-                <IconButton
-                  color="inherit"
-                  href={item.link}
-                  onClick={item.onClick || undefined}
-                  target={item.link ? "_blank" : undefined}
-                >
-                  {item.icon}
-                </IconButton>
-                <ListItemText
-                  sx={{
-                    "& .MuiListItemText-primary": {
-                      fontSize: { xs: "14px", md: "16px" },
-                    },
-                  }}
-                  primary={
-                    item.link ? (
-                      <Link href={item.link} color="inherit" target="_blank">
-                        {item.text}
-                      </Link>
-                    ) : (
-                      item.text
-                    )
-                  }
-                />
-              </ListItem>
-            ))}
-          </List>
-        </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+        {/* Right Side:  Contact List */}
+        <ContactButtons showLabel={true} flexDirection="column"/>
+
+        <Box sx={{ display: { xs: "flex", md: "none", marginTop: "2rem" } }}>
           <DownloadButton
             label="Download CV"
             url={cv.url}
@@ -141,15 +59,6 @@ const Contact = () => {
           />
         </Box>
       </Box>
-      <Divider
-        sx={{
-          width: "85%",
-          borderColor: "white",
-          borderWidth: "1px",
-          paddingLeft: 1,
-          paddingRight: 1,
-        }}
-      />
     </Box>
   );
 };

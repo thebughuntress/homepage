@@ -1,56 +1,105 @@
 import React from "react";
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton, Typography, Link } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { contacts, urls, cv } from "../../data/data";
+import { contact, cv } from "../../data/contact";
 
-const ContactButtons = ({ color }) => {
+const ContactButtons = ({
+  color = "white",
+  showLabel = false,
+  flexDirection = "row",
+  iconShadow = false,
+}) => {
   // Declare iconStyle properly
   const iconStyle = {
-    fontSize: { xs: "25px", md: "30px", lg: "35px" },
-    filter: "drop-shadow(5px 5px 5px rgba(0, 0, 0, 1))",
+    fontSize: showLabel
+      ? { xs: "20px", md: "25px" }
+      : { xs: "25px", md: "35px" },
+    filter: iconShadow ? "drop-shadow(5px 5px 5px rgba(0, 0, 0, 1))" : "none",
   };
 
-  // List of social media/contact buttons data
-  const contactInfo = [
+  const contacts = [
     {
-      label: "LinkedIn",
+      label: contact.linkedin.label,
       icon: <LinkedInIcon sx={iconStyle} />,
-      link: urls.linkedin,
+      url: contact.linkedin.url,
     },
     {
-      label: "GitHub",
+      label: contact.github.label,
       icon: <GitHubIcon sx={iconStyle} />,
-      link: urls.github,
+      url: contact.github.url,
     },
     {
-      label: "Email",
+      label: contact.email.label,
       icon: <EmailIcon sx={iconStyle} />,
-      link: `mailto:${contacts.email}`,
+      url: `mailto:${contact.email.url}`,
     },
     {
-      label: "WhatsApp",
+      label: contact.mobile.label,
       icon: <WhatsAppIcon sx={iconStyle} />,
-      link: urls.whatsapp,
+      url: contact.mobile.url,
     },
+    /* {
+      label: contact.discord.label,
+      icon: <FaDiscord />,
+      url: contact.discord.url,
+    },
+    {
+      label: contact.location.label,
+      icon: <LocationOn />,
+      url: contact.location.url,
+    }, */
   ];
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
-      {contactInfo.map((item) => (
-        <IconButton
-          key={item.label}
-          href={item.link}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: flexDirection,
+        justifyContent: "center",
+        gap: flexDirection === "row" ? 3 : 1,
+      }}
+    >
+      {contacts.map((item, index) => (
+        <Link
+          href={item.url}
           target="_blank"
-          rel="noopener noreferrer"
           sx={{
-            color,
+            textDecoration: "none",
+            color: "inherit",
           }}
         >
-          {item.icon}
-        </IconButton>
+          <Box
+            key={index}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              cursor: "pointer",
+            }}
+          >
+            <IconButton
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                color,
+              }}
+            >
+              {item.icon}
+            </IconButton>
+            {showLabel && (
+              <Typography
+                variant="body1"
+                sx={{ color: "white", fontSize: { xs: "14px", md: "16px" } }}
+              >
+                {item.label}
+              </Typography>
+            )}
+          </Box>
+        </Link>
       ))}
     </Box>
   );
