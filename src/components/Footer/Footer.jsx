@@ -8,13 +8,13 @@ import midjourneyLogo from "../../assets/midjourney-logo.svg";
 import devicesLightThemeImg from "../../assets/devices-light-theme.svg";
 import devicesDarkThemeImg from "../../assets/devices-dark-theme.svg";
 import { useLocation } from "react-router-dom";
-import "./Footer.css";
 import ContactSection from "../ContactSection/ContactSection";
 import BuyMeACoffee from "../BuyMeACoffee/BuyMeACoffee";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import QuoteBox from "../QuoteBox/QuoteBox";
+import "./Footer.css";
 
 const Footer = () => {
   const location = useLocation();

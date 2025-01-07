@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
-import santaClausHatSvg from "../../assets/santa-claus-hat.svg";
-import gluehweinImg from "../../assets/gluehwein.png";
-import coffeeSvg from "../../assets/bmc-full-logo.svg";
+import santaClausHatSvg from "../../assets/bmac/santa-claus-hat.svg";
+import gluehweinImg from "../../assets/bmac/gluehwein.png";
+import coffeeSvg from "../../assets/bmac/bmc-full-logo.svg";
 
 const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
   const currentDate = new Date();

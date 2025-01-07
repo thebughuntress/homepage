@@ -23,8 +23,8 @@ const QuoteBox = ({
         <Typography
           variant="h3"
           sx={{
-            fontSize: { xs: "22px", md: "30px" },
-            fontWeight: 700,
+            fontSize: { xs: "20px", md: "26px" },
+            fontWeight: 500,
             marginBottom: 2,
           }}
         >

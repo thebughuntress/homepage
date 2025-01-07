@@ -1,18 +1,25 @@
 import { Box, Typography, IconButton } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import cloudBg from "../../assets/hero2/cloud-bg.png";
+import cloudBgLight from "../../assets/hero2/cloud-bg-light.png";
+import cloudBgDark from "../../assets/hero2/cloud-bg-dark.png";
+import { useTheme } from "@mui/material/styles";
 import githubIcon from "../../assets/hero2/github.png";
 import linkedinIcon from "../../assets/hero2/linkedin.png";
 import whatsappIcon from "../../assets/hero2/whatsapp.png";
+import emailIcon from "../../assets/hero2/email.png";
 import { cv } from "../../data/contact";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import { contact } from "../../data/contact";
 
 function Hero2() {
+  const theme = useTheme();
+  const isDarkTheme = theme.palette.mode === "dark";
+  const bgImg = isDarkTheme ? cloudBgDark : cloudBgLight;
+
   const roles = ["Web Developer", "Cloud Engineer", "Tutor"];
-  const [roleIndex, setRoleIndex] = useState(0); // Keeps track of which role we're typing
-  const [role, setRole] = useState(""); // The current role being typed
-  const [charIndex, setCharIndex] = useState(0); // The current character index being typed
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [role, setRole] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
 
   useEffect(() => {
     const curRole = roles[roleIndex];
@@ -66,10 +73,7 @@ function Hero2() {
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
         position: "relative",
-        backgroundImage: `url(${cloudBg})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundImage: `url(${bgImg})`,
       }}
     >
       <Box
@@ -84,16 +88,20 @@ function Hero2() {
         <Box>
           <Typography
             variant="h1"
-            sx={{ fontWeight: "bold", fontSize: { xs: "32px", md: "48px" } }}
+            sx={{
+              color: "text.primary",
+              fontSize: { xs: "32px", md: "48px" },
+              fontWeight: 500,
+            }}
           >
             Hi, I'm Antonia
           </Typography>
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "32px", md: "48px" },
-              fontWeight: "bold",
               color: "primary.main",
+              fontSize: { xs: "32px", md: "48px" },
+              fontWeight: 500,
               display: "inline-block",
               whiteSpace: "nowrap",
               overflow: "hidden",
@@ -106,6 +114,7 @@ function Hero2() {
           <Typography
             variant="body1"
             sx={{
+              color: "text.primary",
               fontSize: { xs: "14px", md: "20px" },
               maxWidth: { xs: "90%", md: "80%" },
             }}
@@ -157,6 +166,21 @@ function Hero2() {
           >
             <img
               src={whatsappIcon}
+              alt="WhatsApp"
+              style={{ width: 40, height: 40 }}
+            />
+          </IconButton>
+
+          {/* Email Button */}
+          <IconButton
+            sx={sxContactButton}
+            component="a"
+            href={contact.email.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={emailIcon}
               alt="WhatsApp"
               style={{ width: 40, height: 40 }}
             />

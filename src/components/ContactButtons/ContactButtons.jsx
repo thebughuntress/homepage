@@ -4,7 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { contact} from "../../data/contact";
+import { contact } from "../../data/contact";
 
 const ContactButtons = ({
   color = "white",
@@ -32,14 +32,14 @@ const ContactButtons = ({
       url: contact.github.url,
     },
     {
-      label: contact.email.label,
-      icon: <EmailIcon sx={iconStyle} />,
-      url: `mailto:${contact.email.url}`,
-    },
-    {
       label: contact.mobile.label,
       icon: <WhatsAppIcon sx={iconStyle} />,
       url: contact.mobile.url,
+    },
+    {
+      label: contact.email.label,
+      icon: <EmailIcon sx={iconStyle} />,
+      url: contact.email.url,
     },
     /* {
       label: contact.discord.label,

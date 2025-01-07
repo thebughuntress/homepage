@@ -1,7 +1,7 @@
 const contact = {
   email: {
     label: "antonia[dot]frey[at]outlook[dot]com",
-    url: "antonia.frey@outlook.com",
+    url: "mailto:antonia.frey@outlook.com",
   },
   mobile: { label: "+49 1514 6782868", url: "https://wa.me/4915146782868" },
   github: { label: "thebughuntress", url: "https://github.com/thebughuntress" },
