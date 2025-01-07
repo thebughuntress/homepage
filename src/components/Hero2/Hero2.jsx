@@ -63,9 +63,6 @@ function Hero2() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
         position: "relative",
@@ -77,6 +74,7 @@ function Hero2() {
     >
       <Box
         sx={{
+          textAlign: "start",
           paddingTop: { xs: "40%", md: "10%" },
           paddingLeft: "8%",
           maxWidth: { xs: "90%", md: "45%" },
