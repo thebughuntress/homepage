@@ -85,7 +85,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
           >
             antonia<b>frey</b>
           </Typography>
-          <Box
+         {/*  <Box
             sx={{
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
@@ -99,7 +99,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
               downloadFileName={cv.filename}
               color="primary.main"
             />
-          </Box>
+          </Box> */}
         </Box>
 
         <Box

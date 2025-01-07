@@ -38,25 +38,8 @@ const DownloadButton = ({
 
   return (
     <Button
-      variant="outlined"
+      variant="contained"
       startIcon={<FileDownloadIcon />}
-      sx={{
-        fontSize: "16px",
-        height: "40px",
-        borderRadius: 100,
-        cursor: "pointer",
-        fontWeight: 600,
-        justifyContent: "center",
-        width: "fit-content",
-        color: `${color}`,
-        border: `2px solid`,
-        borderColor: `${color}`,
-        marginY: 2,
-        "&:hover": {
-          color: "#FFF",
-          backgroundColor: "primary.main",
-        },
-      }}
       onClick={handleDownload}
     >
       {label}

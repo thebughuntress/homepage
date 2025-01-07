@@ -15,12 +15,12 @@ const AboutMe = () => {
       <Typography
         variant="h3"
         sx={{
-          paddingY: 2,
+          paddingY: 3,
           fontSize: { xs: "25px", md: "35px" },
           color: "white",
         }}
       >
-        Hi, I'm Antonia
+        Something About Me
       </Typography>
       <Typography
         variant="body1"

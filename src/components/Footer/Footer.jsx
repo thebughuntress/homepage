@@ -15,8 +15,6 @@ import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import QuoteBox from "../QuoteBox/QuoteBox";
-import DownloadButton from "../DownloadButton/DownloadButton";
-import { cv } from "../../data/contact";
 
 const Footer = () => {
   const location = useLocation();
@@ -67,13 +65,6 @@ const Footer = () => {
 
           <BuyMeACoffee coffeeVersion={true} />
 
-          <DownloadButton
-            label="Download CV"
-            url={cv.url}
-            pathToFile={cv.path}
-            downloadFileName={cv.filename}
-            color="#FFF"
-          />
           <Box sx={{ marginY: 2 }}>
             <a
               href="https://www.react.dev"
@@ -131,7 +122,7 @@ const Footer = () => {
             </Typography>
           </Box>
 
-          <Box sx={{marginY: 2}}>
+          <Box sx={{ marginY: 2 }}>
             <a
               href="https://www.midjourney.com/"
               target="_blank"

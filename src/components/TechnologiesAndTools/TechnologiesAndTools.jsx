@@ -127,7 +127,7 @@ const TechnologiesAndTools = () => {
       <Typography
         variant="h3"
         sx={{
-          paddingY: 2,
+          paddingY: 3,
           fontSize: { xs: "25px", md: "35px" },
           color: "white",
         }}
