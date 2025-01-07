@@ -138,7 +138,7 @@ const TechnologiesAndTools = () => {
       <Box
         sx={{
           display: "flex",
-          gap: 2,
+          gap: 3,
           flexWrap: "wrap",
         }}
       >

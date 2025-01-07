@@ -6,7 +6,6 @@ const TechnologyBox = ({ label, img }) => {
     <Card
       sx={{
         backgroundColor: "#FFF",
-        m: 1,
         p: 1,
         width: { xs: "34vw", md: "12vw" },
         height: { xs: "45px", md: "50px" },
