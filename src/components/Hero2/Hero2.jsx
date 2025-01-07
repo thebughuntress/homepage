@@ -105,7 +105,7 @@ function Hero2() {
             sx={{
               color: "text.primary",
               fontSize: { xs: "32px", md: "48px" },
-              fontWeight: { xs: 600, md: 500 },
+              fontWeight: { xs: 600, md: 600 },
             }}
           >
             Hi, I'm Antonia
@@ -115,7 +115,7 @@ function Hero2() {
             sx={{
               color: "primary.main",
               fontSize: { xs: "32px", md: "48px" },
-              fontWeight: { xs: 600, md: 500 },
+              fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
               overflow: "hidden",
