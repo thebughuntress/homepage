@@ -83,22 +83,22 @@ const technologies = [
     label: "Raspberry Pi",
     img: "https://upload.wikimedia.org/wikipedia/de/thumb/c/cb/Raspberry_Pi_Logo.svg/570px-Raspberry_Pi_Logo.svg.png",
   },
-  {
+  /* {
     label: "Excel / VBA",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/240px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png",
-  },
+  }, */
   {
     label: "Java",
     img: "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.jpg",
   },
-  {
+  /* {
     label: "JHipster",
     img: "https://www.jhipster.tech/jhipster-artwork/logos/JHipster%20bowtie%20-%20square.png",
   },
   {
     label: "Google Cloud",
     img: "data:image/png;base64,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",
-  },
+  }, */
   {
     label: "Firebase",
     img: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
@@ -121,8 +121,7 @@ const TechnologiesAndTools = () => {
         flexDirection: "column",
         backgroundColor: "primary.main",
         paddingTop: 5,
-        paddingLeft: { xs: 3, md: "20rem" },
-        paddingRight: { xs: 0, md: "20rem" },
+        paddingX: { xs: 3, md: "20rem" },
       }}
     >
       <Typography
@@ -140,6 +139,8 @@ const TechnologiesAndTools = () => {
           display: "flex",
           gap: 3,
           flexWrap: "wrap",
+          //backgroundColor: "red",
+          justifyContent: "space-around",
         }}
       >
         {technologies.map((technology, index) => (

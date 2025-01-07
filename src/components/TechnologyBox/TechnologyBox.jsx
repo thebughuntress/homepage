@@ -7,7 +7,7 @@ const TechnologyBox = ({ label, img }) => {
       sx={{
         backgroundColor: "#FFF",
         p: 1,
-        width: { xs: "34vw", md: "12vw" },
+        width: { xs: "34vw", md: "25%" },
         height: { xs: "45px", md: "50px" },
         display: "flex",
         alignItems: "center",
