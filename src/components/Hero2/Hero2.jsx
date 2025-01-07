@@ -3,10 +3,14 @@ import React, { useState, useEffect } from "react";
 import cloudBgLight from "../../assets/hero2/cloud-bg-light.png";
 import cloudBgDark from "../../assets/hero2/cloud-bg-dark.png";
 import { useTheme } from "@mui/material/styles";
-import githubIcon from "../../assets/hero2/github.png";
-import linkedinIcon from "../../assets/hero2/linkedin.png";
-import whatsappIcon from "../../assets/hero2/whatsapp.png";
-import emailIcon from "../../assets/hero2/email.png";
+import githubIconBlack from "../../assets/hero2/github.png";
+import linkedinIconBlack from "../../assets/hero2/linkedin.png";
+import whatsappIconBlack from "../../assets/hero2/whatsapp.png";
+import emailIconBlack from "../../assets/hero2/email.png";
+import githubIconWhite from "../../assets/hero2/github_white.png";
+import linkedinIconWhite from "../../assets/hero2/linkedin_white.png";
+import whatsappIconWhite from "../../assets/hero2/whatsapp_white.png";
+import emailIconWhite from "../../assets/hero2/email_white.png";
 import { cv } from "../../data/contact";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import { contact } from "../../data/contact";
@@ -14,7 +18,17 @@ import { contact } from "../../data/contact";
 function Hero2() {
   const theme = useTheme();
   const isDarkTheme = theme.palette.mode === "dark";
+
   const bgImg = isDarkTheme ? cloudBgDark : cloudBgLight;
+
+  const icons = {
+    github: isDarkTheme ? githubIconWhite : githubIconBlack,
+    linkedin: isDarkTheme ? linkedinIconWhite : linkedinIconBlack,
+    whatsapp: isDarkTheme ? whatsappIconWhite : whatsappIconBlack,
+    email: isDarkTheme ? emailIconWhite : emailIconBlack,
+  };
+
+
 
   const roles = ["Web Developer", "Cloud Engineer", "Tutor"];
   const [roleIndex, setRoleIndex] = useState(0);
@@ -91,7 +105,7 @@ function Hero2() {
             sx={{
               color: "text.primary",
               fontSize: { xs: "32px", md: "48px" },
-              fontWeight: {xs: 600, md: 500},
+              fontWeight: { xs: 600, md: 500 },
             }}
           >
             Hi, I'm Antonia
@@ -101,12 +115,12 @@ function Hero2() {
             sx={{
               color: "primary.main",
               fontSize: { xs: "32px", md: "48px" },
-              fontWeight: {xs: 600, md: 500},
+              fontWeight: { xs: 600, md: 500 },
               display: "inline-block",
               whiteSpace: "nowrap",
               overflow: "hidden",
               marginY: 1,
-              height: {xs: "48px", md: "64px"},
+              height: { xs: "48px", md: "64px" },
             }}
           >
             {role}
@@ -135,7 +149,7 @@ function Hero2() {
             rel="noopener noreferrer"
           >
             <img
-              src={githubIcon}
+              src={icons.github}
               alt="GitHub"
               style={{ width: 40, height: 40 }}
             />
@@ -150,7 +164,7 @@ function Hero2() {
             rel="noopener noreferrer"
           >
             <img
-              src={linkedinIcon}
+              src={icons.linkedin}
               alt="LinkedIn"
               style={{ width: 40, height: 40 }}
             />
@@ -165,7 +179,7 @@ function Hero2() {
             rel="noopener noreferrer"
           >
             <img
-              src={whatsappIcon}
+              src={icons.whatsapp}
               alt="WhatsApp"
               style={{ width: 40, height: 40 }}
             />
@@ -180,9 +194,9 @@ function Hero2() {
             rel="noopener noreferrer"
           >
             <img
-              src={emailIcon}
+              src={icons.email}
               alt="WhatsApp"
-              style={{ width: 40, height: 40 }}
+              style={{ marginTop: 10, width: 40, height: "auto" }}
             />
           </IconButton>
         </Box>
