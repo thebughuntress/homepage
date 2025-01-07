@@ -84,14 +84,14 @@ function Hero2() {
         <Box>
           <Typography
             variant="h1"
-            sx={{ fontWeight: "bold", fontSize: { xs: "38px", md: "48px" } }}
+            sx={{ fontWeight: "bold", fontSize: { xs: "32px", md: "48px" } }}
           >
             Hi, I'm Antonia
           </Typography>
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "38px", md: "48px" },
+              fontSize: { xs: "32px", md: "48px" },
               fontWeight: "bold",
               color: "primary.main",
               display: "inline-block",
