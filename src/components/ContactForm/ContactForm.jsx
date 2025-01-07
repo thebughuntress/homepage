@@ -69,22 +69,17 @@ const ContactForm = () => {
     "& .MuiOutlinedInput-root": {
       borderColor: "#FFF",
       "&.Mui-focused": {
-        borderColor: "#FFF", 
+        borderColor: "#FFF",
       },
       "& .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#FFF", 
+        borderColor: "#FFF",
       },
     },
   };
 
   return (
-    <Box
-      sx={{
-        margin: "0 auto",
-        padding: 2,
-      }}
-    >
-      <Typography variant="h5" sx={{ textAlign: "left", marginBottom: 2 }}>
+    <Box>
+      <Typography variant="h5" sx={{ textAlign: "left", marginBottom: 1 }}>
         Send a message
       </Typography>
       <form ref={form} onSubmit={handleSubmit}>

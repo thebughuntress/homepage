@@ -75,7 +75,7 @@ function Hero() {
           sx={{
             fontSize: { xs: "35px", md: "50px", lg: "55px" },
             width: { xs: "85%", md: "100%" },
-            marginTop: { xs: "-8rem", md: 0 },
+            marginTop: { xs: "-5rem", md: 0 },
             marginBottom: { xs: 1, md: 3 },
             color: "white",
             textShadow: "4px 4px 8px black",

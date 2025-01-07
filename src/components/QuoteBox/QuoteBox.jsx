@@ -7,14 +7,16 @@ const QuoteBox = ({
 }) => {
   return (
     <Box
-      sx={{ display: "flex", alignItems: "center", justifyContent: "center", marginY: 2, }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginY: 2,
+      }}
     >
       <Box
         sx={{
-          padding: 1,
-          borderRadius: 2,
           width: { xs: "95%", md: "fit-content" },
-          
           color: { color },
         }}
       >
@@ -23,7 +25,7 @@ const QuoteBox = ({
           sx={{
             fontSize: { xs: "22px", md: "30px" },
             fontWeight: 700,
-            my: 2,
+            marginBottom: 2,
           }}
         >
           {quote}

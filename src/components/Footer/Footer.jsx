@@ -62,19 +62,18 @@ const Footer = () => {
           overflowX: "hidden",
         }}
       >
-        <Box sx={{ width: "80%", textAlign: "center", marginY: 3 }}>
+        <Box sx={{ width: "80%", textAlign: "center", marginY: 2 }}>
           <QuoteBox />
 
           <BuyMeACoffee coffeeVersion={true} />
-          <Box sx={{ mt: 4, mb: 4 }}>
-            <DownloadButton
-              label="Download CV"
-              url={cv.url}
-              pathToFile={cv.path}
-              downloadFileName={cv.filename}
-              color="#FFF"
-            />
-          </Box>
+
+          <DownloadButton
+            label="Download CV"
+            url={cv.url}
+            pathToFile={cv.path}
+            downloadFileName={cv.filename}
+            color="#FFF"
+          />
           <Box sx={{ marginY: 2 }}>
             <a
               href="https://www.react.dev"
@@ -83,7 +82,6 @@ const Footer = () => {
             >
               <FaReact
                 style={{
-                  marginTop: "1.2rem",
                   marginBottom: 5,
                   fontSize: "40px",
                   color: "#61DAFB",
@@ -133,7 +131,7 @@ const Footer = () => {
             </Typography>
           </Box>
 
-          <Box>
+          <Box sx={{marginY: 2}}>
             <a
               href="https://www.midjourney.com/"
               target="_blank"
@@ -146,11 +144,6 @@ const Footer = () => {
                 sx={{
                   height: "65px",
                   verticalAlign: "middle",
-                  marginBottom: "-5px",
-                }}
-                style={{
-                  marginTop: "1.2rem",
-                  marginBottom: 1,
                   fontSize: "40px",
                   color: "#61DAFB",
                   //animation: "wave-animation 5s ease-in-out infinite",
@@ -181,11 +174,7 @@ const Footer = () => {
           >
             Version: <span> {APP_VERSION}</span>
           </Typography>
-          <Tooltip
-            title="Timestamp of latest deploy on Firebase"
-            placement="right"
-            arrow
-          >
+          <Tooltip title="Timestamp of latest deploy" placement="right" arrow>
             <IconButton
               sx={{
                 display: { xs: "none", md: "flex" },

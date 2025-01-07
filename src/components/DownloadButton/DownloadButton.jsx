@@ -51,6 +51,7 @@ const DownloadButton = ({
         color: `${color}`,
         border: `2px solid`,
         borderColor: `${color}`,
+        marginY: 2,
         "&:hover": {
           color: "#FFF",
           backgroundColor: "primary.main",

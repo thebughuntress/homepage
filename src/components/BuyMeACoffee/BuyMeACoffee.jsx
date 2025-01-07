@@ -32,7 +32,7 @@ const BuyMeACoffee = ({ coffeeVersion = false, withDeco = false }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginLeft: 2,
+        marginY: 2,
       }}
     >
       {isGluhweinSeason && !coffeeVersion ? (

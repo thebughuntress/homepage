@@ -59,7 +59,7 @@ const ContactButtons = ({
         display: "flex",
         flexDirection: flexDirection,
         justifyContent: "center",
-        gap: flexDirection === "row" ? 3 : 1,
+        gap: flexDirection === "row" ? 3 : 0,
       }}
     >
       {contacts.map((item, index) => (

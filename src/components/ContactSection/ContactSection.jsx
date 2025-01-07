@@ -27,7 +27,7 @@ const ContactSection = () => {
       >
         {/* Left Side: Contact */}
         <Box sx={{ width: { xs: "100%", md: "50%" }, marginBottom: "2rem" }}>
-          <Box sx={{ marginBottom: 5 }}>
+          <Box sx={{ marginBottom: {xs: 2, md: 5} }}>
             <Typography variant="h2">Contact</Typography>
             <Typography
               variant="body1"
