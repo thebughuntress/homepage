@@ -63,7 +63,7 @@ function Hero2() {
     <Box
       sx={{
         m: 0,
-        minHeight: { xs: "92vh", md: "90vh" },
+        minHeight: { xs: "100vh", md: "90vh" },
         width: "100vw",
         backgroundImage: `url(${cloudBg})`,
         backgroundSize: "cover",
@@ -73,9 +73,9 @@ function Hero2() {
     >
       <Box
         sx={{
-          paddingTop: { xs: "25%", md: "10%" },
+          paddingTop: { xs: "40%", md: "10%" },
           paddingLeft: "8%",
-          maxWidth: { xs: "100%", md: "45%" },
+          maxWidth: { xs: "90%", md: "45%" },
         }}
       >
         {/* Text Box */}
@@ -103,9 +103,9 @@ function Hero2() {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontSize: { xs: "20px", md: "20px" } }}
+            sx={{ fontSize: { xs: "14px", md: "20px" } , maxWidth: {xs: "90%", md: "80%"}}}
           >
-            I build software and teach programming. Currently, <br />I work
+            I build software and teach programming. <br/>Currently, I work
             remotely as a Full-Stack Software Engineer .
           </Typography>
         </Box>

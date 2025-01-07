@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const savedPreference = localStorage.getItem("theme");
-    setIsDarkMode(!(savedPreference === "light"));
+    setIsDarkMode(savedPreference === "dark");
   }, []);
 
   useEffect(() => {}, []);

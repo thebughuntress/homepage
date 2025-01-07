@@ -12,7 +12,6 @@ const Home = () => {
       <Hero2 />
       <AboutMe />
       <TechnologiesAndTools />
-      {/* <Skills /> */}
       <Services />
       <Certificates />
     </Box>
