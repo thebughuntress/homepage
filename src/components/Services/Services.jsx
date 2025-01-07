@@ -15,6 +15,7 @@ import React from "react";
 import PlaceIcon from "@mui/icons-material/Place";
 import superprofImg from "../../assets/superprof.svg";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import { contact } from "../../data/contact";
 
 const TOPICS = [
   "Programming Fundamentals",
@@ -129,6 +130,13 @@ const Services = () => {
                 "& .MuiChip-icon": {
                   color: "white",
                 },
+                "&:hover": {
+                  backgroundColor: "primary.light", 
+                  color: "white", 
+                },
+              }}
+              onClick={() => {
+                window.open(contact.discord.url, "_blank"); // Opens the URL in a new tab
               }}
             />
           </AccordionDetails>
