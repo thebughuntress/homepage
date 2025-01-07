@@ -1,6 +1,5 @@
 import { Box, Typography, IconButton } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import "./Hero2.css";
 import cloudBg from "../../assets/hero2/cloud-bg.png";
 import githubIcon from "../../assets/hero2/github.png";
 import linkedinIcon from "../../assets/hero2/linkedin.png";
@@ -62,9 +61,14 @@ function Hero2() {
   return (
     <Box
       sx={{
-        m: 0,
-        minHeight: { xs: "100vh", md: "90vh" },
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
+        position: "relative",
         backgroundImage: `url(${cloudBg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -103,10 +107,13 @@ function Hero2() {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontSize: { xs: "14px", md: "20px" } , maxWidth: {xs: "90%", md: "80%"}}}
+            sx={{
+              fontSize: { xs: "14px", md: "20px" },
+              maxWidth: { xs: "90%", md: "80%" },
+            }}
           >
-            I build software and teach programming. <br/>Currently, I work
-            remotely as a Full-Stack Software Engineer .
+            I build software and teach programming. <br />
+            Currently, I work remotely as a Full-Stack Software Engineer .
           </Typography>
         </Box>
 
