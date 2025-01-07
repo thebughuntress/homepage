@@ -72,7 +72,7 @@ function Hero2() {
         sx={{
           paddingTop: { xs: "25%", md: "10%" },
           paddingLeft: "8%",
-          maxWidth: { xs: "100%", md: "40%" },
+          maxWidth: { xs: "100%", md: "45%" },
         }}
       >
         {/* Text Box */}
@@ -86,7 +86,7 @@ function Hero2() {
           <Typography
             variant="h1"
             sx={{
-                fontSize: { xs: "38px", md: "48px" } ,
+              fontSize: { xs: "38px", md: "48px" },
               fontWeight: "bold",
               color: "primary.main",
               display: "inline-block",
@@ -100,10 +100,10 @@ function Hero2() {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontSize: { xs: "22px", md: "22px" } }}
+            sx={{ fontSize: { xs: "20px", md: "20px" } }}
           >
-            I build software and teach programming. Currently, I work remotely
-            as a Full-Stack Software Engineer .
+            I build software and teach programming. Currently, <br />I work
+            remotely as a Full-Stack Software Engineer .
           </Typography>
         </Box>
 
