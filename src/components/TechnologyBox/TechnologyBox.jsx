@@ -7,8 +7,8 @@ const TechnologyBox = ({ label, img }) => {
       sx={{
         m: 1,
         p: 1,
-        width: { xs: "40vw", md: "12vw" },
-        height: { xs: "50px", md: "50px" },
+        width: { xs: "34vw", md: "12vw" },
+        height: { xs: "45px", md: "50px" },
         display: "flex",
         alignItems: "center",
         borderRadius: 1,
@@ -22,13 +22,13 @@ const TechnologyBox = ({ label, img }) => {
         sx={{
           objectFit: "contain",
           backgroundColor: "transparent",
-          width: "55px",
-          paddingX: "2px",
-          maxHeight: { xs: "50px", md: "50px" },
+          width: { xs: "50px", md: "55px" },
+          paddingX:{ xs: "1px", md: "2px" },
+          maxHeight: { xs: "45px", md: "50px" },
         }}
       />
 
-      <Typography variant="body1" sx={{ fontSize: "15px" }}>
+      <Typography variant="body1" sx={{ fontSize: {xs: "12px", md: "15px" }}}>
         {label}
       </Typography>
     </Card>

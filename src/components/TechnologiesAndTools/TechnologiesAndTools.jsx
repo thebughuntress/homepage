@@ -121,7 +121,8 @@ const TechnologiesAndTools = () => {
         flexDirection: "column",
         backgroundColor: "primary.main",
         paddingTop: 5,
-        paddingX: { xs: 3, md: "20rem" },
+        paddingLeft: { xs: 3, md: "20rem" },
+        paddingRight: { xs: 0, md: "20rem" },
       }}
     >
       <Typography
