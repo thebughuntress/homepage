@@ -62,10 +62,13 @@ function Hero2() {
   return (
     <Box
       sx={{
+        m: 0,
         minHeight: { xs: "92vh", md: "90vh" },
         width: "100vw",
-        backgroundColor: "blue",
-        backgroundImage: `url(${cloudBg})`, // Use the imported image
+        backgroundImage: `url(${cloudBg})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       <Box
