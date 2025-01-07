@@ -5,6 +5,7 @@ const TechnologyBox = ({ label, img }) => {
   return (
     <Card
       sx={{
+        backgroundColor: "#FFF",
         m: 1,
         p: 1,
         width: { xs: "34vw", md: "12vw" },
@@ -23,12 +24,16 @@ const TechnologyBox = ({ label, img }) => {
           objectFit: "contain",
           backgroundColor: "transparent",
           width: { xs: "50px", md: "55px" },
-          paddingX:{ xs: "1px", md: "2px" },
+          paddingX: { xs: "1px", md: "2px" },
           maxHeight: { xs: "45px", md: "50px" },
         }}
       />
 
-      <Typography variant="body1" sx={{ fontSize: {xs: "12px", md: "15px" }}}>
+      <Typography
+        variant="body1"
+        color="black"
+        sx={{ fontSize: { xs: "12px", md: "15px" } }}
+      >
         {label}
       </Typography>
     </Card>
