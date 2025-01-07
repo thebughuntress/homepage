@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import React, { useEffect } from "react";
 
-const BadgeCollection = () => {
+const Certificates = () => {
   useEffect(() => {
     // Dynamically load the Credly script for embedding badges
     const script = document.createElement("script");
@@ -166,4 +166,4 @@ const BadgeCollection = () => {
   );
 };
 
-export default BadgeCollection;
+export default Certificates;
