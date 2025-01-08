@@ -28,8 +28,6 @@ function Hero2() {
     email: isDarkTheme ? emailIconWhite : emailIconBlack,
   };
 
-
-
   const roles = ["Web Developer", "Cloud Engineer", "Tutor"];
   const [roleIndex, setRoleIndex] = useState(0);
   const [role, setRole] = useState("");
@@ -88,6 +86,8 @@ function Hero2() {
         width: "100vw",
         position: "relative",
         backgroundImage: `url(${bgImg})`,
+        backgroundSize: "cover", 
+        backgroundRepeat: "no-repeat", 
       }}
     >
       <Box
