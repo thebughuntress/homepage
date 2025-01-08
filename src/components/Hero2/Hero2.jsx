@@ -93,8 +93,8 @@ function Hero2() {
       <Box
         sx={{
           textAlign: "start",
-          paddingTop: { xs: "40%", md: "10%" },
-          paddingLeft: "8%",
+          paddingTop: { xs: "40%", md: "12%" },
+          paddingLeft: {xs: "8%", md: "12%"},
           maxWidth: { xs: "90%", md: "45%" },
         }}
       >
@@ -129,8 +129,8 @@ function Hero2() {
             variant="body1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "14px", md: "20px", lg: "20px" },
-              maxWidth: { xs: "90%", md: "80%" },
+              fontSize: { xs: "16px", md: "18px", lg: "20px" },
+              maxWidth: { xs: "90%", md: "75%" },
             }}
           >
             I build software and teach programming. <br />
