@@ -61,8 +61,6 @@ const Footer = () => {
         }}
       >
         <Box sx={{ width: "80%", textAlign: "center", marginY: 2 }}>
-          <QuoteBox />
-
           <BuyMeACoffee coffeeVersion={true} />
 
           <Box sx={{ marginY: 2 }}>

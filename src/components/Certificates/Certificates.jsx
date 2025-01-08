@@ -34,7 +34,7 @@ const Certificates = () => {
     },
     {
       imgUrl: "https://bjleeper.com/wp-content/uploads/2021/07/CTFL-badge.png",
-      name: "ISTQB Certified Tester Foundation Level (CTFL)",
+      name: "ISTQB Certified Tester Foundation Level",
       issuedBy: "ASTQB",
       id: "",
     },
@@ -99,7 +99,7 @@ const Certificates = () => {
             key={index}
             sx={{
               width: { xs: "60vw", md: 215 },
-              height: 280, // Set consistent height
+              height: 260, // Set consistent height
               textAlign: "center",
               display: "flex",
               flexDirection: "column",
@@ -121,17 +121,15 @@ const Certificates = () => {
               sx={{
                 objectFit: "contain",
                 backgroundColor: "transparent",
-                paddingTop: 2,
-                paddingBottom: 1,
+                paddingY: 2,
               }}
             />
-            <CardContent>
+            <CardContent sx={{ m: 0, p: 0, paddingX: 2}}>
               <Typography variant="h6">{cert.name}</Typography>
             </CardContent>
             {/* Footer Section */}
             <CardActions
               sx={{
-                marginTop: "auto",
                 width: "90%",
                 padding: 2,
                 textAlign: "center",

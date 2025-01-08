@@ -3,7 +3,7 @@ import React from "react";
 
 const QuoteBox = ({
   quote = "Technology is best when it brings people together.",
-  color = "white",
+  color = "primary.dark",
 }) => {
   return (
     <Box
@@ -17,7 +17,7 @@ const QuoteBox = ({
       <Box
         sx={{
           width: { xs: "95%", md: "fit-content" },
-          color: { color },
+          color: `${color}`,
         }}
       >
         <Typography

@@ -5,6 +5,7 @@ import Certificates from "../../components/Certificates/Certificates.jsx";
 import Hero2 from "../../components/Hero2/Hero2.jsx";
 import Services from "../../components/Services/Services.jsx";
 import TechnologiesAndTools from "../../components/TechnologiesAndTools/TechnologiesAndTools.jsx";
+import QuoteBox from "../../components/QuoteBox/QuoteBox.jsx";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <TechnologiesAndTools />
       <Services />
       <Certificates />
+      <QuoteBox />
     </Box>
   );
 };
