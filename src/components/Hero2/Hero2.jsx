@@ -104,7 +104,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "32px", md: "48px", lg: "52px" },
+              fontSize: { xs: "32px", md: "48px", lg: "48px" },
               fontWeight: { xs: 600, md: 600 },
             }}
           >
@@ -114,7 +114,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "primary.main",
-              fontSize: { xs: "32px", md: "48px", lg: "52px" },
+              fontSize: { xs: "32px", md: "48px", lg: "48px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
