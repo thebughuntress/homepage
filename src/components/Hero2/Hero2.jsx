@@ -82,7 +82,7 @@ function Hero2() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        minHeight: { xs: "92vh", md: "90vh" },
+        minHeight: { xs: "92vh", md: "93vh" },
         width: "100vw",
         position: "relative",
         backgroundImage: `url(${bgImg})`,

@@ -41,7 +41,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
     <AppBar
       position="static"
       sx={{
-        height: { xs: "8vh", md: "10vh" },
+        height: { xs: "8vh", md: "7vh" },
         display: "flex",
         justifyContent: "center",
         backgroundColor: "transparent",
