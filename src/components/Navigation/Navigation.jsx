@@ -41,7 +41,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
     <AppBar
       position="static"
       sx={{
-        height: { xs: "8vh", md: "7vh" },
+        height: { xs: "8vh", md: "64px" },
         display: "flex",
         justifyContent: "center",
         backgroundColor: "transparent",
@@ -113,14 +113,14 @@ function Navigation({ isDarkMode, onThemeToggle }) {
         >
           {isHome && (
             <>
-              <Button
+              {/* <Button
                 onClick={() => navigate("classes")}
                 sx={{
                   ...sxButton,
                 }}
               >
                 Classes
-              </Button>
+              </Button> */}
             </>
           )}
 

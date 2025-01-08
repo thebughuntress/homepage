@@ -47,33 +47,38 @@ const ContactForm = () => {
     },
     inputLabel: {
       sx: {
-        fontSize: "1rem",
-        color: "#FFF",
+        color: "primary.dark", 
+        transition: "all 0.3s ease", 
+       
       },
     },
   };
 
   const textFieldSx = {
-    "& .MuiOutlinedInput-root.Mui-focused": {
-      borderColor: "inherit",
-      "& .MuiOutlinedInput-notchedOutline": {
-        borderColor: "inherit",
+    backgroundColor: "white",
+    borderRadius: "4px", 
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "primary.dark",
+        borderRadius: "4px", 
       },
+      "&:hover fieldset": {
+        borderColor: "primary.dark", 
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "primary.dark", 
+      },
+    },
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "primary.dark", 
+    },
+    "& .MuiInputLabel-root": {
+      color: "primary.dark",
+      transition: "all 0.3s ease", 
     },
     "& .MuiInputLabel-root.Mui-focused": {
-      color: "#FFF",
-    },
-    "& .MuiInputBase-input": {
-      color: "#FFF",
-    },
-    "& .MuiOutlinedInput-root": {
-      borderColor: "#FFF",
-      "&.Mui-focused": {
-        borderColor: "#FFF",
-      },
-      "& .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#FFF",
-      },
+      color: "primary.dark",
+      transform: "translate(0, -20px) scale(0.75)",
     },
   };
 

@@ -1,10 +1,11 @@
 # Homepage
 
-This is my homepage, providing an overview of my skills, contact information, and more.The website is deployed [here](https://homepage-bdc65.web.app).
+This is my homepage, providing an overview of my skills, contact information, and more.
+The website is deployed [here](https://homepage-bdc65.web.app).
 
 ## Tech Stack
 
-- **[React](react.com) & [Vite](https://vite.dev)** for fast development and efficient bundling
+- **[React](https://react.com) & [Vite](https://vite.dev)** for fast development and efficient bundling
 - **[Material UI](https://mui.com)** for modern UI components
 - **[Firebase](https://firebase.com)** for deployment and hosting
 - **[GoDaddy](https://godaddy.com)** for domain registration and DNS management
