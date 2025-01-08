@@ -4,10 +4,10 @@ This is my homepage, providing an overview of my skills, contact information, an
 
 ## Tech Stack
 
-- **[React](react.com) & [Vite](vite.dev)** for fast development and efficient bundling
-- **[Material UI](mui.com)** for modern UI components
-- **[Firebase](firebase.com)** for deployment and hosting
-- **[GoDaddy](godaddy.com)** for domain registration and DNS management
+- **[React](react.com) & [Vite](https://vite.dev)** for fast development and efficient bundling
+- **[Material UI](https://mui.com)** for modern UI components
+- **[Firebase](https://firebase.com)** for deployment and hosting
+- **[GoDaddy](https://godaddy.com)** for domain registration and DNS management
 
 ## Useful Links
 - [A list of developer portfolios for your inspiration](https://github.com/emmabostian/developer-portfolios)
