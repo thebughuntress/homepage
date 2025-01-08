@@ -140,7 +140,7 @@ const TechnologiesAndTools = () => {
           gap: 3,
           flexWrap: "wrap",
           //backgroundColor: "red",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
         }}
       >
         {technologies.map((technology, index) => (

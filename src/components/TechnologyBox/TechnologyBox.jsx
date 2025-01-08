@@ -4,15 +4,17 @@ import { Box, Card, CardMedia, Typography } from "@mui/material";
 const TechnologyBox = ({ label, img }) => {
   return (
     <Card
+      elevation={0}
       sx={{
         backgroundColor: "#FFF",
         p: 1,
-        width: { xs: "34vw", md: "25%" },
+        width: { xs: "34vw", md: "25%", lg: "28%" },
         height: { xs: "45px", md: "50px" },
         display: "flex",
         alignItems: "center",
         borderRadius: 1,
         gap: 1,
+        boxShadow: "none",
       }}
     >
       <CardMedia

@@ -86,8 +86,8 @@ function Hero2() {
         width: "100vw",
         position: "relative",
         backgroundImage: `url(${bgImg})`,
-        backgroundSize: "cover", 
-        backgroundRepeat: "no-repeat", 
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Box
@@ -104,7 +104,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "32px", md: "48px" },
+              fontSize: { xs: "32px", md: "48px", lg: "52px" },
               fontWeight: { xs: 600, md: 600 },
             }}
           >
@@ -114,7 +114,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "primary.main",
-              fontSize: { xs: "32px", md: "48px" },
+              fontSize: { xs: "32px", md: "48px", lg: "52px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
@@ -129,12 +129,12 @@ function Hero2() {
             variant="body1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "14px", md: "20px" },
+              fontSize: { xs: "14px", md: "20px", lg: "20px" },
               maxWidth: { xs: "90%", md: "80%" },
             }}
           >
             I build software and teach programming. <br />
-            Currently, I work remotely as a Full-Stack Software Engineer .
+            Currently, I work remotely as a Full-Stack Software Engineer.
           </Typography>
         </Box>
 

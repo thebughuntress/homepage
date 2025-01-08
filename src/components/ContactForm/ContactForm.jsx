@@ -120,12 +120,12 @@ const ContactForm = () => {
           sx={{
             marginTop: 2,
             boxShadow: "none",
-            backgroundColor: "primary.dark",
+            backgroundColor: "primary.main",
             color: "#FFF",
             fontSize: "1rem",
             fontWeight: "bold",
             "&:hover": {
-              backgroundColor: "primary.main",
+              backgroundColor: "primary.dark",
               color: "#FFF",
               borderColor: "white",
               boxShadow: "none",
