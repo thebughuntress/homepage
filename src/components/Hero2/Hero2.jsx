@@ -98,7 +98,7 @@ function Hero2() {
       <Box
         sx={{
           textAlign: "start",
-          paddingTop: { xs: "40%", md: "10%", xl: "14%" },
+          paddingTop: { xs: "40%", md: "10%", xl: "12%" },
           paddingLeft: { xs: "8%", md: "12%" },
           maxWidth: { xs: "90%", md: "45%" },
         }}
