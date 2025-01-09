@@ -131,11 +131,10 @@ function Hero2() {
             sx={{
               color: "text.primary",
               fontSize: { xs: "16px", md: "18px", lg: "20px" },
-              maxWidth: { xs: "90%", md: "75%" },
+              maxWidth: { xs: "95%", md: "75%", xl: "54%" },
             }}
           >
-            I build software and teach programming. <br />
-            Currently, I work remotely as a Full-Stack Software Engineer.
+            I build software and teach programming. Currently, I work remotely as a Full-Stack Software Engineer.
           </Typography>
         </Box>
 
