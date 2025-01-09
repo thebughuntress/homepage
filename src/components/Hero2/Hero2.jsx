@@ -14,7 +14,7 @@ import emailIconWhite from "../../assets/hero2/email_white.png";
 import { cv } from "../../data/contact";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import { contact } from "../../data/contact";
-import cvPdf from "../../assets/pdf/cv.pdf" 
+import cvPdf from "../../assets/pdf/cv.pdf";
 
 function Hero2() {
   const theme = useTheme();
@@ -83,7 +83,11 @@ function Hero2() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        minHeight: { xs: "92vh", md: "calc(100vh - 64px)", lg: "calc(100vh - 75px)" },
+        minHeight: {
+          xs: "92vh",
+          md: "calc(100vh - 64px)",
+          lg: "calc(100vh - 75px)",
+        },
         width: "100vw",
         position: "relative",
         backgroundImage: `url(${bgImg})`,
@@ -94,8 +98,8 @@ function Hero2() {
       <Box
         sx={{
           textAlign: "start",
-          paddingTop: { xs: "40%", md: "12%" },
-          paddingLeft: {xs: "8%", md: "12%"},
+          paddingTop: { xs: "40%", md: "10%", xl: "14%" },
+          paddingLeft: { xs: "8%", md: "12%" },
           maxWidth: { xs: "90%", md: "45%" },
         }}
       >
@@ -105,7 +109,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "32px", md: "48px", lg: "48px" },
+              fontSize: { xs: "32px", md: "48px", lg: "48px", xl: "52px" },
               fontWeight: { xs: 600, md: 600 },
             }}
           >
@@ -115,7 +119,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "primary.main",
-              fontSize: { xs: "32px", md: "48px", lg: "48px" },
+              fontSize: { xs: "32px", md: "48px", lg: "48px", xl: "52px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
@@ -134,7 +138,8 @@ function Hero2() {
               maxWidth: { xs: "95%", md: "75%", xl: "54%" },
             }}
           >
-            I build software and teach programming. Currently, I work remotely as a Full-Stack Software Engineer.
+            I build software and teach programming. Currently, I work remotely
+            as a Full-Stack Software Engineer.
           </Typography>
         </Box>
 
