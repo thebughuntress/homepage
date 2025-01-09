@@ -125,7 +125,7 @@ function Hero2() {
               whiteSpace: "nowrap",
               overflow: "hidden",
               marginY: 1,
-              height: { xs: "48px", md: "64px" },
+              height: { xs: "48px", md: "64px", xl: "68px" },
             }}
           >
             {role}
