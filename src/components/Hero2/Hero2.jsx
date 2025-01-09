@@ -14,6 +14,7 @@ import emailIconWhite from "../../assets/hero2/email_white.png";
 import { cv } from "../../data/contact";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import { contact } from "../../data/contact";
+import cvPdf from "../../assets/pdf/cv.pdf" 
 
 function Hero2() {
   const theme = useTheme();
@@ -203,8 +204,7 @@ function Hero2() {
         <Box sx={{ my: 3 }}>
           <DownloadButton
             label="Download CV"
-            url={cv.url}
-            //pathToFile={cv.path}
+            file={cvPdf}
             downloadFileName={cv.filename}
             color="primary.main"
           />
