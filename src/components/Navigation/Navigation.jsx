@@ -41,7 +41,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
     <AppBar
       position="static"
       sx={{
-        height: { xs: "8vh", md: "64px" },
+        height: { xs: "8vh", md: "64px", lg: "75px" },
         display: "flex",
         justifyContent: "center",
         backgroundColor: "transparent",
@@ -73,7 +73,7 @@ function Navigation({ isDarkMode, onThemeToggle }) {
             sx={{
               fontFamily: "Arial, sans-serif",
               mr: 2,
-              fontSize: { xs: "25px", md: "1.8rem", lg: "2rem" },
+              fontSize: { xs: "25px", md: "1.8rem", lg: "2rem", xl: "2.4rem"},
               fontWeight: 500,
               color: "primary.main",
               cursor: isHome ? "default" : "pointer",
