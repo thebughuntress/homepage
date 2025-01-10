@@ -2,37 +2,37 @@ import React from "react";
 import { Button } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
-const DownloadButton = ({ label, downloadFileName, url, file }) => {
+const DownloadButton = ({ label, downloadFileName, url, fallbackFile }) => {
   const handleDownload = async () => {
-    const fileUrl = url;
+    try {
+      // Fetch the file from the specified URL
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Download from ${fileUrl} failed...`);
+      }
 
-    if (file) {
+      // Create a blob from the response and trigger the download
+      const blob = await response.blob();
       const link = document.createElement("a");
-      link.href = file;
       link.download = downloadFileName;
+      const objectUrl = URL.createObjectURL(blob);
+      link.href = objectUrl;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    }
+      URL.revokeObjectURL(objectUrl);
+    } catch (error) {
+      console.info("Downloading fallback file");
 
-    if (!file && fileUrl && fileUrl.startsWith("https://")) {
       try {
-        const response = await fetch(fileUrl);
-        if (!response.ok) {
-          throw new Error("Failed to fetch the file.");
-        }
-        const blob = await response.blob();
+        // Attempt fallback file download
         const link = document.createElement("a");
-
-        // Create an object URL for the blob
-        const objectUrl = URL.createObjectURL(blob);
-        link.href = objectUrl;
         link.download = downloadFileName;
+        link.href = fallbackFile;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        URL.revokeObjectURL(objectUrl);
-      } catch (error) {
+      } catch {
         console.error("Error downloading or saving the file:", error);
       }
     }

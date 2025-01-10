@@ -208,9 +208,10 @@ function Hero2() {
         <Box sx={{ my: 3 }}>
           <DownloadButton
             label="Download CV"
-            file={cvPdf}
-            downloadFileName={cv.filename}
             color="primary.main"
+            url={cv.url}
+            downloadFileName={cv.filename}
+            fallbackFile={cvPdf}
           />
         </Box>
       </Box>

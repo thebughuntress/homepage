@@ -1,6 +1,6 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
-import bgStarlitSky from "../../assets/bg-starlit-sky.jpg";
+import bgStarlitSky from "../../assets/hero/bg-starlit-sky.jpg";
 import ContactButtons from "../ContactButtons/ContactButtons";
 import "./Hero.css";
 
