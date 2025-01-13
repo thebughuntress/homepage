@@ -3,6 +3,7 @@ import React from "react";
 
 const QuoteBox = ({
   quote = "Technology is best when it brings people together.",
+  author = "Matt Mullenweg",
   color = "primary.dark",
 }) => {
   return (
@@ -16,7 +17,7 @@ const QuoteBox = ({
     >
       <Box
         sx={{
-          width: { xs: "75%", md: "fit-content" },
+          width: { xs: "75%", md: "50%" },
           color: `${color}`,
         }}
       >
@@ -26,7 +27,7 @@ const QuoteBox = ({
             fontSize: { xs: "20px", md: "26px" },
             fontWeight: 500,
             marginBottom: 1,
-            textAlign: "start"
+            textAlign: "start",
           }}
         >
           {quote}
@@ -35,9 +36,10 @@ const QuoteBox = ({
           variant="body1"
           sx={{
             textAlign: "right",
+            marginRight: 2,
           }}
         >
-          Matt Mullenweg
+          {author}
         </Typography>
       </Box>
     </Box>

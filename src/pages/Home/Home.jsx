@@ -15,7 +15,7 @@ const Home = () => {
       <TechnologiesAndTools />
       <Services />
       <Certificates />
-      <QuoteBox />
+      <QuoteBox quote="There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors." author="Phil Karlton" />
     </Box>
   );
 };
