@@ -47,34 +47,33 @@ const ContactForm = () => {
     },
     inputLabel: {
       sx: {
-        color: "primary.dark", 
-        transition: "all 0.3s ease", 
-       
+        color: "primary.dark",
+        transition: "all 0.3s ease",
       },
     },
   };
 
   const textFieldSx = {
     backgroundColor: "white",
-    borderRadius: "4px", 
+    borderRadius: "4px",
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
         borderColor: "primary.dark",
-        borderRadius: "4px", 
+        borderRadius: "4px",
       },
       "&:hover fieldset": {
-        borderColor: "primary.dark", 
+        borderColor: "primary.dark",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "primary.dark", 
+        borderColor: "primary.dark",
       },
     },
     "& .MuiOutlinedInput-notchedOutline": {
-      borderColor: "primary.dark", 
+      borderColor: "primary.dark",
     },
     "& .MuiInputLabel-root": {
       color: "primary.dark",
-      transition: "all 0.3s ease", 
+      transition: "all 0.3s ease",
     },
     "& .MuiInputLabel-root.Mui-focused": {
       color: "primary.dark",
@@ -129,6 +128,8 @@ const ContactForm = () => {
             color: "#FFF",
             fontSize: "1rem",
             fontWeight: "bold",
+            border: "1px solid",
+            borderColor: "primary.dark",
             "&:hover": {
               backgroundColor: "primary.dark",
               color: "#FFF",

@@ -29,7 +29,13 @@ function Hero2() {
     email: isDarkTheme ? emailIconWhite : emailIconBlack,
   };
 
-  const roles = ["Web Developer", "Cloud Engineer", "Tutor"];
+  const roles = [
+    "Software Engineer",
+    "Python Programmer",
+    "Web Developer",
+    "Cloud Engineer",
+    "Tutor",
+  ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [role, setRole] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -83,6 +89,8 @@ function Hero2() {
       sx={{
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
+        alignItems: { xs: "center", md: "start" },
         minHeight: {
           xs: "92vh",
           md: "calc(100vh - 64px)",
@@ -97,9 +105,9 @@ function Hero2() {
     >
       <Box
         sx={{
+          //backgroundColor: {xs: "blue",md: "red", lg: "green", xl: "yellow" },
           textAlign: "start",
-          paddingTop: { xs: "40%", md: "10%", xl: "12%" },
-          paddingLeft: { xs: "8%", md: "12%" },
+          paddingLeft: { xs: 0, md: "20vw" },
           maxWidth: { xs: "90%", md: "45%" },
         }}
       >
@@ -109,7 +117,7 @@ function Hero2() {
             variant="h1"
             sx={{
               color: "text.primary",
-              fontSize: { xs: "32px", md: "48px", lg: "48px", xl: "52px" },
+              fontSize: { xs: "32px", md: "48px", lg: "54px", xl: "56px" },
               fontWeight: { xs: 600, md: 600 },
             }}
           >
@@ -118,14 +126,14 @@ function Hero2() {
           <Typography
             variant="h1"
             sx={{
+              marginY: 1,
               color: "primary.main",
-              fontSize: { xs: "32px", md: "48px", lg: "48px", xl: "52px" },
+              fontSize: { xs: "32px", md: "48px", lg: "54px", xl: "56px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
               overflow: "hidden",
-              marginY: 1,
-              height: { xs: "48px", md: "64px", xl: "70px" },
+              height: { xs: "48px", md: "64px", xl: "75px" },
             }}
           >
             {role}
@@ -133,13 +141,14 @@ function Hero2() {
           <Typography
             variant="body1"
             sx={{
+              marginY: 2,
               color: "text.primary",
-              fontSize: { xs: "16px", md: "18px", lg: "20px" },
-              maxWidth: { xs: "95%", md: "75%", xl: "54%" },
+              fontSize: { xs: "16px", md: "18px", lg: "24px" },
+              maxWidth: { xs: "95%", md: "75%", xl: "70%" },
             }}
           >
             I build software and teach programming. Currently, I work remotely
-            as a Full-Stack Software Engineer.
+            as a Software Engineer.
           </Typography>
         </Box>
 
@@ -153,10 +162,11 @@ function Hero2() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Box
+              component="img"
               src={icons.github}
               alt="GitHub"
-              style={{ width: 40, height: 40 }}
+              sx={{ height: { xs: "40px", md: "50px" }, width: "auto" }}
             />
           </IconButton>
 
@@ -168,10 +178,11 @@ function Hero2() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Box
+              component="img"
               src={icons.linkedin}
               alt="LinkedIn"
-              style={{ width: 40, height: 40 }}
+              sx={{ height: { xs: "40px", md: "50px" }, width: "auto" }}
             />
           </IconButton>
 
@@ -183,10 +194,11 @@ function Hero2() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Box
+              component="img"
               src={icons.whatsapp}
               alt="WhatsApp"
-              style={{ width: 40, height: 40 }}
+              sx={{ height: { xs: "40px", md: "50px" }, width: "auto" }}
             />
           </IconButton>
 
@@ -198,10 +210,11 @@ function Hero2() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Box
+              component="img"
               src={icons.email}
-              alt="WhatsApp"
-              style={{ marginTop: 10, width: 40, height: "auto" }}
+              alt="Email"
+              sx={{ height: { xs: "40px", md: "50px" }, width: "auto", mt: 1 }}
             />
           </IconButton>
         </Box>

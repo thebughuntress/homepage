@@ -1,8 +1,12 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, useMediaQuery, useTheme } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 const DownloadButton = ({ label, downloadFileName, url, fallbackFile }) => {
+
+  const theme = useTheme();
+  const isLgScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   const handleDownload = async () => {
     try {
       // Fetch the file from the specified URL
@@ -41,6 +45,7 @@ const DownloadButton = ({ label, downloadFileName, url, fallbackFile }) => {
   return (
     <Button
       variant="contained"
+      size={isLgScreen ? "large" : "small"}
       startIcon={<FileDownloadIcon />}
       onClick={handleDownload}
     >
