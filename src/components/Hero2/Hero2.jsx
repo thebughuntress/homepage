@@ -127,14 +127,14 @@ function Hero2() {
           <Typography
             variant="h1"
             sx={{
-              marginY: 1,
+              marginY: 2,
               color: "primary.main",
               fontSize: { xs: "32px", md: "48px", lg: "54px", xl: "56px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
               overflow: "hidden",
-              height: { xs: "48px", md: "64px", xl: "75px" },
+              height: { xs: "50px", md: "70px", xl: "75px" },
             }}
           >
             {role}
@@ -142,7 +142,7 @@ function Hero2() {
           <Typography
             variant="body1"
             sx={{
-              marginY: { xs: 1, md: 2 },
+              marginY: 1,
               color: "text.primary",
               fontSize: { xs: "16px", md: "18px", lg: "24px" },
               maxWidth: { xs: "95%", md: "75%", xl: "70%" },
