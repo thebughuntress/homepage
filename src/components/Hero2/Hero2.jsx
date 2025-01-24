@@ -118,7 +118,7 @@ function Hero2() {
             sx={{
               marginTop: { xs: "-5rem", md: 0 },
               color: "text.primary",
-              fontSize: { xs: "32px", md: "48px", lg: "54px", xl: "56px" },
+              fontSize: { xs: "32px", md: "42px", lg: "50px", xl: "56px" },
               fontWeight: { xs: 600, md: 600 },
             }}
           >
@@ -127,9 +127,9 @@ function Hero2() {
           <Typography
             variant="h1"
             sx={{
-              marginY: 2,
+              marginY: 1,
               color: "primary.main",
-              fontSize: { xs: "32px", md: "48px", lg: "54px", xl: "56px" },
+              fontSize: { xs: "32px", md: "42px", lg: "50px", xl: "56px" },
               fontWeight: { xs: 600, md: 600 },
               display: "inline-block",
               whiteSpace: "nowrap",
