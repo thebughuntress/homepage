@@ -6,7 +6,6 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-
   define: {
     // Read the version from version.txt located in the root folder with 'utf8' encoding
     APP_VERSION: JSON.stringify(

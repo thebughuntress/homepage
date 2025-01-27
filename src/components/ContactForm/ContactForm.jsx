@@ -42,7 +42,7 @@ const ContactForm = () => {
     input: {
       sx: {
         fontSize: "1rem",
-        color: "#FFF",
+        color: "#000",
       },
     },
     inputLabel: {
