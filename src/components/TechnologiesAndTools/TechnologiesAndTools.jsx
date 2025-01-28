@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import React from "react";
 import TechnologyBox from "../TechnologyBox/TechnologyBox";
 
@@ -48,6 +48,10 @@ const technologies = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   },
   {
+    label: "Storybook",
+    img: "https://www.svgrepo.com/show/354397/storybook-icon.svg",
+  },
+  {
     label: "Bootstrap",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
   },
@@ -74,6 +78,14 @@ const technologies = [
   {
     label: "Postman",
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+  },
+  {
+    label: "PHP",
+    img: "https://suckup.de/wp-content/uploads//2012/01/php1.png",
+  },
+  {
+    label: "Symfony",
+    img: "https://avatars.githubusercontent.com/u/143937?v=4",
   },
   {
     label: "MATLAB",
@@ -151,6 +163,29 @@ const TechnologiesAndTools = () => {
           />
         ))}
       </Box>
+
+      <Typography
+        variant="body1"
+        sx={{
+          marginTop: 2,
+          textAlign: "center",
+          color: "#FFF",
+        }}
+      >
+        My personal{" "}
+        <Link
+          href="https://github.com/thebughuntress"
+          sx={{
+            color: "#FFF",
+            textDecoration: "underline",
+          }}
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // For security
+        >
+          GitHub account
+        </Link>{" "}
+        showcases projects built with the following technologies.
+      </Typography>
     </Box>
   );
 };
