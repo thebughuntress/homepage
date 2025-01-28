@@ -39,7 +39,7 @@ const AboutMe = () => {
       </Typography>
 
       <Box sx={{ mt: 2 }}>
-        <List sx={{ padding: 0 }}>
+        <List sx={{ p: 0 }}>
           <ListItem
             sx={{
               display: "flex",
@@ -59,25 +59,36 @@ const AboutMe = () => {
                   color: "white",
                   marginRight: 2,
                   mt: "7px",
-                  fontSize: "22px",
+                  fontSize: "24px",
                 }}
               />
               <Box>
                 <Typography
                   sx={{
-                    fontSize: "22px",
+                    fontSize: "24px",
                     color: "white",
                     fontWeight: "600",
                   }}
                 >
                   Master of Science
                 </Typography>
-                <Typography sx={{ fontWeight: "500", color: "white" }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontSize: { xs: "16px", md: "18px" },
+                    fontWeight: 500,
+                    color: "white",
+                  }}
+                >
                   Electrical Engineering and Information Technology
                 </Typography>
                 <Typography
-                  variant="body2"
-                  sx={{ fontSize: "14px", color: "lightgray" }}
+                  variant="body1"
+                  sx={{
+                    fontSize: { xs: "16px", md: "18px" },
+                    color: "white",
+                    fontWeight: 300,
+                  }}
                 >
                   Karlsruhe Institute of Technology (KIT), 2020
                 </Typography>
@@ -105,25 +116,36 @@ const AboutMe = () => {
                   color: "white",
                   marginRight: 2,
                   mt: "7px",
-                  fontSize: "22px",
+                  fontSize: "24px",
                 }}
               />
               <Box>
                 <Typography
                   sx={{
-                    fontSize: "22px",
+                    fontSize: "24px",
                     color: "white",
                     fontWeight: "600",
                   }}
                 >
                   Bachelor of Science
                 </Typography>
-                <Typography sx={{ fontWeight: "500", color: "white" }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontSize: { xs: "16px", md: "18px" },
+                    fontWeight: 500,
+                    color: "white",
+                  }}
+                >
                   Electrical Engineering and Information Technology
                 </Typography>
                 <Typography
-                  variant="body2"
-                  sx={{ fontSize: "14px", color: "lightgray" }}
+                  variant="body1"
+                  sx={{
+                    fontSize: { xs: "16px", md: "18px" },
+                    color: "white",
+                    fontWeight: 300,
+                  }}
                 >
                   Karlsruhe Institute of Technology (KIT), 2018
                 </Typography>

@@ -101,7 +101,7 @@ const technologies = [
   }, */
   {
     label: "Java",
-    img: "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.jpg",
+    img: "https://static-00.iconduck.com/assets.00/java-icon-756x1024-oq8lkwya.png",
   },
   /* {
     label: "JHipster",
@@ -184,7 +184,7 @@ const TechnologiesAndTools = () => {
         >
           GitHub account
         </Link>{" "}
-        showcases projects built with the following technologies.
+        showcases projects built with the technologies above.
       </Typography>
     </Box>
   );
